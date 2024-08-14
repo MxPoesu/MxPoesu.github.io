@@ -5,9 +5,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap" rel="stylesheet">
 </head>
-<head>
-	<title>Page title</title>
-</head>
 	<body>
 		<h1>About</h1>
 			<p> I'm El/Merle (they/he), 20-something, autistic and queer artist and anarchist. 
