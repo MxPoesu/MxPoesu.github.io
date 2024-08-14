@@ -5,3 +5,14 @@ html, body {
   font-style: normal;
   
 }
+
+#main {
+    background-color: whitesmoke;
+    border: 1px solid;
+    border-color: darkgrey;
+    padding: 0px 20px 20px 20px;
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
