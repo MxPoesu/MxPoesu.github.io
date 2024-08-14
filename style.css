@@ -1,14 +1,14 @@
 .lexend-<html> {
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 100;
   font-style: normal;
   
 }
 
 
 
-#main {
+html {
     background-color:whitesmoke;
     border: 1px solid;
     border-color:darkgrey;
