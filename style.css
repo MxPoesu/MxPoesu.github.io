@@ -4,14 +4,3 @@
   font-weight: 500;
   font-style: normal;
 }
-#body {
-background-color:whitesmoke;
-border: 1px solid;
-border-color:darkgrey;
-color:#333333;
-padding: 20px;
-width: 60%;
-height:auto;
-margin-left: 20%;
-margin-right: 20%;
-}
