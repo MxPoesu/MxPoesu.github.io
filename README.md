@@ -1,6 +1,9 @@
 <html>
 <body>
 <h1>Links</h1>
-<p> <a href="https://mastodon.art/@MxPoesu">Mastodon</a> | <a href="https://t.me/ArtPoesu">Telegram</a> | <a href="https://hipolink.me/mx.poesu">Donate</a> | Email: mx.poesu@proton.me </p>
+<p> <a href="https://mastodon.art/@MxPoesu">Mastodon</a> | 
+<a href="https://t.me/ArtPoesu">Telegram</a> | 
+<a href="https://hipolink.me/mx.poesu">Donate</a> | 
+<a href="mailto:mx.poesu@proton.me">Leave an email</a> </p>
 </body>
 </html>
