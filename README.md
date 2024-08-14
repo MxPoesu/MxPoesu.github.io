@@ -10,6 +10,6 @@
 			<a href="https://hipolink.me/mx.poesu">Donate via Hipolink</a> | 
 			<a href="mailto:mx.poesu@proton.me">Leave an email</a> </p>
 		<p></p>	
-		<img src="/images/temp.jpg">
+		<img src="/images/temp.png">
 	</body>
 </html>
