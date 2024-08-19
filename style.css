@@ -149,13 +149,12 @@ hr {
 
 /* Grid layout */
 
-.grid-container {
+.container {
 
   margin-inline: auto;
   margin-bottom: 30px;
   max-width: 70ch;
   text-align: left;
-  gap: 10px;
 
   img {
     margin-bottom: 10px;
