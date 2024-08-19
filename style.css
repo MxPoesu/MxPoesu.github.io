@@ -263,7 +263,7 @@ form input.highlight, form textarea.highlight, form select.highlight {
 
 .profile {
   width: 100%;
-  text-align: center;
+  text-align: left;
 
   & p {
     margin: 0 auto;
