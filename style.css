@@ -190,7 +190,7 @@ hr {
 }
 @media (min-width: 800px) {
   .col-2 { grid-column: auto / span 2; }
-  .col-3 { grid-column: auto / span 3; }
+  .col-3 { grid-column: 50px / span 3; }
   .col-4 { grid-column: auto / span 4; }
   .col-6 { grid-column: auto / span 6; }
   .col-7 { grid-column: auto / span 7; }
@@ -260,7 +260,7 @@ hr {
     width: 100%;
 	text-align: left;
 
-    @media (max-width: 200px) {
+    @media (max-width: 600px) {
       width: 100%;
     }
   }
