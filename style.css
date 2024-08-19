@@ -21,14 +21,14 @@
 html, body {
   height: 100%;
   width: 95%;
-  margin: 30px;
+  margin: 20px;
   padding: 10px;
 }
 
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 20px;
   background-color: #eee;
   font-family: var(--Lexend);
   text-align: center;
