@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Gallery</title>
+	<title>Mx.Poesu • artist's gallery</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,21 +9,31 @@
 </head>
 	<body>
 
-		<header class="container block-region block-remove" data-group="profile-header">
-			<div class="profile hcard">
-				<a href="https://mxpoesu.github.io/"><img src="images/pfp.png?text=Profile picture" class="avatar block-edit" data-block="header-avatar"></a>
-				<h3><a href="https://mxpoesu.github.io/" class="p-name u-url block-edit" data-block="header-name"><b>Mx.Poesu</b></a></h3>
-				<p class="block-edit block-remove" data-block="header-text">I'm El/Merle (they/he), 20-something, autistic and queer artist and anarchist. 
-				I create watercolour and ink drawings that strive to celebrate conviviality, unabashedness, and intricacies 🪄✨</p>
+		<section class="two-column block-section" data-group="two-column" data-title="Two-column">
+			<div class="row" style="gap: 20px;">
+				<div class="col-6 box">
+					<img src="https://fpoimg.com/800x400?text=Content%20Image" width="800" height="auto" class="fill block-edit block-remove" data-block="two-column-image-1" style="display: block; width: 100%; height: auto;">
+					<p class="block-edit" data-block="two-column-text-1">Page copy goes here. The length could depend on the type of page. Like a short update, or a list of items.</p>
+				</div>
+				<div class="col-6 box">
+					<header class="container block-region block-remove" data-group="profile-header">
+						<div class="profile hcard">
+							<a href="https://mxpoesu.github.io/"><img src="images/pfp.png?text=Profile picture" class="avatar block-edit" data-block="header-avatar"></a>
+							<h3><a href="https://mxpoesu.github.io/" class="p-name u-url block-edit" data-block="header-name"><b>Mx.Poesu</b></a></h3>
+							<p class="block-edit block-remove" data-block="header-text">I'm El/Merle (they/he), 20-something, autistic and queer artist and anarchist. 
+							I create watercolour and ink drawings that strive to celebrate conviviality, unabashedness, and intricacies 🪄✨</p>
+						</div>
+						<section class="menu block-section" data-group="menu" data-title="Menu" style="text-align: center;">
+							<ul class="block-region">
+								<li> <a href="https://mastodon.art/@MxPoesu"><b>Follow on Mastodon</b></a></li>
+								<li> <a href="https://hipolink.me/mx.poesu"><b>Donate via Hipolink</b></a></li>
+								<li> <a href="mailto:mx.poesu@proton.me"><b>Leave an email</b></a></li>
+							</ul>
+						</section>
+					</header>
+				</div>
 			</div>
-			<section class="menu block-section" data-group="menu" data-title="Menu" style="text-align: center;">
-				<ul class="block-region">
-					<li> <a href="https://mastodon.art/@MxPoesu"><b>Follow on Mastodon</b></a></li>
-					<li> <a href="https://hipolink.me/mx.poesu"><b>Donate via Hipolink</b></a></li>
-					<li> <a href="mailto:mx.poesu@proton.me"><b>Leave an email</b></a></li>
-				</ul>
-			</section>
-		</header>
+		</section>
 
 		<footer>
 			<p>©2024 by Poesu. Build with <a href="https://indieaisle.com">Indie Aisle</a> website template</p>
