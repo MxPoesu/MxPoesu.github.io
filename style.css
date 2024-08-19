@@ -286,7 +286,7 @@ form input.highlight, form textarea.highlight, form select.highlight {
     }
   }
   & .btn-main {
-    position: relative;
+    position: center;
     top: -6px;
     margin-left: 10px;
   }
