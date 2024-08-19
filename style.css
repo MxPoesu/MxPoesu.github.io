@@ -169,16 +169,9 @@ hr {
 .row {
   @media (min-width: 480px) {
     display: grid;
-    grid-template-columns: 2fr, 1fr;
-    grid-template-rows: 1fr 1fr;
-	grid-template-areas: 
-		"portfolio profile-hcard"
-		"portfolio blog"; 
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr auto;
   }
-
-.portfolio { grid-area: portfolio; }
-.profile-hcard { grid-area: profile-hcard; }
-.blog { grid-area: blog; }
 
   div {
     margin-bottom: 15px;
