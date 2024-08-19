@@ -23,12 +23,12 @@ html, body {
   width: 95%;
   text-align: center;
   margin: 0px;
-  padding: 20px;
+  padding: 10px;
 }
 
 body {
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #eee;
   font-family: var(--Lexend);
   text-align: center;
