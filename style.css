@@ -21,7 +21,6 @@
 html, body {
   height: 100%;
   width: 95%;
-  text-align: center;
 }
 
 body {
@@ -29,7 +28,7 @@ body {
   padding-bottom: 30px;
   background-color: #eee;
   font-family: var(--Lexend);
-  text-align: left;
+  text-align: center;
   font-size: var(--18px);
   line-height: 1.4;
   color: #333;
