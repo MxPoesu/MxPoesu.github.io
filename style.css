@@ -263,12 +263,13 @@ form input.highlight, form textarea.highlight, form select.highlight {
 
 .profile {
   width: 100%;
-  text-align: left;
+  text-align: center;
 
   & p {
     margin: 0 auto;
     margin-bottom: 10px;
     width: 75%;
+	text-align: left;
 
     @media (max-width: 600px) {
       width: 100%;
@@ -276,17 +277,16 @@ form input.highlight, form textarea.highlight, form select.highlight {
   }
   & h3 {
     display: inline-block;
-    position: center;
+    position: relative;
     top: -4px;
     font-size: var(--24px);
 
     & a {
       text-decoration: none;
-	  text-align: center;
     }
   }
   & .btn-main {
-    position: center;
+    position: relative;
     top: -6px;
     margin-left: 10px;
   }
