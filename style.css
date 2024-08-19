@@ -29,6 +29,13 @@ html, body {
   padding: 0px;
 }
 
+main {
+  grid-template: 
+    "portfolio" 
+    "about" 
+    "blog";
+}
+
 body {
   padding-top: 0px;
   padding-bottom: 0px;
