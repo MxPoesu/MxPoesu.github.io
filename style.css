@@ -26,10 +26,10 @@ html, body {
 }
 
 body {
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #eee;
   font-family: var(--Lexend);
   text-align: center;
