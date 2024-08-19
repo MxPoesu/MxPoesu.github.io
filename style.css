@@ -26,8 +26,8 @@ body {
   padding-top: 50px;
   padding-bottom: 30px;
   background-color: #eee;
-  font-family: var(--helvetica);
-  text-align: center;
+  font-family: var(--Lexend);
+  text-align: left;
   font-size: var(--18px);
   line-height: 1.4;
   color: #333;
@@ -49,15 +49,15 @@ a {
   text-decoration: underline;
 
   &:hover, &.selected {
-    color: #175bd2;
+    color: #ed8800;
   }
   &:visited:hover {
-    color: #4c21b6;
+    color: #dc210f;
   }
 }
 h1, h2, h3 {
   color: var(--primary);
-  font-family: var(--helvetica);
+  font-family: var(--Lexend);
   font-weight: 500;
 
   &:last-child {
