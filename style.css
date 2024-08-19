@@ -240,7 +240,7 @@ hr {
 /* Profile header */
 
 .profile {
-  width: 50%;
+  width: 100%;
   text-align: center;
 
   & p {
@@ -257,7 +257,7 @@ hr {
     display: inline-block;
     position: relative;
     top: -4px;
-    font-size: 30px;
+    font-size: 28px;
 
     & a {
       text-decoration: none;
