@@ -258,8 +258,9 @@ hr {
   & p {
     margin: 0 auto;
     margin-bottom: 10px;
-    width: 75%;
+    width: 90%;
 	text-align: left;
+	vertical-align: middle;
 
     @media (max-width: 600px) {
       width: 100%;
@@ -268,11 +269,13 @@ hr {
   & h3 {
     display: inline-block;
     position: relative;
-    top: -4px;
+	  vertical-align: middle;
+    top: 0px;
     font-size: 28px;
 
     & a {
       text-decoration: none;
+	  vertical-align: middle;
     }
   }
   & .btn-main {
