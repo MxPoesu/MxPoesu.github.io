@@ -149,28 +149,28 @@ hr {
 
 /* Grid layout */
 
-.container {  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "portfolio profile-hcard"
-    "portfolio blog";
+.container {
+
+  margin-inline: auto;
+  margin-bottom: 30px;
+  max-width: 70ch;
+  text-align: left;
+
+  img {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 740px) {
+    width: 100%;
+    padding: 0 20px;
+  }
 }
-
-.portfolio { grid-area: portfolio; }
-
-.profile-hcard { grid-area: profile-hcard; }
-
-.blog { grid-area: blog; }
-
 
 .row {
   @media (min-width: 480px) {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr auto;
+    grid-template-columns: 2fr, 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   div {
