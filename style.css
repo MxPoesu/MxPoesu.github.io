@@ -282,7 +282,7 @@ form input.highlight, form textarea.highlight, form select.highlight {
 
     & a {
       text-decoration: none;
-	  text-align: left;
+	  text-align: center;
     }
   }
   & .btn-main {
