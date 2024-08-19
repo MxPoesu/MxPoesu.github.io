@@ -178,7 +178,7 @@ hr {
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 50px) {
   .col-2, .col-3, .col-4, .col-5, .col-6, .col-7 { grid-column: auto / span 6; }
   .col-8, .col-9, .col-10, .col-11, .col-12 { grid-column: auto / span 12; }
 
@@ -188,8 +188,8 @@ hr {
     }
   }
 }
-@media (min-width: 800px) {
-  .col-2 { grid-column: auto / span 2; }
+@media (min-width: 50px) {
+  .col-2 { grid-column: 800px / span 2; }
   .col-3 { grid-column: 50px / span 3; }
   .col-4 { grid-column: auto / span 4; }
   .col-6 { grid-column: auto / span 6; }
