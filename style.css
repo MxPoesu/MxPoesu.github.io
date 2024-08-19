@@ -139,9 +139,10 @@ hr {
 /* Grid layout */
 
 .container {
-  border-radius: 10px;
-  background-color: #fff;
-  padding: 20px;
+  margin-inline: auto;
+  margin-bottom: 30px;
+  max-width: 70ch;
+  text-align: left;
 
   img {
     margin-bottom: 10px;
