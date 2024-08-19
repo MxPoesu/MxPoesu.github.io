@@ -276,12 +276,13 @@ form input.highlight, form textarea.highlight, form select.highlight {
   }
   & h3 {
     display: inline-block;
-    position: relative;
+    position: center;
     top: -4px;
     font-size: var(--24px);
 
     & a {
       text-decoration: none;
+	  text-align: left;
     }
   }
   & .btn-main {
