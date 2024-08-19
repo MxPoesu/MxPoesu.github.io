@@ -176,6 +176,10 @@ hr {
 		"portfolio blog"; 
   }
 
+.portfolio { grid-area: portfolio; }
+.profile-hcard { grid-area: profile-hcard; }
+.blog { grid-area: blog; }
+
   div {
     margin-bottom: 15px;
   }
