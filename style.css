@@ -237,28 +237,6 @@ hr {
   font-style: italic;
 }
 
-/* Forms */
-
-form input, form textarea, form select {
-  margin: 5px 0;
-  border: #ccc 1px solid;
-  border-radius: 5px;
-  box-sizing: border-box;
-  padding: 7px 9px;
-  font-family: var(--helvetica);
-  font-size: var(--18px);
-  color: #666;
-  font-weight: 100;
-}
-form input:focus, form textarea:focus, form select:focus {
-  border: #555 1px solid;
-  outline: none;
-  color: #333;
-}
-form input.highlight, form textarea.highlight, form select.highlight {
-  border: #e24535 1px solid;
-}
-
 /* Profile header */
 
 .profile {
@@ -279,7 +257,7 @@ form input.highlight, form textarea.highlight, form select.highlight {
     display: inline-block;
     position: relative;
     top: -4px;
-    font-size: var(--24px);
+    font-size: var(--30px);
 
     & a {
       text-decoration: none;
