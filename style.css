@@ -139,20 +139,22 @@ hr {
 /* Grid layout */
 
 .container {
-  margin-inline: auto;
-  margin-bottom: 30px;
-  max-width: 70ch;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  width: 100%;
+  background-color: #fff;
+  padding: 60px 80px;
+  font-size: var(--20px);
   text-align: left;
+  line-height: 1.4;
+  overflow: hidden;
 
-  img {
-    margin-bottom: 10px;
+  @media (max-width: 600px) {
+    border-radius: 10px;
+    padding: 20px;
   }
-
-  @media (max-width: 740px) {
-    width: 100%;
-    padding: 0 20px;
-  }
-}
 
 .row {
   @media (min-width: 480px) {
