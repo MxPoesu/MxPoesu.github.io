@@ -29,12 +29,6 @@ body {
   cursor: default;
 }
 
-.table {
-  font-family: Lexend;
-  font-style: normal;
-  font-weight: 300;
-}
-
 .frame {
 	display: flex;
 	align-items: middle;
