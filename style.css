@@ -24,18 +24,22 @@ body {
   font-size: 12px;
   line-height: 1.4;
   color: #333;
-  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   cursor: default;
+}
 
+.table {
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .frame {
 	display: flex;
 	align-items: middle;
 	white-space: nowrap;
-	height: auto;
+	height: 50px;
 	margin-bottom: 0;
 	margin-top:0
 
@@ -56,7 +60,7 @@ a {
 h1, h2, h3 {
   color: var(--primary);
   font-family: var(--Lexend);
-  font-weight: 500;
+  font-weight: 700;
 
   &:last-child {
     margin-bottom: 0;
