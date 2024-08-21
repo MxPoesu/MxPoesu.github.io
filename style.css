@@ -77,6 +77,10 @@ th {
 	margin-bottom: 0;
 	margin-top: 10px;	
     font-weight: 500;
+	
+	& img {
+	width:30px;
+	}
 
     & > li {
       display: inline-block;
@@ -250,10 +254,6 @@ ul {
 
 	& li {
 	margin-bottom: 0;
-	}
-	  
-	& img {
-	width:30px;
 	}
 }
 
