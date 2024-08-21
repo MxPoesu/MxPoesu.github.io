@@ -38,6 +38,15 @@ body {
 
 /* MAIN */
 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  vertical-align: top;
+}
+
 .frame {
 	display: flex;
 	align-items: middle;
@@ -101,6 +110,12 @@ body {
 	padding-bottom: 10px;
 	margin-top: 5px;
 	background: white;
+	
+	& a {
+		font-family: "Pacifico", cursive;
+		font-weight: 300;
+		font-style: normal;
+	}
 }
 
 .tos, .blog {
