@@ -1,33 +1,42 @@
+/* GLOBAL */
+
 html, body {
-  height: 100%;
-  width: 95%;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 25px;
-  margin-right: 25px;
-  padding: 0px;
+	height: 100%;
+	width: 95%;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+	margin-right: 25px;
+	padding: 0px;
 }
 
 body {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
-  background-color: #eee;
-  font-family: Lexend;
-  font-style: normal;
-  font-weight: 300;
-  text-align: center;
-  font-size: 12px;
-  line-height: 1.4;
-  color: #333;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  cursor: default;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+	background-color: #eee;
+	font-family: Lexend;
+	font-style: normal;
+	font-weight: 300;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	cursor: default;
 }
+
+
+
+
+
+
+/* MAIN */
 
 .frame {
 	display: flex;
@@ -51,7 +60,7 @@ body {
 }
 
 .menu {
-  margin-bottom: 0;
+	margin-bottom: 0;
 
   & ul {
     display: inline-block;
@@ -67,6 +76,7 @@ body {
       &:last-child {
         margin-right: 0;
       }
+	  
       & a {
         text-decoration: none;
 
@@ -108,8 +118,6 @@ body {
 }
 
 .portfolio {
-	height:360px;
-	width:610px;
 	text-align:center;
 	font-style: normal;
 	font-weight:300;
@@ -126,40 +134,49 @@ body {
 	}
 	
 	& img {
-		height: 330px;
+		width: 480px;
 		margin: 0;
 		padding: 0;
 	}	
 }
 
 footer {
-  padding-top: 10px;
-  padding-bottom: 30px;
-  p {
+	padding-top: 10px;
+	padding-bottom: 30px;
+
+p {
     font-size: 10px;
     text-align: center;
   }
 }
 
-a {
-  color: var(--primary);
-  text-decoration: none;
 
-  &:hover, &.selected {
-    color: #ed8800;
-  }
-  &:visited:hover {
-    color: #dc210f;
+
+
+
+
+/* FORMATTING */
+
+a {
+	color: var(--primary);
+	text-decoration: none;
+
+	&:hover, &.selected {
+		color: #ed8800;
+	}
+
+	&:visited:hover {
+		color: #dc210f;
   }
 }
 
 h1, h2, h3 {
-  color: var(--primary);
-  font-family: var(--Lexend);
-  font-weight: 700;
+	color: var(--primary);
+	font-family: var(--Lexend);
+	font-weight: 700;
 
-  &:last-child {
-    margin-bottom: 0;
+	&:last-child {
+		margin-bottom: 0;
   }
 
   & a {
@@ -169,65 +186,65 @@ h1, h2, h3 {
 }
 
 h1 {
-  margin-bottom: var(--20px);
-  font-size: var(--50px);
-  color: var(--primary);
+	margin-bottom: var(--20px);
+	font-size: var(--50px);
+	color: var(--primary);
 
-  @media (max-width: 600px) {
-    margin-bottom: var(--30px);
-    font-size: var(--30px);
-  }
+	@media (max-width: 600px) {
+		margin-bottom: var(--30px);
+		font-size: var(--30px);
+	}
 }
 h2 {
-  margin-bottom: var(--10px);
-  font-size: var(--28px);
+	margin-bottom: var(--10px);
+	font-size: var(--28px);
 
-  @media (max-width: 600px) {
-    margin-bottom: var(--20px);
-    font-size: var(--24px);
-  }
+	@media (max-width: 600px) {
+		margin-bottom: var(--20px);
+		font-size: var(--24px);
+	}
 }
 h3 {
-  margin-bottom: var(--10px);
-  font-size: var(--24px);
-  font-weight: 500;
-  line-height: 1.2;
+	margin-bottom: var(--10px);
+	font-size: var(--24px);
+	font-weight: 500;
+	line-height: 1.2;
 
-  @media (max-width: 600px) {
-    margin-bottom: var(--10px);
-    font-size: var(--20px);
-  }
+	@media (max-width: 600px) {
+		margin-bottom: var(--10px);
+		font-size: var(--20px);
+	}
 }
 
 p {
-  margin-bottom: 0;
-  margin-top:0;
+	margin-bottom: 0;
+	margin-top:0;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 ul, ol {
-  list-style: none;
-  padding: 0;
+	list-style: none;
+	padding: 0;
 }
 ul {
-  list-style: disc;
-  margin-left: 0;
+	list-style: disc;
+	margin-left: 0;
 
-  & li {
-    margin-bottom: 0;
-  }
-  
-  & img {
+	& li {
+	margin-bottom: 0;
+	}
+	  
+	& img {
 	width:30px;
-  }
+	}
 }
 
 em {
-  font-style: italic;
+	font-style: italic;
 }
 strong {
-  font-weight: 700;
+	font-weight: 700;
 }
