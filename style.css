@@ -29,6 +29,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	cursor: default;
+	background-image: url('images/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 
@@ -38,14 +42,32 @@ body {
 
 /* MAIN */
 
-.center {
-  margin-left: auto;
-  margin-right: auto;
+.nav {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-weight: light;
+    font-size: 10px;
+    text-align: center;
+	
+	& th {
+		padding-left: 8px;
+		padding-right: 8px;
+		font-weight: 300;
+	}
+	
+}
+
+.main {
+	margin-left: auto;
+	margin-right: auto;
   
 }
 
 th {
-  vertical-align: top;
+	vertical-align: top;
+
 }
 
 .card-header {
@@ -75,7 +97,6 @@ th {
 	margin-right: 7x;
 	margin-bottom: 0;
 	margin-top: 10px;	
-    font-weight: 500;
 	transition: filter 0.3s ease; 
 	
   }
@@ -109,7 +130,7 @@ th {
 	}
 }
 
-.tos, .blog {
+.blog {
 	max-width: 220px;
 	font-style: normal;
 	font-weight: 300;
@@ -148,12 +169,9 @@ th {
 
 footer {
 	padding-top: 10px;
-	padding-bottom: 30px;
-
-p {
+	padding-bottom: 0;
     font-size: 10px;
     text-align: center;
-  }
 }
 
 
