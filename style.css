@@ -214,15 +214,15 @@ footer {
 a {
 	color: var(--primary);
 	text-decoration: none;
+	}
 
-	&:hover, &.selected {
+	a:hover, a.selected {
 		color: #ed8800;
 	}
 
-	&:visited:hover {
+	a:visited:hover {
 		color: #dc210f;
-  }
-}
+	}
 
 h1, h2, h3 {
 	color: var(--primary);
@@ -231,11 +231,6 @@ h1, h2, h3 {
 
 	&:last-child {
 		margin-bottom: 0;
-  }
-
-  & a {
-    text-decoration: none;
-    color: var(--primary);
   }
 }
 
