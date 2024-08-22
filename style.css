@@ -51,13 +51,13 @@ body {
     font-size: 10px;
     text-align: center;
 	
-	& th {
+}
+
+	.nav th {
 		padding-left: 8px;
 		padding-right: 8px;
 		font-weight: 300;
 	}
-	
-}
 
 .main {
 	margin-left: auto;
@@ -73,42 +73,41 @@ th {
 .card-header {
 	display: flex;
 	padding-bottom: 10px;
-	
-	& img {
+}
+
+	.card-header img {
 		width:50px;
 		height:auto;
 		padding-right:12px;
 		float:left;
 	}
 	
-	& a {
+	.card-header a {
 		font-size:20px;
 	}
-}
 
 .card-menu {
 	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
+}
 
-  & th {
+  .card-menu th {
     display: inline-block;
     margin-left: 7px;
 	margin-right: 7x;
 	margin-bottom: 0;
 	margin-top: 10px;	
 	transition: filter 0.3s ease; 
-	
   }
 	
-  & th:hover {
+  .card-menu th:hover {
 	filter: drop-shadow(0 0 2px gray); 
   }
 	
-  & img {
+  .card-menu img {
 	width:30px;
 	}
-}
 
 .about-card {
 	max-width: 220px;
@@ -122,13 +121,13 @@ th {
 	padding-bottom: 10px;
 	margin-top: 0;
 	background: white;
+}
 	
-	& a {
+	.about-card a {
 		font-family: "Pacifico", cursive;
 		font-weight: 300;
 		font-style: normal;
 	}
-}
 
 .blog {
 	max-width: 220px;
@@ -155,17 +154,17 @@ th {
 	padding-bottom: 15px;
 	margin-top:0;
 	background: white;
+}
 	
-	& p {
+	.portfolio p {
 		padding-top:5px;
 	}
 	
-	& img {
+	.portfolio img {
 		width: 480px;
 		margin: 0;
 		padding: 0;
 	}	
-}
 
 .tos {
 	max-width: 60%;
@@ -182,10 +181,11 @@ th {
 	margin-right: auto;
 	background: white;
 	
-	& a {
+}
+
+	.tos a {
 		text-decoration: underline;
 	}
-}
 
 .tos, .main { animation: appear 0.8s; 
 	position: relative;
@@ -272,23 +272,6 @@ h3 {
 p {
 	margin-bottom: 0;
 	margin-top:0;
-
-	&:last-child {
-		margin-bottom: 0;
-	}
-}
-
-ul, ol {
-	list-style: none;
-	padding: 0;
-}
-ul {
-	list-style: disc;
-	margin-left: 0;
-
-	& li {
-	margin-bottom: 0;
-	}
 }
 
 em {
