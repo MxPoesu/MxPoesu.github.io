@@ -27,6 +27,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	cursor: default;
+	background-image: url('images/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	background-color: #f9f9f9;
 }
 
