@@ -79,7 +79,7 @@ body {
 	}
 
 	.col-2 {
-		
+	
 	}
 
 
@@ -173,7 +173,7 @@ body {
 	}
 	
 	.portfolio img {
-	width: 550px;
+	max-height: 360px;
 	margin: 0;
 	padding: 0;
 }	
