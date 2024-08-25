@@ -73,21 +73,33 @@
 
 				<div class="col col-2">
 					<div class="portfolio">
-						<div id="gallery">
-							<figure class="slider">
-							<figure><a href="artworks/001.webp"><img src="artworks/001.webp"></a></figure>
-							<figure><a href="artworks/004.webp"><img src="artworks/004.webp"></a></figure>
-							<figure><a href="artworks/003.webp"><img src="artworks/003.webp"></a></figure>
-							<figure><a href="artworks/002.webp"><img src="artworks/002.webp"></a></figure>
-							<figure><a href="artworks/005.webp"><img src="artworks/005.webp"></a></figure>
-							<figure><a href="artworks/006.webp"><img src="artworks/006.webp"></a></figure>
-							<figure><a href="artworks/007.webp"><img src="artworks/007.webp"></a></figure>
-							<figure><a href="artworks/008.webp"><img src="artworks/008.webp"></a></figure>
-							<figure><a href="artworks/009.webp"><img src="artworks/009.webp"></a></figure>
-							<figure><a href="artworks/001.webp"><img src="artworks/001.webp"></a></figure>							
-							</figure>
-							<p><a href="art.html">↠ See all artworks ↞</a></p>
+						<div class="slideshow-container" style="height:400px">
+							<div class="mySlides fade"><a href="artworks/001.webp"><img src="artworks/005.webp"></a></div>
+							<div class="mySlides fade"><a href="artworks/004.webp"><img src="artworks/004.webp"></a></div>
+							<div class="mySlides fade"><a href="artworks/003.webp"><img src="artworks/003.webp"></a></div>
+							<div class="mySlides fade"><a href="artworks/002.webp"><img src="artworks/002.webp"></a></div>
+							<div class="mySlides fade"><a href="artworks/005.webp"><img src="artworks/001.webp"></a></div>
+							<div class="mySlides fade"><a href="artworks/006.webp"><img src="artworks/006.webp"></a></div>
+							<div class="mySlides fade"><a href="artworks/007.webp"><img src="artworks/007.webp"></a></div>
+							<div class="mySlides fade"><a href="artworks/008.webp"><img src="artworks/008.webp"></a></div>
+							<div class="mySlides fade"><a href="artworks/009.webp"><img src="artworks/009.webp"></a></div>
 						</div>	
+						<table class="slideshow-nav">	
+							<th>						
+								<div>
+									<span class="dot" onclick="currentSlide(1)"></span>
+									<span class="dot" onclick="currentSlide(2)"></span>
+									<span class="dot" onclick="currentSlide(3)"></span>
+									<span class="dot" onclick="currentSlide(4)"></span>
+									<span class="dot" onclick="currentSlide(5)"></span>
+									<span class="dot" onclick="currentSlide(6)"></span>
+									<span class="dot" onclick="currentSlide(7)"></span>
+									<span class="dot" onclick="currentSlide(8)"></span>
+									<span class="dot" onclick="currentSlide(9)"></span>
+								</div>
+							</th>
+							<th><a href="art.html">See all artworks ↠</a></th>
+						</table>
 					</div>		
 				</div>
 			</div>
@@ -97,6 +109,39 @@
 				<p>©2024 by Poesu ♡</p>
 			</footer>
 		</div>
+
+		<script>
+
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			  
+			  slideIndex++;
+			  if (slideIndex > slides.length) {slideIndex = 1}
+			  slides[slideIndex-1].style.display = "none";
+			  setTimeout(showSlides, 10000);
+			}
+		
+		</script>
 
 	</body>
 </html>
