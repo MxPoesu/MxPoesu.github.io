@@ -68,7 +68,7 @@ body {
   display: grid;
   grid-template-columns: 255px auto;
   gap: 15px;
-  max-width: 95%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -79,7 +79,7 @@ body {
 	}
 
 	.col-2 {
-	
+	max-width: 100%;
 	}
 
 
@@ -164,19 +164,68 @@ body {
 	padding-right: 15px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	width: auto;
 	margin-top: 0;
 	background: white;
 }
 	
 	.portfolio p {
-		padding-top:5px;
+		padding-top: 5px;
 	}
 	
 	.portfolio img {
-	max-height: 360px;
+	width: auto;
 	margin: 0;
 	padding: 0;
 }	
+
+
+
+@keyframes slider {
+0% { left: 0%; }
+5% { left: 0%; }
+10% { left: -100%; }
+15% { left: -100%; }
+20% { left: -200%; }
+30% { left: -200%; }
+35% { left: -300%; }
+40% { left: -300%; }
+45% { left: -400%; }
+50% { left: -400%; }
+55% { left: -500%; }
+60% { left: -500%; }
+65% { left: -600%; }
+70% { left: -600%; }
+75% { left: -700%; }
+80% { left: -700%; }
+85% { left: -800%; }
+90% { left: -800%; }
+95% { left: -900%; }
+100% { left: -900%; }
+}
+
+* {
+  box-sizing: border-box;
+}
+figure { 
+  margin: 0;
+  vertical-align: middle;
+}
+div#gallery { 
+  width: 100%; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 1000%;
+  font-size: 0; animation: 40s slider infinite; 
+}
+figure.slider figure { 
+  width: 10%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: auto; height: 360px; }
+
+
+
 
 
 
@@ -287,4 +336,15 @@ strong {
 
 ::selection {
   background: #b6f0f8;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.date {
+	color: #81B8C9;
 }
