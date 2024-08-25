@@ -36,11 +36,11 @@ body {
 .nav {
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 0;
+	padding-top: 3px;
 	padding-bottom: 10px;
-	font-weight: light;
     font-size: 10px;
     text-align: center;
+	background-image: none;
 	
 }
 
