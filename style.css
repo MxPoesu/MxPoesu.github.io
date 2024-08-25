@@ -47,7 +47,7 @@ html, body {
 
 
 
-	.container-grid, .longread, footer { animation: appear 0.8s; 
+	.main { animation: appear 0.8s; 
 		position: relative;
 	}
 
