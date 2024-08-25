@@ -182,8 +182,8 @@ body {
 }
 
 	.slideshow-nav th {
-		padding-left: 80px;
-		padding-right: 80px;
+		padding-left: 60px;
+		padding-right: 60px;
 		font-weight: 300;
 	}
 
@@ -198,7 +198,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: center;
-  max-height: 390px;
+  max-height: 330px;
+  border-radius: 3px;
 }
 
 	.mySlides {
@@ -207,11 +208,11 @@ body {
 	
 	.dot {
 	  cursor: pointer;
-	  height: 8px;
-	  width: 8px;
+	  height: 10px;
+	  width: 10px;
 	  margin: 0 2px;
 	  background-color: #bbb;
-	  border-radius: 50%;
+	  border-radius: 5%;
 	  display: inline-block;
 	  transition: background-color 0.6s ease;
 	}
