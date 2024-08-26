@@ -73,7 +73,7 @@
 
 				<div class="col col-2">
 					<div class="portfolio">
-						<div class="slideshow-container" style="height:340px">
+						<div class="slideshow-container" controls id="slider">
 							<div class="mySlides fade"><a href="artworks/005.webp"><img src="artworks/005.webp"></a></div>
 							<div class="mySlides fade"><a href="artworks/003.webp"><img src="artworks/003.webp"></a></div>
 							<div class="mySlides fade"><a href="artworks/004.webp"><img src="artworks/004.webp"></a></div>
@@ -84,6 +84,7 @@
 							<div class="mySlides fade"><a href="artworks/008.webp"><img src="artworks/008.webp"></a></div>
 							<div class="mySlides fade"><a href="artworks/009.webp"><img src="artworks/009.webp"></a></div>
 						</div>	
+
 						<table class="slideshow-nav">	
 							<th style="padding-right: 35px;">						
 								<div>
@@ -140,6 +141,19 @@
 			  setTimeout(showSlides, 10000);
 			}
 		
+		</script>
+		
+		<script>
+			var elem = document.getElementById("slider");
+			function openFullscreen() {
+			  if (elem.requestFullscreen) {
+				elem.requestFullscreen();
+			  } else if (elem.webkitRequestFullscreen) { /* Safari */
+				elem.webkitRequestFullscreen();
+			  } else if (elem.msRequestFullscreen) { /* IE11 */
+				elem.msRequestFullscreen();
+			  }
+			}
 		</script>
 
 	</body>

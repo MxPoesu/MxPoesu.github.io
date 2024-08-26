@@ -253,6 +253,38 @@ body {
 		text-decoration: underline;
 	}
 
+.art-grid {
+	max-width: 90%;
+	text-align: center;
+	border-radius: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	
+}
+
+
+	.art-grid img {
+		height: 188px;
+		border-radius: 6px;
+	}
+	
+	.art-grid h1 {
+		display: block;
+		margin-bottom: 10px;
+		font-family: Lexend;
+		font-style: normal;
+		font-weight: 300;
+		text-align: left;
+		font-size: 10px;
+		padding: 3px;
+	}
+	
 
 
 
@@ -286,7 +318,7 @@ a {
 h1, h2, h3 {
 	color: var(--primary);
 	font-family: var(--Lexend);
-	font-weight: 700;
+	font-weight: 500;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -294,14 +326,11 @@ h1, h2, h3 {
 }
 
 h1 {
-	margin-bottom: var(--20px);
-	font-size: var(--50px);
-	color: var(--primary);
-
-	@media (max-width: 600px) {
-		margin-bottom: var(--30px);
-		font-size: var(--30px);
-	}
+	font-family: "Pacifico", cursive;
+	font-style: normal;
+	font-size: 18px;
+	margin-top: 0;
+	margin-bottom: 5px;
 }
 h2 {
 	margin-bottom: var(--10px);
