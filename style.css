@@ -285,6 +285,15 @@ body {
 		padding: 3px;
 	}
 	
+	.p1 {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	
+	.p2. {
+		
+	}
+	
 
 
 
@@ -374,6 +383,10 @@ ul {
 	padding: 0;
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+li {
+	line-height: 1.8;
 }
 
 .date {
