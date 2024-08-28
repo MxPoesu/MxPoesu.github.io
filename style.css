@@ -14,7 +14,7 @@ html {
 	text-rendering: optimizeLegibility;
 }
 
-html, body, .nav th {
+html, body, .nav th, .nav a {
 	background-image: url('images/background.webp');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
