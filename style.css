@@ -20,7 +20,7 @@ html, body, .nav th, .nav a {
 	background-attachment: fixed;
 	background-size: cover;
 	background-color: #f9f9f9;	
-	border: none;
+	border-style: none;
 }
 
 
@@ -31,13 +31,11 @@ html, body, .nav th, .nav a {
 	margin-top: 10px;
 	margin-bottom: 8px;
 	padding: 0;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+	gap: 8px;
+	max-width: 50%;
 }
-
-	.nav th {
-		padding-left: 8px;
-		padding-right: 8px;
-		font-weight: 300;
-	}
 
 
 
@@ -63,12 +61,12 @@ html, body, .nav th, .nav a {
 /* TEXTS */
 
 .container-grid {
-  display: grid;
-  grid-template-columns: 255px auto;
-  gap: 15px;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+	display: grid;
+	grid-template-columns: 255px auto;
+	gap: 15px;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .about-card, .longread {
