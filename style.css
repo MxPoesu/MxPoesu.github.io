@@ -14,13 +14,12 @@ html {
 	text-rendering: optimizeLegibility;
 }
 
-html, body, .nav th, .nav a {
+html, body, .nav th, .nav a, .col  {
 	background-image: url('images/background.webp');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	background-color: #f9f9f9;	
-	border-style: none;
 }
 
 
