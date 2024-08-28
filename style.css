@@ -31,12 +31,13 @@ html, body, .nav th, .nav a {
 	margin-top: 15px;
 	margin-bottom: 10px;
 	padding: 0;
-	display: grid;
-	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
-	gap: 8px;
-	max-width: 50%;
 }
 
+	.nav th {
+		padding-left: 8px;
+		padding-right: 8px;
+		font-weight: 300;
+	}
 
 
 .main { 
