@@ -14,13 +14,12 @@ html {
 	text-rendering: optimizeLegibility;
 }
 
-html, body, .nav th, .nav a {
+html, body, .nav th, .nav a, .col  {
 	background-image: url('images/background.webp');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	background-color: #f9f9f9;	
-	border: 0 hidden;
 }
 
 
@@ -31,13 +30,12 @@ html, body, .nav th, .nav a {
 	margin-top: 15px;
 	margin-bottom: 10px;
 	padding: 0;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+	gap: 8px;
+	max-width: 50%;
 }
 
-	.nav th {
-		padding-left: 8px;
-		padding-right: 8px;
-		font-weight: 300;
-	}
 
 
 .main { 
