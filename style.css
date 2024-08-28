@@ -3,11 +3,6 @@
 html {
 	text-align: center;
 	padding: 0;
-	background-image: url('images/background.webp');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: #f9f9f9;
 	padding-top: 0;
 	padding-bottom: 0;
 	font-family: Lexend;
@@ -17,6 +12,14 @@ html {
 	line-height: 1.4;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+}
+
+body {
+	background-image: url('images/background.webp');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #f9f9f9;	
 }
 
 
