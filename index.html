@@ -5,11 +5,7 @@
 		<title>Mx.Poesu • artist</title>
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 		<link rel="stylesheet" href="style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="alternate" type="application/atom+xml" title="Mx.Poesu • artist" href="/feed.xml">
-		<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 		<meta name="description" content="Portfolio of artist Mx.Poesu">
 		<meta name="keywords" content="artist, traditional art, drawing">
 		<meta name="author" content="El Poesu">
@@ -19,21 +15,27 @@
 
 	<body>
 
+		<header>
+			<a class="skip-link" href='#main'>Skip to content</a>
+		</header>
+
 		<div class="nav">
-			<div class="col col-1">◊</div>
-			<div class="col col-2"><b><a href="index.html">Home</a></b></div>
-			<div class="col col-3">◊</div>
-			<div class="col col-4"><a href="tos.html">Terms of Service</a></div>
-			<div class="col col-5">◊</div>
-			<div class="col col-6"><a href="blog.html">Blog</a></div>
-			<div class="col col-7">◊</div>
-			<div class="col col-8"><a href="art.html">Portfolio</a></div>
-			<div class="col col-9">◊</div>
-			<div class="col col-10"><a href="feed.xml">RSS <img src="images/rss.png" style="width:10px;vertical-align:middle"></a></div>
+			<div class="col col-01">◊</div>
+			<div class="col col-02"><b><a href="index.html">Home</a></b></div>
+			<div class="col col-03">◊</div>
+			<div class="col col-04"><a href="tos.html">Terms of Service</a></div>
+			<div class="col col-05">◊</div>
+			<div class="col col-06"><a href="art.html">Portfolio</a></div>
+			<div class="col col-07">◊</div>
+			<div class="col col-08"><a href="blog.html">Blog</a></div>
+			<div class="col col-09">◊</div>
+			<div class="col col-10"><a href="bookmarks.html">Bookmarks</a></div>
 			<div class="col col-11">◊</div>
+			<div class="col col-12"><a href="feed.xml">RSS <img src="images/rss.png" style="width:10px;vertical-align:middle"></a></div>
+			<div class="col col-13">◊</div>
 		</div>
 	
-		<div class="main">
+		<main id="main">
 	
 			<div class="container-grid">
 				<div class="col col-1">
@@ -56,7 +58,7 @@
 							autistic and queer artist and anarchist. 
 							I create watercolour and ink drawings 
 							that strive to celebrate conviviality, 
-							unabashedness, and intricacies 🪄✨
+							unabashedness, and intricacies .*🟊⋆
 						</p>
 						
 						<table class="card-menu">
@@ -70,6 +72,11 @@
 					<div class="recent">
 						<h1>Recent posts</h1>
 							<ul>
+								<li>
+									<span class="date">27 august 2024</span>
+									~
+									<a href="art_manifesto.html">Art manifesto</a>
+								</li>
 								<li>
 									<span class="date">26 august 2024</span>
 									~
@@ -116,17 +123,16 @@
 			
 			<footer>
 				<p>©2024 by Poesu ♡</p>
-				<p><a href="https://github.com/MxPoesu/MxPoesu.github.io">Github page</a></p>
+				<p><a href="https://github.com/MxPoesu/MxPoesu.github.io">Github page</a> ◊ <a class="back-link" href='#main'>Back to top</a></p>
 			</footer>
 			
-		</div>
+		</main>
 
 		<script>
 
 			let slideIndex = 1;
 			showSlides(slideIndex);
 
-			// Thumbnail image controls
 			function currentSlide(n) {
 			  showSlides(slideIndex = n);
 			}
