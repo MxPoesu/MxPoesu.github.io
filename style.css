@@ -9,9 +9,10 @@ html {
 	font-style: normal;
 	font-weight: 300;
 	font-size: 10px;
-	line-height: 1.4;
+	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
 }
 
 html, body, .nav th, .nav a, .col  {
@@ -43,6 +44,8 @@ html, body, .nav th, .nav a, .col  {
 		.back-link:focus {
 			transform: translateY(0%);
 		}
+		
+		
 
 
 .nav {
@@ -68,7 +71,6 @@ html, body, .nav th, .nav a, .col  {
 		0% { opacity: 0; top:50px;}
 		100% { opacity: 1; top:0;}
 	}
-
 
 
 
@@ -120,6 +122,15 @@ html, body, .nav th, .nav a, .col  {
 		height: auto;
 		padding-right: 12px;
 		float: left;
+	}
+	
+	.card-header p {
+		font-size: 10px;
+		font-weight: 300;
+	}
+	
+	.card-header h1 {
+		margin-bottom: 0;
 	}
 
 
@@ -329,8 +340,6 @@ footer {
 
 
 
-
-
 /* GENERAL FORMATTING */
 
 a {
@@ -383,7 +392,7 @@ ul {
 }
 
 li {
-	line-height: 1.8;
+	line-height: 1.5;
 }
 
 .date {
