@@ -127,6 +127,7 @@ html, body, .nav th, .nav a, .col  {
 	.card-header p {
 		font-size: 10px;
 		font-weight: 300;
+		line-height: 1;
 	}
 	
 	.card-header h1 {
