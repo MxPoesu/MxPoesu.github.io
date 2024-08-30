@@ -62,6 +62,21 @@ html, body, .nav th, .nav a, .col  {
 
 
 
+.footer-links {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-top: 2px;
+	padding-top: 2px;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto;
+	gap: 8px;
+	max-width: 32%;
+	border-top: 3px outset lightgray;
+}
+
+
+
 #main { 
 	animation: appear 0.8s; 
 	position: relative;
@@ -124,10 +139,14 @@ html, body, .nav th, .nav a, .col  {
 		float: left;
 	}
 	
-	.card-header p {
+	.card-header p, .sub {
 		font-size: 10px;
 		font-weight: 300;
 		line-height: 1;
+	}
+	
+	.sub {
+		text-align: center;
 	}
 	
 	.card-header h1 {
