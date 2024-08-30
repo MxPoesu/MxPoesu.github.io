@@ -419,9 +419,18 @@ li {
 	color: #81B8C9;
 }
 
-.red {
-	color: red;
-}
+/* TEXT COLOURS */
+	.text-color-red {
+		color: #FA1569;
+		font-weight: 700;
+	}
+	.text-color-yellow {
+		color: #F09A05;
+		font-weight: 700;
+	}	
+	
+
+
 
 
 
