@@ -127,6 +127,9 @@ footer {
 		width: 32.2%;
 		padding-right: 15px; 
 	}
+	.col-2 {
+		width: 65%;
+	}
 
 
 
