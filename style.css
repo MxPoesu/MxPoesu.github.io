@@ -65,7 +65,8 @@ html, body, header, .nav-button, .skip-link {
 
 
 footer {
-	margin-top: 15px;
+	margin-top: 30px;
+	padding-bottom: 70px;
 }
 
 	.footer-links {
@@ -97,20 +98,40 @@ footer {
 
 
 
+
+
 /* TEXTS */
 
+
+
 .container-grid {
-	display: grid;
-	grid-template-columns: 255px auto;
+	grid-template-columns: auto auto;
 	gap: 15px;
 	max-width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
+	
+	[class*="col-"] {
+	  float: left;
+	  padding-top: 5px;
+	}
+	
+	.container-grid::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+	
+	.col-1 {
+		width: 32.2%;
+		padding-right: 15px; 
+	}
+
+
 
 .about-card, .longread {
 	text-align: left;
-
 }
 
 .about-card, .longread, .recent, .portfolio, .art-grid {
@@ -243,12 +264,6 @@ footer {
 				float: left;
 			}
 
-
-
-footer {
-	padding-top: 15px;
-	padding-bottom: 70px;
-}
 
 
 
