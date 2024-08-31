@@ -15,7 +15,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-html, body, .col, .nav  {
+html, body, .col, header  {
 	background-image: url('images/background.webp');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
