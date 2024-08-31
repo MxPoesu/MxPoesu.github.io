@@ -8,14 +8,14 @@ html {
 	font-family: Lexend;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	scroll-behavior: smooth;
 }
 
-html, body, .nav th, .nav a, .col  {
+html, body, .col  {
 	background-image: url('images/background.webp');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -52,28 +52,30 @@ html, body, .nav th, .nav a, .col  {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 15px;
-	margin-top: 3px;
-	padding: 0;
-	display: grid;
-	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
-	gap: 8px;
-	max-width: 55%;
+	margin-top: 0;
+	padding-top: 0;
 }
 
+	.nav-button, .footer-button {
+		padding: 5px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 
 
-.footer-links {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 0;
-	margin-top: 2px;
-	padding-top: 2px;
-	display: grid;
-	grid-template-columns: auto auto auto auto auto auto auto;
-	gap: 8px;
-	max-width: 32%;
-	border-top: 3px outset lightgray;
+
+footer {
+	margin-top: 15px;
 }
+
+	.footer-links {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding-top: 2px;
+	}
+
 
 
 
@@ -118,7 +120,7 @@ html, body, .nav th, .nav a, .col  {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	background: white;
-	font-size: 12px;
+	font-size: 14px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -145,9 +147,6 @@ html, body, .nav th, .nav a, .col  {
 		line-height: 1;
 	}
 	
-	.sub {
-		text-align: center;
-	}
 	
 	.card-header h1 {
 		margin-bottom: 0;
@@ -161,20 +160,23 @@ html, body, .nav th, .nav a, .col  {
 	margin-right: auto;
 }
 
-	.card-menu th {
-		display: inline-block;
-		margin-left: 5px;
-		margin-right: 5px;
+	.card-menu {
 		margin-top: 10px;
 		margin-bottom: 0;	
-		transition: filter 0.3s ease; 
+		text-align: center;
 	  }
+	  
+	.card-button {
+		transition: filter 0.3s ease;
+		padding-left: 4px;
+		padding-right: 4px;
+	}	
 		
-	.card-menu th:hover {
+	.card-button:hover {
 		filter: drop-shadow(0 0 2px gray); 
 	}
 		
-	.card-menu img {
+	.card-button img {
 		width: 35px;
 	}
 
@@ -187,7 +189,7 @@ html, body, .nav th, .nav a, .col  {
 	.recent h1 {
 		font-family: Lexend;
 		font-weight: 700;
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 
@@ -391,6 +393,10 @@ p {
 	margin-top:0;
 }
 
+.sub {
+	text-align: center;
+}
+
 em {
 	font-style: italic;
 }
@@ -416,16 +422,16 @@ li {
 }
 
 .date {
-	color: #81B8C9;
+	color: #0089B3;
 }
 
 /* TEXT COLOURS */
 	.text-color-red {
-		color: #FA1569;
+		color: #E60054;
 		font-weight: 700;
 	}
 	.text-color-yellow {
-		color: #F09A05;
+		color: #F06C00;
 		font-weight: 700;
 	}	
 	
@@ -446,7 +452,7 @@ li {
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url('assets/font/LexendLatExt.woff2') format('woff2');
+  src: url('font/LexendLatExt.woff2') format('woff2');
   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
@@ -455,7 +461,7 @@ li {
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url('assets/font/LexendLat.woff2') format('woff2');
+  src: url('font/LexendLat.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -466,7 +472,7 @@ li {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('assets/font/PacificoLatExt.woff2') format('woff2');
+  src: url('font/PacificoLatExt.woff2') format('woff2');
   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
@@ -475,6 +481,6 @@ li {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('assets/font/PacificoLat.woff2') format('woff2');
+  src: url('font/PacificoLat.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
