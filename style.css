@@ -2,9 +2,6 @@
 
 html {
 	text-align: center;
-	padding: 0;
-	padding-top: 0;
-	padding-bottom: 0;
 	font-family: Lexend;
 	font-style: normal;
 	font-weight: 300;
@@ -13,19 +10,19 @@ html {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	scroll-behavior: smooth;
+	background-color: #F5EEE4;	
 }
 
-html, body, header, .nav-button, .skip-link {
-	background-image: url('images/background.webp');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: #f9f9f9;	
+body {
+	margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 .skip-link {
-	color: #f9f9f9;
+	color: #CCBDB6;
 	font-weight: 700;
 	left: 50%;
 	transform: translateY(-100%);
@@ -33,6 +30,14 @@ html, body, header, .nav-button, .skip-link {
 
 	.skip-link:focus {
 		transform: translateY(0%);
+	}
+	
+	header a:hover, header a.selected {
+		color: #FFFFFF;
+	}
+
+	header a:visited:hover {
+		color: #FFFFFF;
 	}
 	
 	.back-link {
@@ -46,14 +51,52 @@ html, body, header, .nav-button, .skip-link {
 		}
 		
 		
+		
+header {
+	display: block;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	background-color: #CCBDB6;
+	border: 3px solid transparent;
+	border-image-source: url('images/border.png');
+	border-image-slice: 20;
+}
 
 
-.nav {
+.nick {
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 15px;
-	margin-top: 0;
-	padding-top: 0;
+	margin-bottom: 5px;	
+}
+
+	.nick img {
+		width: 80px;
+		height: auto;
+		padding-right: 12px;
+		float: left;
+	}
+	
+	.nick p {
+		font-weight: 300;
+		line-height: 1;
+	}
+	
+	.nick h1 {
+		margin-bottom: 0;
+	}
+
+
+.nav, footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+	justify-content: space-between;	
+	flex-wrap: wrap;
+	color: white;
+	background-color: #472536;
+	border: 3px solid transparent;
+	border-image-source: url('images/border.png');
+	border-image-slice: 20;
 }
 
 	.nav-button, .footer-button {
@@ -65,8 +108,8 @@ html, body, header, .nav-button, .skip-link {
 
 
 footer {
-	margin-top: 30px;
-	padding-bottom: 70px;
+	margin-top: 65px;
+	padding-bottom: 75px;
 }
 
 	.footer-links {
@@ -83,6 +126,7 @@ footer {
 #main { 
 	animation: appear 0.8s; 
 	position: relative;
+	margin-top: 25px;
 }
 
 	@keyframes appear {
@@ -102,79 +146,27 @@ footer {
 
 /* TEXTS */
 
-
-
-.container-grid {
-	grid-template-columns: auto auto;
-	gap: 15px;
-	max-width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-}
-	
-	[class*="col-"] {
-	  float: left;
-	  padding-top: 5px;
-	}
-	
-	.container-grid::after {
-	  content: "";
-	  clear: both;
-	  display: table;
-	}
-	
-	.col-1 {
-		width: 32.2%;
-		padding-right: 15px; 
-	}
-	.col-2 {
-		width: 65%;
-	}
-
-
-
-.about-card, .longread {
-	text-align: left;
-}
-
-.about-card, .longread, .recent, .portfolio, .art-grid {
-	border-radius: 5px;
+.about-card, .longread, .recent, .art-grid {
+	border-radius: 3px;
 	padding-left: 15px;
 	padding-right: 15px;
-	padding-top: 15px;
+	padding-top: 10px;
 	padding-bottom: 15px;
+	margin-bottom: 30px;
 	background: white;
 	font-size: 14px;
 	margin-left: auto;
 	margin-right: auto;
+	width: 90%;
+	border: 9px solid transparent;
+	border-image-source: url('images/border.png');
+	border-image-slice: 20;
+	border-image-outset: 4px;
 }
 
-.about-text a, .longread a, .recent a {
+.about-text a, .longread a, li a {
 	text-decoration: underline;
 }
-
-.card-header {
-	display: flex;
-	padding-bottom: 10px;
-}
-
-	.card-header img {
-		width: 55px;
-		height: auto;
-		padding-right: 12px;
-		float: left;
-	}
-	
-	.card-header p, .sub {
-		font-size: 10px;
-		font-weight: 300;
-		line-height: 1;
-	}
-	
-	
-	.card-header h1 {
-		margin-bottom: 0;
-	}
 
 
 
@@ -185,15 +177,15 @@ footer {
 }
 
 	.card-menu {
-		margin-top: 10px;
+		margin-top: 15px;
 		margin-bottom: 0;	
 		text-align: center;
 	  }
 	  
 	.card-button {
 		transition: filter 0.3s ease;
-		padding-left: 4px;
-		padding-right: 4px;
+		padding-left: 7px;
+		padding-right: 7px;
 	}	
 		
 	.card-button:hover {
@@ -201,25 +193,24 @@ footer {
 	}
 		
 	.card-button img {
-		width: 35px;
+		width: 40px;
 	}
 
 
-
-.recent {
-	margin-top: 5px;
-}
 
 	.recent h1 {
 		font-family: Lexend;
 		font-weight: 700;
 		font-size: 14px;
+		padding: 0;
+		margin: 0;
 	}
 
 
 
 .longread {
 	max-width: 60%;
+	text-align: left;
 }
 
 	.longread h1 {
@@ -280,68 +271,40 @@ footer {
 
 /* IMAGES */
 
-.portfolio p {
-	padding-top: 5px;
+.portfolio, .nav, .footer-links {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	max-width: 100%;
+	flex-wrap: wrap;
 }
-	
-	.portfolio img {
-	width: auto;
-	margin: 0;
-	padding: 0;
-}	
 
-	.slideshow-container {
-		max-width: 100%;
-		position: relative;
+.portfolio, .footer-links {
+	width: 90%;
+}
+
+	.picture {
+		display: flex;
+		flex-grow: 1;
+		justify-content: space-between;	
+		height: 40vh;
 	}
 
-		.mySlides {
-			display: none;
-		}
-
-			.fade {
-				animation-name: fade;
-				animation-duration: 1.5s;
-			}
-
-			@keyframes fade {
-				from {opacity: .4}
-				to {opacity: 1}
-			}
-
-			.slideshow-container img {
-				margin-left: auto;
-				margin-right: auto;
-				position: center;
-				max-height: 330px;
-				border-radius: 3px;
-			}
-
-		.slideshow-nav {
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: 2px;
-		}
-
-			.slideshow-nav th {
-				font-weight: 300;
-			}
-
-		
-			.dot {
-				cursor: pointer;
-				height: 10px;
-				width: 10px;
-				margin: 0 2px;
-				background-color: #bbb;
-				border-radius: 5%;
-				display: inline-block;
-				transition: background-color 0.6s ease;
-			}
-
-			.active, .dot:hover {
-				background-color: #ed8800;
-			}
+	.portfolio p {
+		padding-top: 5px;
+		text-align: right;
+	}
+	
+	.portfolio img {
+		height: 100%;
+		max-width: 100%;
+		object-fit: scale-down;
+		margin-bottom: 0;
+		background-image: url('images/nav.jpg');
+		border: 2px solid transparent;
+		border-image-source: url('images/border.png');
+		border-image-slice: 20;
+	}	
 
 
 
@@ -352,8 +315,8 @@ footer {
 }
 
 	.art-grid img {
-		height: 188px;
-		border-radius: 6px;
+		height: 180px;
+		border-radius: 3px;
 	}
 	
 	.art-grid h1 {
@@ -403,6 +366,7 @@ h1 {
 	font-size: 24px;
 	margin-top: 0;
 	margin-bottom: 5px;
+	text-decoration: none;
 }
 
 
@@ -420,7 +384,7 @@ em {
 }
 
 strong {
-	font-weight: 700;
+	font-weight: 900;
 }
 
 ::selection {
