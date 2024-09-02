@@ -49,6 +49,7 @@ body {
 		.back-link:focus {
 			transform: translateY(0%);
 		}
+	
 		
 		
 		
@@ -292,20 +293,19 @@ footer {
 
 	.portfolio p {
 		padding-top: 5px;
+		margin-bottom: 0;
 		text-align: right;
 	}
 	
 	.portfolio img {
 		height: 100%;
 		max-width: 100%;
-		object-fit: scale-down;
-		margin-bottom: 0;
-		background-image: url('images/nav.jpg');
+		object-fit: cover;
 		border: 2px solid transparent;
 		border-image-source: url('images/border.png');
 		border-image-slice: 20;
-	}	
-
+	}
+	
 
 
 .art-grid {
@@ -366,6 +366,16 @@ h1 {
 	font-size: 24px;
 	margin-top: 0;
 	margin-bottom: 5px;
+	text-decoration: none;
+}
+
+h2 {
+	font-family: "Lexend";
+	font-style: bold;
+	font-weight: 700;
+	font-size: 14px;
+	margin-top: 0;
+	margin-bottom: 0;
 	text-decoration: none;
 }
 
