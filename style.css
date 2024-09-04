@@ -104,6 +104,12 @@ header {
 		margin-right: 10px;
 		vertical-align: middle;
 	}
+	
+		.nav-button img {
+			width: 15px;
+			vertical-align: text-top;
+			margin-left: 5px;
+		}
 
 
 
@@ -165,19 +171,28 @@ footer {
 	border-image-outset: 4px;
 }
 
+
+
 .about-text a, .longread a, li a {
 	text-decoration: underline;
 }
 
 .intro-grid {
-	grid-template-columns: auto auto;
-	column-count: 2;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 94%;
+	max-width: 100%;
 	text-align: left;
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
 }
 
+	@media only screen and (min-width: 768px) {
+		.intro-grid {width: 95%;}
+		.about-card {width: 45%; float: left;}
+		.recent {width: 45%; float: right;}
+	}
+	
 	
 
 .card-menu, .blog-buttons {
@@ -203,19 +218,24 @@ footer {
 	}
 		
 	.card-button img {
-		width: 40px;
+		height: 40px;
+		width: auto;
 	}
 	
 
 
 
 .longread {
-	max-width: 60%;
+	max-width: 100%;
 	text-align: left;
 }
 
 	.longread h1 {
 		text-align: center;
+	}
+	
+	@media only screen and (min-width: 768px) {
+		.longread {width: 60%;}
 	}
 
 
@@ -306,6 +326,10 @@ footer {
 		border-radius: 3px; 
 	}
 	
+	@media only screen and (max-width: 768px) {
+		.picture {height: 100%; max-width: 100%;}
+	}
+	
 
 
 .art-grid {
@@ -377,6 +401,7 @@ h2 {
 	margin-top: 0;
 	margin-bottom: 0;
 	text-decoration: none;
+	text-align: center;
 }
 
 
@@ -407,6 +432,12 @@ ul {
 	margin-top: 0;
 	margin-bottom: 0;
 	text-align: left;
+}
+
+ol {
+	padding-left: 44%;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 li {

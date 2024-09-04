@@ -3,13 +3,13 @@
 
 	<channel>
 		<title>Mx.Poesu • artist</title>
-		<link>https://mxpoesu.github.io/</link>
-		<description>Portfolio of artist Mx.Poesu</description>
 		<image>
 			<url>https://mxpoesu.github.io/images/pfp.png</url>
 			<title>El Poesu</title>
-			<link>https://mxpoesu.github.io/</link>
+			<link>https://mxpoesu.github.io</link>
 		</image>
+		<link>https://mxpoesu.github.io</link>
+		<description>Portfolio of artist Mx.Poesu</description>
 		<language>en</language>
 
 			<item>
