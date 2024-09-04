@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 
-	<channel lang="en">
+	<channel>
 		<title>Mx.Poesu • artist</title>
 		<link>https://mxpoesu.github.io/</link>
 		<description>Portfolio of artist Mx.Poesu</description>
+		<image>
+			<url>https://mxpoesu.github.io/images/pfp.png</url>
+			<title>El Poesu</title>
+			<link>https://mxpoesu.github.io/</link>
+		</image>
+		<language>en</language>
 
 			<item>
 				<title>Art manifesto</title>
