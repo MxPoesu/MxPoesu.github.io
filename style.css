@@ -173,7 +173,7 @@ footer {
 
 
 
-.about-text a, .longread a, li a {
+.about-text a, .longread a, li a, .art-grid a {
 	text-decoration: underline;
 }
 
@@ -339,14 +339,18 @@ footer {
 	margin-bottom: 10px;
 }
 
+		@media only screen and (max-width: 768px) {
+			.art-grid {max-width: 90%;}
+		}
+
 	.art-grid img {
 		height: 180px;
 		border-radius: 3px;
 	}
 	
 		@media only screen and (max-width: 768px) {
-		.art-grid img {width: 100%; height: auto;}
-	}
+			.art-grid img {width: 100%; height: auto;}
+		}
 	
 	.art-grid h1 {
 		display: block;
