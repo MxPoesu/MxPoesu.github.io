@@ -344,6 +344,10 @@ footer {
 		border-radius: 3px;
 	}
 	
+		@media only screen and (max-width: 768px) {
+		.art-grid img {width: 100%; height: auto;}
+	}
+	
 	.art-grid h1 {
 		display: block;
 		margin-bottom: 10px;
