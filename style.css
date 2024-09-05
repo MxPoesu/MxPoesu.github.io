@@ -238,14 +238,24 @@ footer {
 		.longread {width: 60%;}
 	}
 
+	.blogpic {
+		max-height: auto;
+		max-width: 50%;
+		border-radius: 4px;
+		padding: 2.5px;
+	}
+
 	.meta {
 		text-align: right;
 		font-size: 10px;
 	}	
 	
 	.flag {
-		height: 18px;
+		height: 16px;
 		vertical-align: middle;
+		border: 1.5px solid black;
+		border-radius: 3px;
+		padding: 0;
 	}
 
 
@@ -380,13 +390,6 @@ footer {
 	}
 	
 
-
-.longread img {
-	max-height: auto;
-	max-width: 50%;
-	border-radius: 4px;
-	padding: 2.5px;
-}
 
 
 
