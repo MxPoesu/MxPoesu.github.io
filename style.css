@@ -238,6 +238,16 @@ footer {
 		.longread {width: 60%;}
 	}
 
+	.meta {
+		text-align: right;
+		font-size: 10px;
+	}	
+	
+	.flag {
+		height: 18px;
+		vertical-align: middle;
+	}
+
 
 
 .blog-buttons {
@@ -371,6 +381,18 @@ footer {
 	
 
 
+.longread img {
+	max-height: auto;
+	max-width: 50%;
+	border-radius: 4px;
+	padding: 2.5px;
+}
+
+
+
+
+
+
 
 
 
@@ -444,7 +466,6 @@ ul {
 }
 
 ol {
-	padding-left: 44%;
 	margin-top: 0;
 	margin-bottom: 0;
 }
