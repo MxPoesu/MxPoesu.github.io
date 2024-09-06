@@ -153,13 +153,13 @@ footer {
 
 /* TEXTS */
 
-.about-card, .longread, .recent, .art-grid, .portfolio {
+.about-card, .longread, .recent, .art-grid, .portfolio, .portfolio1, .portfolio2 {
 	border-radius: 3px;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 10px;
 	padding-bottom: 15px;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	background: white;
 	font-size: 14px;
 	margin-left: auto;
@@ -177,7 +177,7 @@ footer {
 	text-decoration: underline;
 }
 
-.intro-grid {
+.intro-grid, .intro-grid1 {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 100%;
@@ -189,8 +189,11 @@ footer {
 
 	@media only screen and (min-width: 768px) {
 		.intro-grid {width: 95%;}
+		.intro-grid1 {width: 95%;}
 		.about-card {width: 45%; float: left;}
 		.recent {width: 45%; float: right;}
+		.portfolio1 {width: 45%; float: left;}
+		.portfolio2 {width: 45%; float: right;}
 	}
 	
 	
@@ -339,18 +342,37 @@ footer {
 		text-align: right;
 	}
 	
-	.portfolio img {
+	.portfolio img, .portfolio1 img, .portfolio2 img {
 		height: 100%;
 		max-width: 100%;
 		object-fit: cover;
 		border-radius: 3px; 
+		padding-left: 1px;
+		padding-right: 1px;
 	}
 	
 	@media only screen and (max-width: 768px) {
 		.picture {height: 100%; max-width: 100%;}
 		.portfolio {padding: 0;}
+		.recentart {height: 100%; max-width: 100%;}
 	}
 	
+	.recentart {
+		height: 90%;
+		text-align: center;
+		object-fit: cover;
+	}
+
+	.recentart img {
+		object-fit: cover;
+		margin-top: 5px;
+		border-radius: 3px;
+	}
+	
+		@media only screen and (max-width: 768px) {
+			.recentart img {height: 90%; max-width: 100%;}
+		}
+
 
 
 .art-grid {
