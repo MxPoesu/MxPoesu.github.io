@@ -102,7 +102,15 @@ header {
 		padding: 5px;
 		margin-left: 10px;
 		margin-right: 10px;
-		vertical-align: middle;
+
+	}
+	
+	@media only screen and (max-width: 768px) {
+		.nav-button, .footer-button {
+			padding: 3px;
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 	
 		.nav-button img {
@@ -153,7 +161,7 @@ footer {
 
 /* TEXTS */
 
-.about-card, .longread, .recent, .art-grid, .portfolio, .portfolio1, .portfolio2 {
+.about-card, .longread, .recent, .art-grid, .portfolio, .portfolio1, .portfolio2, .portfolio3 {
 	border-radius: 3px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -271,13 +279,11 @@ footer {
 }
 
 	.blog-buttons th {
-		margin-left: 15px;
-		margin-right: 15px;
 		margin-bottom: 0;
 		padding-top: 0;
 		padding-bottom: 0;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 10px;
+		padding-right: 10px;
 		font-size: 10px;
 		text-decoration: none;
 	}
@@ -286,7 +292,7 @@ footer {
 			text-decoration: none;
 		}	
 		
-		.blog-buttons p {
+		.blog-buttons span {
 			font-weight: 300;
 			margin: 0;
 			padding: 0;
@@ -294,7 +300,6 @@ footer {
 		
 			.th1 {
 				text-align: right;
-				
 			}
 
 			.th2 {
@@ -335,54 +340,77 @@ footer {
 		height: 40vh;
 	}
 
-	.portfolio p {
+	.portfolio p, .portfolio3 p {
 		padding-top: 5px;
 		padding-bottom: 0;
 		margin-bottom: 0;
 		text-align: right;
 	}
 	
+	.portfolio3 img {
+		height: 100%;
+		max-width: 100%;
+		border-radius: 3px;
+	}
+	
+	.portfolio3 p {
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+	
+	@media only screen and (min-width: 912px) {
+		.portfolio3 img {
+			height: 450px;
+			max-width: auto;
+		}
+	}
+	
 	.portfolio img, .portfolio1 img, .portfolio2 img {
 		height: 100%;
 		max-width: 100%;
+	}	
+	
+	.portfolio img, .portfolio1 img, .portfolio2 img {
 		object-fit: cover;
 		border-radius: 3px; 
 		padding-left: 1px;
 		padding-right: 1px;
 	}
 	
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 912px) {
 		.picture {height: 100%; max-width: 100%;}
 		.portfolio {padding: 0;}
 		.recentart {height: 100%; max-width: 100%;}
 	}
 	
 	.recentart {
-		height: 90%;
+		height: 100%;
 		text-align: center;
 		object-fit: cover;
+		max-width: 100%;	
+		padding-bottom: 70px;
 	}
 
 	.recentart img {
-		object-fit: cover;
 		margin-top: 5px;
 		border-radius: 3px;
 	}
 	
 		@media only screen and (max-width: 768px) {
-			.recentart img {height: 90%; max-width: 100%;}
+			.recentart img {max-height: 100%; max-width: 100%;}
 		}
 
 
 
-.art-grid {
+.art-grid, .portfolio3 {
 	max-width: 82%;
-	text-align: center;
 	margin-bottom: 10px;
 }
 
 		@media only screen and (max-width: 768px) {
 			.art-grid {max-width: 90%;}
+			.portfolio3 {max-width: 90%;}
 		}
 
 	.art-grid img {
@@ -391,7 +419,7 @@ footer {
 	}
 	
 		@media only screen and (max-width: 768px) {
-			.art-grid img {width: 100%; height: auto;}
+			.art-grid img {width: 100%; height: auto; margin-left: auto;}
 		}
 	
 	.art-grid h1 {
@@ -411,6 +439,12 @@ footer {
 		flex-wrap: wrap;
 	}
 	
+		@media only screen and (max-width: 768px) {
+			.p1, .p2 {text-align: center; display: grid;}
+		}
+	
+
+
 
 
 
