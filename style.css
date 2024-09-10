@@ -343,10 +343,6 @@ html {
 
 /* IMAGES */
 
-img {
-	background-color: gray;
-}
-
 .portfolio, .nav, .footer-links {
 	margin-left: auto;
 	margin-right: auto;
