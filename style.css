@@ -238,7 +238,7 @@ html {
 
 	.meta {
 		text-align: right;
-		font-size: 10px;
+		font-size: 12px;
 	}	
 	
 	.flag {
@@ -297,6 +297,7 @@ html {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	border-top: 1px solid #0089B3;
+	border-bottom: 1px solid #0089B3;
 }
 
 	.controls th {
@@ -305,15 +306,16 @@ html {
 		padding-bottom: 0;
 		padding-left: 10px;
 		padding-right: 10px;
-		font-size: 10px;
+		font-size: 12px;
 		text-decoration: none;
 	}
+	
 	
 		.controls a {
 			text-decoration: none;
 		}	
 		
-		.controls span {
+		.controls span, .controls p {
 			font-weight: 300;
 			margin: 0;
 			padding: 0;
