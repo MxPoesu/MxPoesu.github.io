@@ -26,7 +26,7 @@ html {
 		padding-top: 2px;
 		padding-bottom: 5px;
 		border: 3px solid transparent;
-		border-image-source: url('images/border.png');
+		border-image-source: url('images/border.webp');
 		border-image-slice: 20;
 		background-image: url('images/header.webp');
 		background-repeat: no-repeat;
@@ -129,7 +129,7 @@ html {
 	color: white;
 	background-color: #472536;
 	border: 3px solid transparent;
-	border-image-source: url('images/border.png');
+	border-image-source: url('images/border.webp');
 	border-image-slice: 20;
 }
 
@@ -181,7 +181,7 @@ html {
 	margin-right: auto;
 	width: 90%;
 	border: 9px solid transparent;
-	border-image-source: url('images/border.png');
+	border-image-source: url('images/border.webp');
 	border-image-slice: 20;
 	border-image-outset: 4px;
 }
