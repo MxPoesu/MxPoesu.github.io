@@ -181,7 +181,7 @@ html {
 
 /* TEXTS */
 
-.about-card, .longread, .recent, .art-grid, .portfolio, .portfolio-left, .portfolio-right, .portfolio-single, .home-quote, .giscus {
+.about-card, .longread, .recent, .art-grid, .portfolio, .portfolio-left, .portfolio-right, .portfolio-single, .home-quote {
 	border-radius: 3px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -198,6 +198,38 @@ html {
 	border-image-slice: 20;
 	border-image-outset: 4px;
 }
+
+.giscus-index {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	font-size: 14px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+	.giscus-post {
+		max-width: 90%;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+		@media only screen and (min-width: 768px) {
+			.giscus-post {width: 60%;}
+		}
+
+	.giscus-art {
+		max-width: 90%;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+		@media only screen and (min-width: 768px) {
+			.giscus-art {width: 82%;}
+		}
+
 
 
 .about-text a, .longread a, li a, .art-grid a, .wip-about a {
