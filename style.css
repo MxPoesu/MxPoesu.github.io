@@ -181,7 +181,7 @@ html {
 
 /* TEXTS */
 
-.about-card, .longread, .recent, .art-grid, .portfolio, .portfolio-left, .portfolio-right, .portfolio-single, .home-quote {
+.about-card, .longread, .recent, .art-grid, .portfolio, .portfolio-left, .portfolio-right, .portfolio-single, .home-quote, .comments {
 	border-radius: 3px;
 	padding-left: 15px;
 	padding-right: 15px;
