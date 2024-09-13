@@ -58,23 +58,37 @@
 		
 			<br>
 
-			<div class="giscus-art">
-				<script src="https://giscus.app/client.js"
-						data-repo="MxPoesu/MxPoesu.github.io"
-						data-repo-id="R_kgDOMhIzaA"
-						data-category="Announcements"
-						data-category-id="DIC_kwDOMhIzaM4CiZqz"
-						data-mapping="pathname"
-						data-strict="0"
-						data-reactions-enabled="0"
-						data-emit-metadata="0"
-						data-input-position="top"
-						data-theme="noborder_light"
-						data-lang="en"
-						data-loading="lazy"
-						crossorigin="anonymous"
-						async>
-				</script>
+			<div class="guestbook-art">
+				<h1>Comments</h1>
+				<br>
+					<script async src="https://guestbooks.meadow.cafe/resources/js/embed_script/131/script.js"></script> 
+					<div id="guestbooks___guestbook-form-container">
+						<form id="guestbooks___guestbook-form" action="https://guestbooks.meadow.cafe/guestbook/131/submit" method="post">
+							<div class="guestbooks___input-container">
+								<input placeholder="Name" type="text" id="name" name="name" required style="width: 50%;">
+							</div>
+							<div class="guestbooks___input-container">
+								<input placeholder="Pronouns" type="text" id="pronouns" name="pronouns" required style="width: 50%;">
+							</div>
+							<div class="guestbooks___input-container">
+								<input placeholder="Website (optional)" type="url" id="website" name="website" style="width: 50%;">
+							</div>
+							<div id="guestbooks___challenge-answer-container"></div>  
+							<br/>
+							<div class="guestbooks___input-container">
+								<textarea placeholder="Message (plain text only)..." id="text" name="text" style="width: 50%; box-sizing: border-box; resize: vertical;" required></textarea>
+							</div>
+							<br/>
+							<input type="submit" value="Submit">
+							<div id="guestbooks___error-message"></div>  
+						</form>
+					</div>
+					<div id="guestbooks___guestbook-made-with" style="text-align: right;">
+						<small>Lovingly made with <a target="_blank" href="https://guestbooks.meadow.cafe">Guestbooks</a></small>
+					</div>  
+					<hr style="margin: 1em 0;"/>
+					<h3 id="guestbooks___guestbook-messages-header">Messages</h3>
+					<div id="guestbooks___guestbook-messages-container"></div>  
 			</div>			
 		
 		</main>

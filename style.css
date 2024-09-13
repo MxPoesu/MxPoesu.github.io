@@ -199,29 +199,28 @@ html {
 	border-image-outset: 4px;
 }
 
-.giscus-index {
+.guestbook-index {
 	padding-bottom: 15px;
 	margin-bottom: 15px;
 	font-size: 14px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
+
 }
 
-	.giscus-post {
+	.guestbook-post {
 		max-width: 90%;
-		text-align: left;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	
 		@media only screen and (min-width: 768px) {
-			.giscus-post {width: 60%;}
+			.guestbook-post {width: 60%;}
 		}
 
-	.giscus-art {
+	.guestbook-art {
 		max-width: 90%;
-		text-align: left;
 		margin-left: auto;
 		margin-right: auto;
 	}
