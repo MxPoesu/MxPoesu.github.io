@@ -16,6 +16,8 @@
 		<meta name="author" content="El Poesu">
 		<meta property="og:description" content="View all my artworks and blog posts, find me on Fediverse, send an email, or make a donation! 🌟">
 		<meta property="og:image" content="images/linkPreview.webp">
+		<meta name="pinterest" content="nopin" />
+		<meta name="pinterest" content="nohover" />
 		
 	</head>
 
@@ -69,9 +71,9 @@
 						unabashedness, and intricacies <span class="emoji">🪄✨</span></p>
 					</p>
 					<div class="card-menu">
-						<span class="card-button"><a rel="me" href="https://mastodon.art/@MxPoesu"><img src="images/mastodon.png" alt="Follow on Mastodon"></a></span>
-						<span class="card-button"><a rel="me" href="https://hipolink.me/mx.poesu"><img src="images/donate.png" alt="Make a donation"></a></span>
-						<span class="card-button"><a rel="me" href="mailto:mx.poesu@proton.me"><img src="images/email.png" alt="Leave an email"></a></span>
+						<span class="card-button"><a rel="me" href="https://mastodon.art/@MxPoesu"><img src="images/mastodon.png" alt="Follow on Mastodon" title="Mastodon"></a></span>
+						<span class="card-button"><a rel="me" href="https://hipolink.me/mx.poesu"><img src="images/donate.png" alt="Make a donation" title="Tip via Hipolink"></a></span>
+						<span class="card-button"><a rel="me" href="mailto:mx.poesu@proton.me"><img src="images/email.png" alt="Leave an email" title="Email"></a></span>
 						<span class="card-button"><img src="images/com-open.png" alt="Commissions open"></a></span>
 					</div>
 				</div>
@@ -123,38 +125,51 @@
 
 			<br>
 			
-			<div class="guestbook-index">
-				<h1>Guestbook</h1>
-				<p>Just say hi!</p>
+			<div class="interact">
+				<div class="fun">
+					<h1>Funsies</h1>
+					<span><a href="https://tamanotchi.world/15186c" target="_blank"><img src="https://tamanotchi.world/i/15186" alt="A tamaNOTchi pet!" title="It's tamaNOTchi! Click to feed!"></a></span>
+					<span><a href="https://indieblog.page/" target="_blank"><img src="images/fun-indieblog.png" alt="Indieblog.page" title="Browse IndieWeb"></a></span>
+					<span><a href="https://theuselessweb.com/" target="_blank"><img src="images/fun-uselessweb.png" alt="Take me to a useless site!" title="Browse 'useless' web!"></a></span>
+					<span><a href="https://radiofreefedi.net/" target="_blank"><img src="images/fun-rff.svg" alt="Radio Free Fedi" title="Streaming music from Fediverse artists"></a></span>
+					<span><a href="https://search.marginalia.nu/" target="_blank"><img src="images/fun-marg.png" alt="Search.Marginalia" title="No bullshit search engine"></a></span>
+				</div>
+				
 				<br>
-					<script async src="https://guestbooks.meadow.cafe/resources/js/embed_script/131/script.js"></script> 
-					<div id="guestbooks___guestbook-form-container">
-						<form id="guestbooks___guestbook-form" action="https://guestbooks.meadow.cafe/guestbook/131/submit" method="post">
-							<div class="guestbooks___input-container">
-								<input placeholder="Name" type="text" id="name" name="name" required style="width: 50%;">
-							</div>
-							<div class="guestbooks___input-container">
-								<input placeholder="Pronouns" type="text" id="pronouns" name="pronouns" required style="width: 50%;">
-							</div>
-							<div class="guestbooks___input-container">
-								<input placeholder="Website (optional)" type="url" id="website" name="website" style="width: 50%;">
-							</div>
-							<div id="guestbooks___challenge-answer-container"></div>  
-							<br/>
-							<div class="guestbooks___input-container">
-								<textarea placeholder="Message (plain text only)..." id="text" name="text" style="width: 50%; box-sizing: border-box; resize: vertical;" required></textarea>
-							</div>
-							<br/>
-							<input type="submit" value="Submit">
-							<div id="guestbooks___error-message"></div>  
-						</form>
-					</div>
-					<div id="guestbooks___guestbook-made-with" style="text-align: right;">
-						<small>Lovingly made with <a target="_blank" href="https://guestbooks.meadow.cafe">Guestbooks</a></small>
-					</div>  
-					<hr style="margin: 1em 0;"/>
-					<h3 id="guestbooks___guestbook-messages-header">Messages</h3>
-					<div id="guestbooks___guestbook-messages-container"></div>  
+				
+				<div class="guestbook">
+					<h1>Guestbook</h1>
+					<p>Just say hi!</p>
+					<br>
+						<script async src="https://guestbooks.meadow.cafe/resources/js/embed_script/131/script.js"></script> 
+						<div id="guestbooks___guestbook-form-container">
+							<form id="guestbooks___guestbook-form" action="https://guestbooks.meadow.cafe/guestbook/131/submit" method="post">
+								<div class="guestbooks___input-container">
+									<input placeholder="Name" type="text" id="name" name="name" required style="width: 60%;">
+								</div>
+								<div class="guestbooks___input-container">
+									<input placeholder="Pronouns" type="text" id="pronouns" name="pronouns" required style="width: 60%;">
+								</div>
+								<div class="guestbooks___input-container">
+									<input placeholder="Website (optional)" type="url" id="website" name="website" style="width: 60%;">
+								</div>
+								<div id="guestbooks___challenge-answer-container"></div>  
+								<br/>
+								<div class="guestbooks___input-container">
+									<textarea placeholder="Message (plain text only)..." id="text" name="text" style="width: 60%; box-sizing: border-box; resize: vertical;" required></textarea>
+								</div>
+								<br/>
+								<input type="submit" value="Submit">
+								<div id="guestbooks___error-message"></div>  
+							</form>
+						</div>
+						<div id="guestbooks___guestbook-made-with" style="text-align: right;">
+							<small>Lovingly made with <a target="_blank" href="https://guestbooks.meadow.cafe">Guestbooks</a></small>
+						</div>  
+						<hr style="margin: 1em 0;"/>
+						<h3 id="guestbooks___guestbook-messages-header">Messages</h3>
+						<div id="guestbooks___guestbook-messages-container"></div>  
+				</div>
 			</div>
 			
 		</main>

@@ -199,37 +199,6 @@ html {
 	border-image-outset: 4px;
 }
 
-.guestbook-index {
-	padding-bottom: 15px;
-	margin-bottom: 15px;
-	font-size: 14px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
-}
-
-	.giscus-post {
-		max-width: 90%;
-		text-align: left;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
-		@media only screen and (min-width: 768px) {
-			.giscus-post {width: 60%;}
-		}
-
-	.giscus-art {
-		max-width: 90%;
-		text-align: left;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
-		@media only screen and (min-width: 768px) {
-			.giscus-art {width: 82%;}
-		}
-
 
 
 .about-text a, .longread a, li a, .art-grid a, .wip-about a {
@@ -529,6 +498,79 @@ html {
 	.wip img {
 		height: 200px;
 	}
+
+
+
+
+
+
+
+
+
+
+
+/* INTERACTIVE STUFF */
+
+
+.fun {
+	text-align: center;
+	border-radius: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	background: white;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 30%;
+	border: 9px solid transparent;
+	border-image-source: url('images/border.webp');
+	border-image-slice: 20;
+	border-image-outset: 4px;
+}
+
+	.fun img {
+		height: 50px;
+		width: auto;
+		border-radius: 3px;
+		padding: 4px;
+	}
+
+.guestbook {
+	font-size: 14px;
+	text-align: center;
+	width: 90%;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.giscus-post {
+	max-width: 90%;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+		@media only screen and (min-width: 768px) {
+			.giscus-post {width: 60%;}
+		}
+
+	.giscus-art {
+		max-width: 90%;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+		@media only screen and (min-width: 768px) {
+			.giscus-art {width: 82%;}
+		}
+
+
 
 
 
