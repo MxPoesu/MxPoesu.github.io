@@ -669,11 +669,11 @@ li {
 
 
 /* TEXT COLOURS */
-	.text-color-red {
+	.red {
 		color: #E60054;
 		font-weight: 700;
 	}
-	.text-color-yellow {
+	.yellow {
 		color: #F06C00;
 		font-weight: 700;
 	}	
