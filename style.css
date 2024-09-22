@@ -35,9 +35,9 @@ html {
 	}
 
 	footer {
-		margin-top: 90px;
+		margin-top: 30px;
 		padding-bottom: 50px;
-		height: 300px;	
+		height: 180px;	
 	}
 
 
@@ -54,7 +54,7 @@ html {
 	#main { 
 		animation: appear 0.8s; 
 		position: relative;
-		margin-top: 25px;
+		margin-top: 0;
 		height: 100%;
 	}
 
@@ -118,27 +118,31 @@ html {
 .nick {
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 5px;	
+	margin-bottom: 10px;	
 	background: none;
+	display: grid;
+	grid-template-columns: 70px 110px;
+	width: 210px;
+	gap: 12px;
+	line-height: 1;
 }
 
 	.nick img {
-		width: 80px;
+		width: 70px;
 		height: auto;
-		padding-right: 12px;
-		float: left;
 	}
 	
 	.nick p {
 		font-weight: 300;
-		line-height: 1;
+		margin-bottom: 0px;
 	}
 	
 	.nick h1 {
+		margin-top: 8px;
 		margin-bottom: 0px;
-		line-height: 1.1;
 		font-size: 39px;
 	}
+	
 
 
 .nav, footer {
@@ -199,21 +203,24 @@ html {
 
 /* TEXTS */
 
-.about-card, .longread, .recent, .art-grid, .portfolio, .portfolio-left, .portfolio-right, .portfolio-single, .home-quote {
-	border-radius: 3px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 10px;
-	padding-bottom: 15px;
-	margin-bottom: 15px;
-	font-size: 14px;
+.longread, .art-grid, .portfolio-single {
+	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
 }
 
 
-.about-card, .longread, .recent, .art-grid, .portfolio, .portfolio-left, .portfolio-right, .portfolio-single, .home-quote, .fun {
+.about-card, .recent, .longread, .art-grid, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .fun, .guestbook-form {
+	border-radius: 2px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 14px;
+}
+
+.about-card, .longread, .recent, .art-grid, .portfolio-left, .portfolio-right, .portfolio-single, .home-quote, .fun, .guestbook-form {
 	background-color: white;
 	border: 8px solid transparent;
 	border-image-source: url('images/border.webp');
@@ -221,35 +228,40 @@ html {
 	border-image-outset: 3px;
 }
 
+.portfolio-top {
+	background-color: #472536;
+	border-bottom: 4px solid #472536;
+}
+
+.about-card, .recent, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form {
+	margin-bottom: 20px;
+}
 
 .about-text a, .longread a, li a, .art-grid a, .wip-about a {
 	text-decoration: underline;
 }
 
-.home-text, .home-pic {
+.home-grid {
+	
+}
+
+
+.row-1, .row-2 {
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 100%;
 	text-align: left;
-	display: flex;
-	flex-wrap: wrap;
-	flex-grow: 1;
 }
 
 	@media only screen and (min-width: 768px) {
-		.home-text {width: 95%;}
-		.home-pic {width: 95%;}
-		.about-card {width: 40%; float: left;}
-		.recent {width: 50%; float: right;}
-		.portfolio-left {width: 50%; float: left;}
-		.portfolio-right {width: 40%; float: right;}
+		.row-1 {display: grid; grid-template-columns: 40% auto; gap: 20px;}
+		.row-2 {display: grid; grid-template-columns: auto 50%; gap: 20px;}
 	}
 
-.home-quote {
-	margin-top: 25px;
+
+.home-quote, .fun h1 {
 	text-align: left;
 }
-
 
 
 .longread {
@@ -397,37 +409,43 @@ html {
 .portfolio, .nav, .footer-links {
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 15px;
 	max-width: 100%;
 	flex-wrap: wrap;
 }
 
 .portfolio, .footer-links {
-	width: 90%;
+	width: 100%;
 	margin-bottom: 25px;
 }
-
-	.portfolio p {
-		text-align: right;
+	
+	.see-all {
 		padding-top: 5px;
 		padding-bottom: 0;
 		margin-bottom: 0;
+		margin-right: 50px;
+		text-align: right;
 	}
 
 	.portfolio-top {
 		display: flex;
 		flex-grow: 1;
 		justify-content: space-between;	
-		height: 40vh;
+		height: 47.5vh;
 	}
+	
+		@media only screen and (max-width: 912px) {
+			.portfolio-top {
+				height: 100%;
+				max-width: 100%;
+			}
+		}
 	
 	.portfolio img, .portfolio-left img, .portfolio-right img {
 		height: 100%;
 		max-width: 100%;
 		object-fit: cover;
-		border-radius: 3px; 
-		padding-left: 1px;
-		padding-right: 1px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	
 	.portfolio-single .meta {
@@ -449,40 +467,16 @@ html {
 		}
 	}	
 	
-	.recentart {
-		height: 100%;
-		text-align: center;
-		object-fit: cover;
-		max-width: 100%;
-	}
 
+	
 	.recentart img {
 		margin-top: 5px;
-		border-radius: 3px;
+		border-radius: 2px;
 	}
 	
-		@media only screen and (max-width: 768px) {
-			.recentart img {height: 100%; max-width: 100%; padding-bottom: 70px;}
-			.portfolio-left, .portfolio-right {overflow: clip;}
-		}	
-	
-		@media only screen and (max-width: 912px) {
-			.portfolio-top {height: 100%; max-width: 100%;}
-			.portfolio {padding: 0;}
-			.recentart {height: 100%; max-width: 100%;}
-		}
 	
 
 
-.art-grid, .portfolio-single {
-	max-width: 82%;
-	margin-bottom: 10px;
-}
-
-		@media only screen and (max-width: 768px) {
-			.art-grid {max-width: 90%;}
-			.portfolio-single {max-width: 90%;}
-		}
 
 	.art-grid img {
 		height: 180px;
@@ -540,30 +534,28 @@ html {
 
 .fun {
 	text-align: center;
-	padding: 5px;
 	margin-bottom: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 40%;
 }
-
-	@media only screen and (max-width: 768px) {
-		.fun {max-width: 90%;}
-	}
 	
 	.fun img {
-		height: 43px;
+		height: 50px;
 		width: auto;
-		border-radius: 3px;
-		padding: 4px;
+		border-radius: 2px;
+		padding-left: 4px;
+		padding-left: 4px;
 	}
+
+		@media only screen and (max-width: 912px) {
+			.fun img {height: 35px; width: auto;}
+		}
 
 .guestbook {
 	font-size: 14px;
 	text-align: center;
 	width: 90%;
 	padding-bottom: 15px;
-	margin-bottom: 15px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -587,9 +579,6 @@ html {
 		margin-right: auto;
 	}
 	
-		@media only screen and (min-width: 768px) {
-			.giscus-art {width: 82%;}
-		}
 
 
 
