@@ -228,11 +228,6 @@ html {
 	border-image-outset: 3px;
 }
 
-.portfolio-top {
-	background-color: #472536;
-	border-bottom: 4px solid #472536;
-}
-
 .about-card, .recent, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form {
 	margin-bottom: 20px;
 }
@@ -241,8 +236,8 @@ html {
 	text-decoration: underline;
 }
 
-.home-grid {
-	
+.row-1 {
+	align-items: end;
 }
 
 
@@ -430,7 +425,9 @@ html {
 		display: flex;
 		flex-grow: 1;
 		justify-content: space-between;	
-		height: 47.5vh;
+		height: 48vh;
+		background-color: #472536;
+		border-bottom: 4px solid #472536;
 	}
 	
 		@media only screen and (max-width: 912px) {
