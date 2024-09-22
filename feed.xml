@@ -13,21 +13,35 @@
 		<language>en</language>
 
 			<item>
+				<title>Quick portrait</title>
+				<image>
+					<url>https://mxpoesu.github.io/art/2024-09-22.webp</url>
+					<title>El Poesu</title>
+					<link>https://mxpoesu.github.io</link>
+				</image>				
+				<link>https://mxpoesu.github.io/art/2024-09-22.html</link>
+				<description>Phone sketch</description>
+				<author>mx.poesu@proton.me</author>
+				<date>2024-09-22</date>
+				<category>Art</category>
+			</item>
+
+			<item>
 				<title>Art manifesto</title>
-				<link>https://mxpoesu.github.io/2024-09-06-art-manifesto.html</link>
+				<link>https://mxpoesu.github.io/post/2024-09-06.html</link>
 				<description>8 principles I stick to in my creative work</description>
 				<author>mx.poesu@proton.me</author>
 				<date>2024-09-06</date>
-				<category>IndieWeb</category>
+				<category>Post</category>
 			</item>
 			
 			<item>
 				<title>About me and this website!</title>
-				<link>https://mxpoesu.github.io/2024-09-05-about.html</link>
+				<link>https://mxpoesu.github.io/post/2024-09-05.html</link>
 				<description>Who I am and what this site is</description>
 				<author>mx.poesu@proton.me</author>
 				<date>2024-09-05</date>
-				<category>IndieWeb</category>
+				<category>Post</category>
 			</item>
 
 	</channel>
