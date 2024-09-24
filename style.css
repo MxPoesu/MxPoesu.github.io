@@ -235,7 +235,7 @@ html {
 
 }
 
-	.fade, .giscus-post {
+ 	.fade, .giscus-post {
         animation-duration: auto;
         animation-timing-function: ease-in-out;
         animation-delay: 0s;
@@ -251,16 +251,23 @@ html {
 
 	@keyframes show {
 			0% {opacity: 35%; }
+			80% {opacity: 99%; }
 			100% {opacity: 100%; }
 		}
 		
 		@media(prefers-reduced-motion) {
 			.fade, .giscus-post {animation: none;}
-		}
+		} 
 		
 		@media only screen and (max-width: 768px) {
-			.fade, .giscus-post {animation: none;}
-		}
+			@keyframes show {
+				0% {opacity: 35%; }
+				20% {opacity: 99%; }
+				100% {opacity: 100%; }
+			}
+		} 
+		
+
 
 .about-card, .longread, .recent, .art-grid, .portfolio-left, .portfolio-right, .portfolio-single, .home-quote, .fun, .guestbook-form {
 	background-color: white;
@@ -526,7 +533,7 @@ html {
 
 	.art-grid img {
 		height: 180px;
-		border-radius: 3px;
+		border-radius: 2px;
 	}
 	
 		@media only screen and (max-width: 768px) {
