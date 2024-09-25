@@ -246,7 +246,7 @@ html {
 
 /* TEXTS */
 
-.longread, .art-grid, .portfolio-single {
+.longread, .art-grid, .art-grid-back, .portfolio-single {
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
@@ -254,7 +254,7 @@ html {
 }
 
 
-.about-card, .recent, .longread, .portfolio-single, .home-quote, .fun, .guestbook-form {
+.about-card, .recent, .longread, .art-grid-back, .portfolio-single, .home-quote, .fun, .guestbook-form {
 	border-radius: 2px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -301,7 +301,7 @@ html {
 		
 
 
-.about-card, .longread, .recent, .portfolio-single, .home-quote, .fun, .guestbook-form {
+.about-card, .longread, .recent, .art-grid-back, .portfolio-single, .home-quote, .fun, .guestbook-form {
 	background-color: white;
 	border: 8px solid transparent;
 	border-image-source: url('images/border.webp');
@@ -313,7 +313,7 @@ html {
 	margin-bottom: 25px;
 }
 
-.about-text a, .longread a, li a, .art-grid a, .wip-about a {
+.about-text a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a {
 	text-decoration: underline;
 }
 
