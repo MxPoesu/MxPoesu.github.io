@@ -12,8 +12,28 @@ html {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	scroll-behavior: smooth;
-	background-color: #F5EEE4;	
+	scroll-padding-top: 40px;
 }
+
+	@media only screen and (max-width: 768px) {
+		html {font-size: 16px;}
+	}
+
+	html {
+	  --s: 79px; /* control the size*/
+	  --c1: #ecded4;
+	  --c2: #f8eee3;
+	  
+	  --_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--c1) 78% 80%,#0000 81%);
+	  --_c:,#0000 75%,var(--c2) 0;
+	  background:
+		conic-gradient(at 12% 20% var(--_c)) calc(var(--s)* .44) calc(.9*var(--s)),
+		conic-gradient(at 12% 20% var(--_c)) calc(var(--s)*-.06) calc(.4*var(--s)),
+		conic-gradient(at 20% 12% var(--_c)) calc(.9*var(--s)) calc(var(--s)* .44),
+		conic-gradient(at 20% 12% var(--_c)) calc(.4*var(--s)) calc(var(--s)*-.06),
+		var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2) var(--c2);
+	  background-size: var(--s) var(--s);
+	} /* background pattern; source: https://css-pattern.com/quatrefoils/ */
 
 	body {
 		margin: 0;
@@ -45,7 +65,7 @@ html {
 		.footer-links {
 			margin-left: auto;
 			margin-right: auto;
-			margin-bottom: 0;
+			margin-bottom: 20px;
 			margin-top: 0;
 			padding-top: 2px;
 		}
@@ -103,22 +123,25 @@ html {
 	}	
 	
 	.back-link {
+	--offset: 100px; 
 	position: sticky;
 	position: -webkit-sticky;
 	color: white;
 	background-color: #472536; 
 	border-radius: 50%; 
 	padding-top: 0;
-	padding-bottom: 10px;
+	padding-bottom: 7px;
 	padding-left: 10px;
 	padding-right: 10px;
 	z-index: 9999;
-	bottom: 20px;
+	bottom: 10px;
+	left: 96%;
 	font-weight: 700;
 	font-size: 22px;
-	left: 96%;
 	text-align: right;
 	transform: translateY(-100%);
+	place-self: end;
+	margin-top: calc(100vh + var(--offset));
 }
 		@media only screen and (max-width: 768px) {
 			.back-link {left: 85%;}
@@ -158,6 +181,12 @@ html {
 		margin-bottom: 0px;
 		font-size: 39px;
 	}
+	
+		@media only screen and (max-width: 768px) {
+			.nick {	grid-template-columns: 80px 130px; width: 230px;}
+			.nick h1 {font-size: 50px;}
+			.nick img {width: 80px; height: auto;}
+		}
 	
 
 
@@ -225,15 +254,18 @@ html {
 }
 
 
-.about-card, .recent, .longread, .art-grid, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .fun, .guestbook-form {
+.about-card, .recent, .longread, .portfolio-single, .home-quote, .fun, .guestbook-form {
 	border-radius: 2px;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	font-size: 14px;
-
 }
+
+	@media only screen and (max-width: 768px) {
+		.about-card, .recent, .longread, .art-grid, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .fun, .guestbook-form {font-size: 18px;}
+	}
 
  	.fade, .giscus-post {
         animation-duration: auto;
@@ -250,8 +282,8 @@ html {
 		}
 
 	@keyframes show {
-			0% {opacity: 35%; }
-			80% {opacity: 99%; }
+			0% {opacity: 15%; }
+			60% {opacity: 99%; }
 			100% {opacity: 100%; }
 		}
 		
@@ -269,7 +301,7 @@ html {
 		
 
 
-.about-card, .longread, .recent, .art-grid, .portfolio-left, .portfolio-right, .portfolio-single, .home-quote, .fun, .guestbook-form {
+.about-card, .longread, .recent, .portfolio-single, .home-quote, .fun, .guestbook-form {
 	background-color: white;
 	border: 8px solid transparent;
 	border-image-source: url('images/border.webp');
@@ -277,16 +309,12 @@ html {
 	border-image-outset: 3px;
 }
 
-.about-card, .recent, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form {
-	margin-bottom: 20px;
+.about-card, .recent, .portfolio, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form {
+	margin-bottom: 25px;
 }
 
 .about-text a, .longread a, li a, .art-grid a, .wip-about a {
 	text-decoration: underline;
-}
-
-.row-1 {
-	align-items: end;
 }
 
 
@@ -295,6 +323,7 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
+	align-items: center;
 }
 
 	@media only screen and (min-width: 768px) {
@@ -342,7 +371,7 @@ html {
 	
 	.meta-last {
 		padding-bottom: 8px;
-		border-bottom: 1px solid #0089B3;
+		border-bottom: 2px dotted #472536;
 	}
 	
 	.flag {
@@ -412,8 +441,8 @@ html {
 	margin-right: auto;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	border-top: 1px solid #0089B3;
-	border-bottom: 1px solid #0089B3;
+	border-top: 2px dotted #472536;
+	border-bottom: 2px dotted #472536;
 }
 
 	.controls th {
@@ -466,9 +495,8 @@ html {
 	flex-wrap: wrap;
 }
 
-.portfolio, .footer-links {
+.portfolio {
 	width: 100%;
-	margin-bottom: 25px;
 }
 	
 	.see-all {
@@ -484,6 +512,13 @@ html {
 		flex-grow: 1;
 		justify-content: space-between;	
 		height: 48vh;
+		background-color: #472536;
+		border-bottom: 5px solid transparent;
+		border-left: 3px solid transparent;
+		border-right: 3px solid transparent;
+		border-image-source: url('images/border.webp');
+		border-image-slice: 20;
+		border-image-outset: 2px;
 	}
 	
 		@media only screen and (max-width: 912px) {
@@ -493,13 +528,14 @@ html {
 			}
 		}
 	
-	.portfolio img, .portfolio-left img, .portfolio-right img {
+	.portfolio img, .portfolio-left, .portfolio-right {
 		height: 100%;
 		max-width: 100%;
 		object-fit: cover;
 		padding-left: 0;
 		padding-right: 0;
 	}
+	
 	
 	.portfolio-single .meta {
 		text-align: center;
@@ -510,11 +546,10 @@ html {
 	.portfolio-single img {
 		height: 100%;
 		max-width: 100%;
-		border-radius: 3px;
 	}
 	
 	@media only screen and (min-width: 912px) {
-		.portfolio-left img, .portfolio-right img, .portfolio-single img {
+		.portfolio-left, .portfolio-right, .portfolio-single img {
 			height: 350px;
 			max-width: auto;
 		}
@@ -522,18 +557,70 @@ html {
 	
 
 	
-	.recentart img {
-		margin-top: 5px;
-		border-radius: 2px;
+	.recentart {
+		position: relative;
+		text-align: center;
 	}
 	
+	.recentart img {filter: drop-shadow(1px 4px 2px #DEC8C1);}
 	
+		.recentart h1 {
+			position: absolute;
+			font-size: 78px;
+			font-weight: 500;
+		}
+		
+			.now {
+				top: 60px;
+				right: 30px;
+				transform: rotate(15deg);
+			}
+			
+				@media only screen and (max-width: 912px) {
+					.now {top: 60px; left: -200px;}
+				}
+			
+			.latest {
+				bottom: 50px;
+				right: 20px;
+				color: white;
+				transform: rotate(-15deg);
+			}
 
+
+		.tape-right, .tape-left, .tape-center {
+			height: 40px;
+			width: 80px;
+			background-color: #D6BE99;
+			position: absolute;
+			top: -15px;
+			opacity: 0.5;
+			border-radius: 1px;
+		}
+
+			.tape-right {
+				right: -20px;
+				transform: rotate(10deg);
+			}
+
+			.tape-left {
+				left: -20px;
+				transform: rotate(-10deg);
+			}
+			
+			.tape-center {
+				right: 30%;
+				height: 30px;
+				width: 70px;
+				transform: rotate(3deg);
+			}
+			
+			.gallery {position: relative;}
 
 
 	.art-grid img {
-		height: 180px;
-		border-radius: 2px;
+		height: 220px;
+		filter: drop-shadow(1px 4px 2px #DEC8C1);
 	}
 	
 		@media only screen and (max-width: 768px) {
@@ -543,13 +630,12 @@ html {
 	.art-grid h1 {
 		display: block;
 		margin-bottom: 10px;
-		font-family: Raleway;
 		font-style: normal;
 		font-weight: 400;
 		text-align: left;
-		font-size: 10px;
 		padding: 3px;
 	}
+	
 	
 	.pic-justify {
 		display: flex;
@@ -557,9 +643,26 @@ html {
 		flex-wrap: wrap;
 	}
 	
+	.pic-center {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-left: 210px;
+		margin-right: 210px;
+	}
+	
+	.pic-justify img {
+		margin-bottom: 20px;
+	}
+	
+	.pic-center img {
+		
+	}
+	
 		@media only screen and (max-width: 768px) {
-			.pic-justify, .pic-center {text-align: center; display: grid;}
+			.pic-justify, .pic-center {text-align: center; display: grid; margin: 0;}
 		}
+	
 	
 	.wip-about {
 		text-align: left;
@@ -593,15 +696,16 @@ html {
 }
 	
 	.fun img {
-		height: 50px;
+		height: 45px;
 		width: auto;
 		border-radius: 2px;
+		margin-top: 4px;
 		padding-left: 4px;
-		padding-left: 4px;
+		padding-right: 4px;
 	}
 
 		@media only screen and (max-width: 912px) {
-			.fun img {height: 35px; width: auto;}
+			.fun img {height: 38px; width: auto;}
 		}
 
 .guestbook {
@@ -684,7 +788,10 @@ h2 {
 	text-decoration: none;
 	text-align: center;
 }
-
+	@media only screen and (max-width: 768px) {
+		h1 {font-size: 42px;}
+		h2 {font-size: 18px;}
+	}
 
 p {
 	margin-bottom: 0;
