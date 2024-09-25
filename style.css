@@ -309,7 +309,7 @@ html {
 	border-image-outset: 3px;
 }
 
-.about-card, .recent, .portfolio, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form {
+.about-card, .recent, .portfolio, .recentart, .home-quote, .guestbook-form {
 	margin-bottom: 25px;
 }
 
@@ -557,32 +557,28 @@ html {
 	
 
 	
-	.recentart {
+	.recentart, .gallery {
 		position: relative;
-		text-align: center;
 	}
 	
 	.recentart img {filter: drop-shadow(1px 4px 2px #DEC8C1);}
 	
 		.recentart h1 {
-			position: absolute;
 			font-size: 78px;
 			font-weight: 500;
+			position: absolute;
+			margin: 0;
 		}
 		
 			.now {
 				top: 60px;
-				right: 30px;
+				left: 400px;
 				transform: rotate(15deg);
 			}
 			
-				@media only screen and (max-width: 912px) {
-					.now {top: 60px; left: -200px;}
-				}
-			
 			.latest {
-				bottom: 50px;
-				right: 20px;
+				bottom: 30px;
+				left: 250px;
 				color: white;
 				transform: rotate(-15deg);
 			}
@@ -592,19 +588,29 @@ html {
 			height: 40px;
 			width: 80px;
 			background-color: #D6BE99;
-			position: absolute;
 			top: -15px;
 			opacity: 0.5;
 			border-radius: 1px;
+			margin: 0;
+			padding: 0;
 		}
 
 			.tape-right {
-				right: -20px;
+				top: -15px;
+				left: 460px;
 				transform: rotate(10deg);
+				position: absolute;
 			}
 
+				@media only screen and (max-width: 912px) {
+					.now {top: 80px; left: 0; position: absolute;}
+					.tape-right {top: -15px; left: 285px; position: absolute;}
+				}
+
 			.tape-left {
-				left: -20px;
+				top: -15px;
+				left: -15px;
+				position: absolute;
 				transform: rotate(-10deg);
 			}
 			
@@ -613,9 +619,9 @@ html {
 				height: 30px;
 				width: 70px;
 				transform: rotate(3deg);
+				position: absolute;
 			}
 			
-			.gallery {position: relative;}
 
 
 	.art-grid img {
