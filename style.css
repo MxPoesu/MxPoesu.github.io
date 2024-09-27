@@ -303,7 +303,7 @@ footer {
 }
 
 	@media only screen and (max-width: 768px) {
-		.about-card, .recent, .longread, .art-grid, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .fun, .guestbook-form {font-size: 18px;}
+		.about-card, .recent, .longread, .art-grid, .art-grid-back, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .fun, .guestbook-form {font-size: 18px;}
 	}
 
 	.about-card, .recent, .portfolio, .recentart, .home-quote, .guestbook-form {margin-bottom: 25px;}
