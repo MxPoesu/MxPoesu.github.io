@@ -148,8 +148,10 @@ header {
 	
 		.nav-button img {
 			vertical-align: text-bottom;
-			width: 18px;
+			width: 16px;
 		}
+		
+		@media only screen and (max-width: 768px) {.nav-button img {width: 18px;}}
 
 
 
@@ -579,6 +581,8 @@ footer {
 		margin-right: 50px;
 		text-align: right;
 	}
+	
+		@media only screen and (max-width: 768px) {.see-all {margin-right: 18px;}}
 
 	.portfolio-top {
 		display: flex;
