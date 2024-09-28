@@ -141,14 +141,14 @@ header {
 	@media only screen and (max-width: 768px) {
 		.nav-button, .footer-button {
 			padding: 3px;
-			margin-left: 0;
-			margin-right: 0;
+			margin-left: 2px;
+			margin-right: 2px;
 		}
 	}
 	
 		.nav-button img {
 			vertical-align: text-bottom;
-			width: 16px;
+			height: 1.2em;
 		}
 		
 		@media only screen and (max-width: 768px) {.nav-button img {width: 18px;}}
@@ -316,7 +316,7 @@ footer {
 		.about-card, .recent, .longread, .art-grid, .art-grid-back, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .fun, .guestbook-form {font-size: 18px;}
 	}
 
-	.about-card, .recent, .portfolio, .recentart, .home-quote, .guestbook-form {margin-bottom: 25px;}
+	.about-card, .recent, .portfolio, .recentart-1, .recentart-2, .home-quote, .guestbook-form, .fun {margin-bottom: 25px;}
 	.about-text a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a {text-decoration: underline;}
 		
 		
@@ -337,20 +337,18 @@ footer {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
-	align-items: center;
 }
 
-	@media only screen and (min-width: 768px) {
-		.row-1 {display: grid; grid-template-columns: 40% auto; gap: 20px;}
-		.row-2 {display: grid; grid-template-columns: auto 50%; gap: 20px;}
+	td {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
+	.row-1 p, .row-2 p, .row-1 h1, .row-2 h1 {text-align: left;}
 	.home-quote, .fun h1 {text-align: left;}
-	.recentart, .gallery {position: relative;}
-	.recentart img {filter: drop-shadow(1px 4px 2px #DEC8C1);}
+	.recentart-1, .recentart-2, .gallery {position: relative;}
 	
-		.recentart h1 {
+		.recentart-1 h1, .recentart-2 h1 {
 			font-size: 78px;
 			font-weight: 500;
 			position: absolute;
@@ -366,7 +364,7 @@ footer {
 			
 			.latest {
 				bottom: 30px;
-				left: 250px;
+				left: 220px;
 				color: white;
 				transform: rotate(-15deg);
 			}
@@ -395,20 +393,20 @@ footer {
 
 	.tape-right {
 		top: -15px;
-		left: 460px;
+		left: 465px;
 		transform: rotate(10deg);
 		position: absolute;
 	}
 
 		@media only screen and (max-width: 912px) {
 			.now {top: 80px; left: 5px; position: absolute;}
-			.latest {left: 160px; bottom: 23px;}
+			.latest {left: 100px; bottom: 20px;}
 			.tape-right {top: -15px; left: 260px; position: absolute;}
 		}
 
 	.tape-left {
 		top: -15px;
-		left: -15px;
+		left: -25px;
 		position: absolute;
 		transform: rotate(-10deg);
 	}
@@ -449,19 +447,12 @@ footer {
 		padding: 2.5px;
 	}
 
-	.fave {
-		max-width: 100px;
-		padding-top: 5px;
-		padding-right: 20px;
-		float: left;
-	}
-
 	.meta, .meta-last {
 		text-align: center;
 		font-size: 12px;
 	}	
 	
-		.meta-last {
+		.meta-last, .td-border {
 			padding-bottom: 8px;
 			border-bottom: 2px dotted #472536;
 		}
@@ -472,6 +463,27 @@ footer {
 		border: 1.5px solid black;
 		border-radius: 3px;
 		padding: 0;
+	}
+
+
+
+
+
+
+/* INTERESTS */
+
+.audiobooks {
+	padding-bottom: 10px;
+}
+
+	.book {
+		max-width: 100px;
+		padding-right: 10px;
+		margin-bottom: 0;
+	}
+
+	.game {
+		max-width: 49%;
 	}
 
 
@@ -605,7 +617,7 @@ footer {
 			}
 		}
 	
-	.portfolio img, .portfolio-left, .portfolio-right {
+	.portfolio img {
 		height: 100%;
 		max-width: 100%;
 		object-fit: cover;
@@ -625,13 +637,44 @@ footer {
 	}
 	
 	@media only screen and (min-width: 912px) {
-		.portfolio-left, .portfolio-right, .portfolio-single img {
+		.portfolio-single img {
 			height: 350px;
 			max-width: auto;
 		}
 	}	
 	
 
+	.recentart-1 {
+		display: flex;
+		flex-grow: 1;
+		height: 98vh;
+	}
+	
+	.recentart-2 {
+		display: flex;
+		flex-grow: 1;
+		height: 136.5vh;
+		align-items: start;
+	}
+	
+	.recentart-1 img, .recentart-2 img {
+		height: 100%;
+		max-width: 100%;
+		object-fit: cover;
+		filter: drop-shadow(1px 4px 2px #DEC8C1);
+		padding: 0;
+		margin: 0;
+	}
+	
+	@media only screen and (max-width: 912px) {
+		td, col {
+			display: block;
+			width: 100%;
+			padding-left:0;
+			padding-right:0;
+		  }
+		.recentart-1, .recentart-2 {height: 500px; max-width: 100%; }
+	}
 	
 
 			
@@ -706,6 +749,9 @@ footer {
 
 /* INTERACTIVE */
 
+.imood {
+	text-align: center;
+}
 
 .fun {
 	text-align: center;
@@ -737,7 +783,7 @@ footer {
 .guestbook {
 	font-size: 14px;
 	text-align: center;
-	width: 90%;
+	width: 88%;
 	padding-bottom: 15px;
 	margin-left: auto;
 	margin-right: auto;
@@ -791,7 +837,7 @@ a {
 	background: #b6f0f8;
 }
 
-h1 {
+h1, .faves h2 {
 	font-family: "Reenie Beanie", cursive;
 	font-style: bold;
 	font-weight: 600;
@@ -802,13 +848,13 @@ h1 {
 	line-height: 1;
 }
 
-h2 {
+h2, .faves h1 {
 	font-family: "Raleway";
 	font-style: bold;
 	font-weight: 700;
 	font-size: 14px;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	text-decoration: none;
 	text-align: center;
 }
