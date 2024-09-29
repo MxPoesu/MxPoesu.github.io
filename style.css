@@ -57,7 +57,7 @@ html {
 		--col-text-yellow: #F06C00;
 		--col-text-a: #ed8800;
 		--col-text-date: #0089B3;
-		--col-text-select: b6f0f8;
+		--col-text-select: #b6f0f8;
 		--col-shadow: #DEC8C1;
 		--col-bg-c1: #ecded4;
 		--col-bg-c2: #f8eee3;
@@ -350,7 +350,7 @@ footer {
 
 
 /* PAPERS */
-.about-card, .recent, .longread, .art-grid-back, .portfolio-single, .home-quote, .fun, .guestbook-form {
+.about-card, .recent, .longread, .art-grid-back, .portfolio-single, .home-quote, .guestbook-form {
 	border-radius: 2px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -360,16 +360,16 @@ footer {
 }
 
 	@media only screen and (max-width: 768px) {
-		.about-card, .recent, .longread, .art-grid, .art-grid-back, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .fun, .guestbook-form {font-size: 18px;}
+		.about-card, .recent, .longread, .art-grid, .art-grid-back, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form {font-size: 18px;}
 	}
 
-	.about-card, .recent, .portfolio, .recentart-1, .recentart-2, .home-quote, .guestbook-form, .fun {margin-bottom: 25px;}
+	.about-card, .recent, .portfolio, .recentart-1, .recentart-2, .home-quote, .guestbook-form {margin-bottom: 25px;}
 	.about-text a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a {text-decoration: underline;}
 		
 		
 
 /* BORDER IMAGE */
-.about-card, .longread, .recent, .art-grid-back, .portfolio-single, .home-quote, .fun, .guestbook-form {
+.about-card, .longread, .recent, .art-grid-back, .portfolio-single, .home-quote, .guestbook-form {
 	background-color: var(--col-primary);
 	border: 7px solid transparent;
 	border-image-source: url('images/border.webp');
@@ -392,7 +392,7 @@ footer {
 	}
 
 	.row-1 p, .row-2 p, .row-1 h1, .row-2 h1 {text-align: left;}
-	.home-quote, .fun h1 {text-align: left;}
+	.home-quote {text-align: left;}
 	.recentart-1, .recentart-2, .gallery {position: relative;}
 	
 		.recentart-1 h1, .recentart-2 h1 {
@@ -412,7 +412,7 @@ footer {
 			.latest {
 				bottom: 20px;
 				left: 230px;
-				color: var(--col-text-light);
+				color: black;
 				transform: rotate(-15deg);
 			}
 
@@ -701,17 +701,25 @@ footer {
 	.recentart-1 {
 		display: flex;
 		flex-grow: 1;
-		height: 98vh;
+		height: 92vh;
 	}
 	
 	.recentart-2 {
 		display: flex;
 		flex-grow: 1;
-		height: 136.5vh;
-		align-items: start;
+		height: 94vh;
 	}
 	
-	.recentart-1 img, .recentart-2 img {
+	.recentart-1 img {
+		height: 100%;
+		max-width: 100%;
+		object-fit: cover;
+		filter: drop-shadow(1px 4px 2px var(--col-shadow));
+		padding: 0;
+		margin: 0;
+	}
+	
+	.recentart-2 img {
 		height: 100%;
 		max-width: 100%;
 		object-fit: cover;
@@ -810,7 +818,6 @@ footer {
 
 .fun {
 	text-align: center;
-	margin-bottom: 15px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -899,9 +906,7 @@ a {
 		color: var(--col-text-a);
 	}
 
-::selection {
-	background: var(--col-text-select);
-}
+::selection {background: var(--col-text-select);}
 
 h1, .faves h2 {
 	font-family: "Reenie Beanie", cursive;
@@ -919,7 +924,7 @@ h2, .faves h1 {
 	font-style: bold;
 	font-weight: 700;
 	font-size: 14px;
-	margin-top: 15px;
+	margin-top: 5px;
 	margin-bottom: 15px;
 	text-decoration: none;
 	text-align: center;
