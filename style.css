@@ -542,7 +542,7 @@ footer {
 	}
 
 	@media only screen and (max-width: 912px) {
-		.game {max-width: 100%;}
+		.book, .game {max-width: 100%;}
 		.audiobooks td {text-align: center;}
 		.audiobooks p {text-align: left;}
 	}
