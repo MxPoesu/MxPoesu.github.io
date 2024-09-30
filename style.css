@@ -49,37 +49,42 @@ html {
 	html {
 		color-scheme: light dark;
 
-		--col-primary: white;
-		--col-secondary: #472536;
-		--col-tertiary: #361C29;
-		--col-text-main: black;
-		--col-text-light: white;
-		--col-text-yellow: #F06C00;
-		--col-text-a: #ed8800;
-		--col-text-date: #0089B3;
-		--col-text-select: #b6f0f8;
-		--col-shadow: #DEC8C1;
-		--col-bg-c1: #ecded4;
-		--col-bg-c2: #f8eee3;
+		--col-primary: white;			/* Papers */
+		--col-secondary: #472536;		/* Brown. Navigation and footer */
+		--col-tertiary: #361C29;		/* Dark brown. Header */
+		--col-text-main: black;			/* Main body text */
+		--col-text-light: white;		/* Header and footer text */
+		--col-text-yellow: #F06C00;		/* List style */
+		--col-text-a: #ed8800;			/* Orange. Links on hover */
+		--col-text-date: #0089B3;		/* Blue. Dates */
+		--col-text-select: #b6f0f8;		/* Light blue. Text selection */
+		--col-shadow: #DEC8C1;			/* Artwork shadow */
+		--col-bg-c1: #ecded4; 			/* Dark beige. Pattern */
+		--col-bg-c2: #f8eee3;			/* Light beige. Background */
+		--col-tape: #D6BE99;			/* Light yellow. Tape */
 	}
 
 
-/* 	@media (prefers-color-scheme: dark) {
+ 	@media (prefers-color-scheme: dark) {
 		html {
-			--col-primary: black;
-			--col-secondary: #472536;
-			--col-tertiary: #361C29;
-			--col-text-main: white;
-			--col-text-light: white;
-			--col-text-yellow: #F06C00;
-			--col-text-a: #ed8800;
-			--col-text-date: #0089B3;
-			--col-text-select: b6f0f8;
-			--col-shadow: #DEC8C1;
-			--col-bg-c1: #ecded4;
-			--col-bg-c2: #f8eee3;
+			--col-primary: #292525;			/* Papers */
+			--col-secondary: #1A1015;		/* Brown. Navigation and footer */
+			--col-tertiary: #0D080A;		/* Dark brown. Header */
+			--col-text-main: #D4D1CF;		/* Main body text */
+			--col-text-light: #D4D1CF;		/* Header and footer text */
+			--col-text-yellow: #C4873F;		/* List style */
+			--col-text-a: #EDB566;			/* Orange. Links on hover */
+			--col-text-date: #5EA8CC;		/* Blue. Dates */
+			--col-text-select: #4D697A;		/* Light blue. Text selection */
+			--col-shadow: #241D1A;			/* Artwork shadow */
+			--col-bg-c1: #262524; 			/* Light brown. Pattern */
+			--col-bg-c2: #0A0A09;			/* Dark brown. Background */
+			--col-tape: #6B5947;			/* Light yellow. Tape */
+			
+			font-weight: 500;
+			filter: brightness(85%);
 		}
-	} */
+	}
 
 
 
@@ -225,11 +230,12 @@ header {
 }
 	@media only screen and (max-width: 768px) {
 		.back-link {
-			left: 80%;
-			font-size: 50px;
-			padding-bottom: 17px;
-			padding-left: 17px;
-			padding-right: 17px;
+			left: 82%;
+			bottom: 15px;
+			font-size: 40px;
+			padding-bottom: 10px;
+			padding-left: 12px;
+			padding-right: 12px;
 		}
 	}
 	
@@ -289,7 +295,7 @@ footer {
 	}
 
 	@media(prefers-reduced-motion) {
-		#main {animation: appear 2s;}
+		#main {animation: appear 1s;}
 		
 		@keyframes appear {
 			0% {opacity: 0.5; }
@@ -430,7 +436,7 @@ footer {
 .tape-right, .tape-left, .tape-center {
 	height: 40px;
 	width: 80px;
-	background-color: #D6BE99;
+	background-color: var(--col-tape);
 	top: -15px;
 	opacity: 0.5;
 	border-radius: 1px;
@@ -501,7 +507,7 @@ footer {
 	
 		.meta-last {
 			padding-bottom: 8px;
-			border-bottom: 2px dotted #472536;
+			border-bottom: 2px dotted var(--col-secondary);
 		}
 	
 		@media only screen and (max-width: 768px) {.meta, .meta-last {font-size: 14px;}}
@@ -585,8 +591,8 @@ footer {
 	margin-right: auto;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	border-top: 2px dotted #472536;
-	border-bottom: 2px dotted #472536;
+	border-top: 2px dotted var(--col-secondary);
+	border-bottom: 2px dotted var(--col-secondary);
 }
 
 	.controls th {
@@ -643,7 +649,7 @@ footer {
 		padding-top: 5px;
 		padding-bottom: 0;
 		margin-bottom: 0;
-		margin-right: 50px;
+		margin-right: 61px;
 		text-align: right;
 		
 	}
@@ -835,8 +841,6 @@ footer {
 			.fun img {
 				height: 40px; 
 				width: auto; 
-				padding-left: 1px; 
-				padding-right: 1px;
 			}
 		}
 
@@ -852,6 +856,8 @@ footer {
 }
 
 	.guestbook input, .guestbook textarea {
+		font-family: Raleway;
+		font-weight: 400;
 		color: var(--col-text-main);
 		background-color: var(--col-primary);
 		border: 2px inset lightgray;
