@@ -749,7 +749,11 @@ footer {
 			max-width: auto;
 		}
 		
-		.wip img {height: auto; max-width: 450px; margin-left: 100px; margin-right: 100px;}
+		.wip img {
+			height: auto; 
+			max-width: 450px; 
+			margin-left: 100px; 
+			margin-right: 100px;}
 	}	
 	
 
