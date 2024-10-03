@@ -356,13 +356,16 @@ footer {
 /* MAIN */
 
 /* CENTERING SINGLE COLUMN CONTENT AND GRIDS */
-.longread, .art-grid, .art-grid-back, .portfolio-single {
+.longread, .art-grid, .art-grid-back {
 	margin-top: 35px;
+}
+
+
+.longread, .art-grid, .art-grid-back, .portfolio-single {
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
 }
-
 
 
 /* PAPERS */
@@ -727,22 +730,26 @@ footer {
 		padding-right: 0;
 	}
 	
+	.portfolio-single {margin-top: 10px;}
+	
 	.portfolio-single .meta {
 		text-align: center;
 		padding: 0;
 		margin: 0;
 	}
 	
-	.portfolio-single img {
+	.portfolio-single img, .wip img {
 		height: 100%;
 		max-width: 100%;
 	}
 	
 	@media only screen and (min-width: 912px) {
 		.portfolio-single img {
-			height: 350px;
+			height: 450px;
 			max-width: auto;
 		}
+		
+		.wip img {height: auto; max-width: 450px; margin-left: 100px; margin-right: 100px;}
 	}	
 	
 
@@ -845,7 +852,7 @@ footer {
 		padding-bottom: 20px;
 	}
 		
-		.wip img {height: 200px;}
+		
 
 
 
