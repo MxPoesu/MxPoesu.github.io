@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 	<channel>
+	<atom:link href="https://mxpoesu.github.io/feed.xml" rel="self" type="application/rss+xml" />	
+	
 		<title>Mx.Poesu • artist</title>
 		<image>
 			<url>https://mxpoesu.github.io/images/pfp.png</url>
@@ -16,31 +18,34 @@
 				<title>Quick portrait</title>
 				<image>
 					<url>https://mxpoesu.github.io/art/2024-09-22.webp</url>
-					<title>El Poesu</title>
+					<title>Quick portrait</title>
 					<link>https://mxpoesu.github.io</link>
 				</image>				
 				<link>https://mxpoesu.github.io/art/2024-09-22.html</link>
+				<guid isPermaLink="true">https://mxpoesu.github.io/art/2024-09-22.html</guid>
 				<description>Phone sketch</description>
-				<author>mx.poesu@proton.me</author>
-				<date>2024-09-22</date>
+				<author>mx.poesu@proton.me (El Poesu)</author>
+				<pubDate>2024-09-22</pubDate>
 				<category>Art</category>
 			</item>
 
 			<item>
 				<title>Art manifesto</title>
 				<link>https://mxpoesu.github.io/post/2024-09-06.html</link>
+				<guid isPermaLink="true">https://mxpoesu.github.io/post/2024-09-06.html</guid>
 				<description>8 principles I stick to in my creative work</description>
-				<author>mx.poesu@proton.me</author>
-				<date>2024-09-06</date>
+				<author>mx.poesu@proton.me (El Poesu)</author>
+				<pubDate>2024-09-06</pubDate>
 				<category>Post</category>
 			</item>
 			
 			<item>
 				<title>About me and this website!</title>
 				<link>https://mxpoesu.github.io/post/2024-09-05.html</link>
+				<guid isPermaLink="true">https://mxpoesu.github.io/post/2024-09-05.html</guid>
 				<description>Who I am and what this site is</description>
-				<author>mx.poesu@proton.me</author>
-				<date>2024-09-05</date>
+				<author>mx.poesu@proton.me (El Poesu)</author>
+				<pubDate>2024-09-05</pubDate>
 				<category>Post</category>
 			</item>
 

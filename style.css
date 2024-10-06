@@ -1023,7 +1023,25 @@ ol {
 	li {line-height: 1.7;}
 
 
-	
+spoiler-component {
+  background: var(--col-border);
+  color: transparent;
+  cursor: help;
+  user-select: none;
+  transition: background 0.3s ease 0.2s, color 0.2s ease 0.25s;
+}
+
+spoiler-component:hover, spoiler-component:focus {
+  background: inherit;
+  color: inherit;
+}
+
+/* 	Code for HTML:
+	<spoiler-component aria-label="Spoiler" role="group" tabindex="0">
+		<spoiler-content inert>
+		...
+		</spoiler-content>
+	</spoiler-component> */
 
 
 
