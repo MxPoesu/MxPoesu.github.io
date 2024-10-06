@@ -7,7 +7,7 @@
 		<title>Mx.Poesu • artist</title>
 		<image>
 			<url>https://mxpoesu.github.io/images/pfp.png</url>
-			<title>El Poesu</title>
+			<title>Mx.Poesu • artist</title>
 			<link>https://mxpoesu.github.io</link>
 		</image>
 		<link>https://mxpoesu.github.io</link>
@@ -15,12 +15,7 @@
 		<language>en</language>
 
 			<item>
-				<title>Quick portrait</title>
-				<image>
-					<url>https://mxpoesu.github.io/art/2024-09-22.webp</url>
-					<title>Quick portrait</title>
-					<link>https://mxpoesu.github.io</link>
-				</image>				
+				<title>Quick portrait</title>				
 				<link>https://mxpoesu.github.io/art/2024-09-22.html</link>
 				<guid isPermaLink="true">https://mxpoesu.github.io/art/2024-09-22.html</guid>
 				<description>Phone sketch</description>
