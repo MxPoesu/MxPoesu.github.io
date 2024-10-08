@@ -76,7 +76,7 @@ html {
 			--col-text-a: #EDB566;			/* Orange. Links on hover */
 			--col-text-date: #5EA8CC;		/* Blue. Dates */
 			--col-text-select: #4D697A;		/* Light blue. Text selection */
-			--col-shadow: #241D1A;			/* Artwork shadow */
+			--col-shadow: black;			/* Artwork shadow */
 			--col-border: #D4D1CF;			/* Meta-border */
 			--col-bg-c1: #262524; 			/* Light brown. Pattern */
 			--col-bg-c2: #0A0A09;			/* Dark brown. Background */
@@ -568,7 +568,6 @@ footer {
 	
 		.passions img {
 			height: 35.5vh; 
-			filter: drop-shadow(1px 4px 2px var(--col-shadow));
 			border-radius: 2px;
 		}
 		
