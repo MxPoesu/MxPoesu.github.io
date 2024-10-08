@@ -193,7 +193,7 @@ header {
 }
 
 	.nav {margin-top: -3px;}
-	footer p a {text-decoration: underline; text-decoration-style: wavy;}
+	footer p a {text-decoration: underline; text-decoration-style: dotted;}
 
 	.nav-button, .footer-button {
 		padding: 5px;
@@ -384,7 +384,7 @@ footer {
 	}
 
 	.about-card, .recent, .portfolio, .recentart-1, .recentart-2, .home-quote, .guestbook-form {margin-bottom: 25px;}
-	.about-text a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a {text-decoration: underline; text-decoration-style: wavy;}
+	.about-text a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a {text-decoration: underline; text-decoration-style: dotted;}
 		
 		
 
