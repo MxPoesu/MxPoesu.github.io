@@ -63,6 +63,7 @@ html {
 		--col-bg-c2: #f8eee3;			/* Light beige. Background */
 		--col-tape: #D6BE99;			/* Light yellow. Tape */
 		--col-bg-figcaption: rgba(255, 255, 255, 0.8); 
+		--col-table-border: lightgray; 
 	}
 
 
@@ -82,6 +83,7 @@ html {
 			--col-bg-c2: #0A0A09;			/* Dark brown. Background */
 			--col-tape: #6B5947;			/* Light yellow. Tape */
 			--col-bg-figcaption: rgba(0, 0, 0, 0.6); 
+			--col-table-border: #575757; 
 			
 			font-weight: 500;
 			filter: brightness(85%);
@@ -258,7 +260,7 @@ footer {
 	margin-top: 30px;
 	padding-top: 20px;
 	padding-bottom: 50px;
-	height: 180px;	
+	height: 250px;	
 }
 
 
@@ -534,7 +536,25 @@ footer {
 		padding: 0;
 	}
 
-
+	.blogtable {
+		display: table;
+		width: 100%;
+		border-collapse: collapse;
+	}
+	
+		.blogtable table, .blogtable tr, .blogtable td, .blogtable th {
+			vertical-align: top;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 5px;
+			padding-right: 5px;
+			border: 2px solid var(--col-table-border);
+		}
+	
+		.blogtable th {text-align: center;}
+		.blogtable td, .blogtable th {display: table-cell; width: auto;}
+		
+		
 
 
 
