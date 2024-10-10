@@ -538,7 +538,7 @@ footer {
 
 	.blogtable {
 		display: table;
-		width: 100%;
+		max-width: 100%;
 		border-collapse: collapse;
 	}
 	
@@ -551,7 +551,7 @@ footer {
 			border: 2px solid var(--col-table-border);
 		}
 	
-		.blogtable th {text-align: center;}
+		.blogtable th {text-align: center; background-color: var(--col-table-border);}
 		.blogtable td, .blogtable th {display: table-cell; width: auto;}
 		
 		
