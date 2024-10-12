@@ -272,6 +272,8 @@ footer {
 		padding-top: 2px;
 	}
 	
+	footer img {height: 30px; border-radius: 1px;}
+	
 
 
 .sitemap {
@@ -554,7 +556,7 @@ footer {
 		.blogtable th {text-align: center; background-color: var(--col-table-border);}
 		.blogtable td, .blogtable th {display: table-cell; width: auto;}
 		
-		
+.designhistory {width: 100%; padding-bottom: 20px;}
 
 
 
