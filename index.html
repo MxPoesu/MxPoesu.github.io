@@ -88,7 +88,7 @@
 							<td class="fade" rowspan="2" >
 								<div class="recentart-1">
 									<a href="art/2024-10-01.html" target="_blank"><img class="portfolio-right" src="art/thumbnails-1080/2024-10-01.webp" alt="Snake-like dragon"title="Rrrrah!"></a>
-									<h1 class="now"></h1>
+									<!-- <h1 class="now"></h1> -->
 									<div class="tape-right"></div>
 								</div>			
 							</td>	
@@ -126,7 +126,7 @@
 							<td class="fade" colspan="1" rowspan="2">
 								<div class="recentart-2">
 									<a href="art/2022-08-16.html" target="_blank"><img class="portfolio-left" src="art/thumbnails-1080/2022-08-16.webp" loading="lazy" alt="The Owl House characters, Eda and Raine, sitting on a hill and playing music"></a>
-									<h1 class="latest"></h1>
+									<!-- <h1 class="latest"></h1> -->
 									<div class="tape-left"></div>
 								</div>
 							</td>				
@@ -157,7 +157,7 @@
 				
 			</div>
 			
-			<br>
+			
 				
 			<div class="guestbook">
 				<div class="fade">
@@ -175,7 +175,7 @@
 							
 								<form id="guestbooks___guestbook-form" action="https://guestbooks.meadow.cafe/guestbook/131/submit" method="post">
 									<div class="guestbooks___input-container">
-										<input 
+										<input class="inputarea"
 											placeholder="Name and pronouns" 
 											type="text" 
 											id="name" 
@@ -184,7 +184,7 @@
 											style="width: 50%;">
 									</div>
 									<div class="guestbooks___input-container">
-										<input 
+										<input class="inputarea"
 											placeholder="Website (optional)" 
 											type="url" 
 											id="website" 
@@ -194,7 +194,7 @@
 									<div id="guestbooks___challenge-answer-container"></div>  
 									<br/>
 									<div class="guestbooks___input-container">
-										<textarea
+										<textarea class="inputarea"
 											placeholder="Message (plain text only)"
 											id="text" 
 											name="text" 
@@ -202,10 +202,9 @@
 											required></textarea>
 									</div>
 									<br/>
-									<input 
+									<input class="submit"
 										type="submit" 
-										value="Submit" 
-										style="color:white;background-color:#472536;padding:10px;border: 2px outset black;border-radius:3px;width:90px;">
+										value="Submit">
 									<div id="guestbooks___error-message"></div>  
 								</form>
 								
@@ -214,18 +213,7 @@
 				</div>
 				
 				<div class="fade">
-					<div 
-						id="guestbooks___guestbook-messages-container" 
-						style="color:white;
-						background:#472536;
-						border-radius:2px;
-						padding:15px;
-						text-align:left;
-						border: 8px solid transparent;
-						border-image-source: url('images/border.webp');
-						border-image-slice: 20;
-						border-image-outset: 3px;">
-					</div> 
+					<div class="guestbook-messages" id="guestbooks___guestbook-messages-container"></div> 
 				</div>					
 			</div>
 			
