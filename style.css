@@ -388,7 +388,7 @@ footer {
 	}
 
 	.about-card, .recent, .portfolio, .recentart-1, .recentart-2, .home-quote, .guestbook-form {margin-bottom: 25px;}
-	.about-text a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a {text-decoration: underline; text-decoration-style: dotted;}
+	.about-text a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a, .guestbook-form a {text-decoration: underline; text-decoration-style: dotted;}
 		
 		
 
@@ -957,10 +957,15 @@ footer {
 	}
 	
 	.submit {
-		border: 2px outset black;
+		border: 3px outset black;
 		border-radius: 3px;
 		width: 90px;
-	}	
+		transition: ease-out;
+		cursor: pointer;
+	}
+	
+	.submit:hover {background-color: var(--col-tape);}
+	.submit:active {border: 3px inset gray;  transform: translateY(2px);}
 	
 	.guestbook-messages {
 		text-align: left;
