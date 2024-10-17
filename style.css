@@ -384,7 +384,7 @@ footer {
 }
 
 	@media only screen and (max-width: 768px) {
-		.about-card, .recent, .longread, .art-grid, .art-grid-back, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form {font-size: 18px;}
+		.about-card, .recent, .longread, .art-grid, .art-grid-back, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form, .inputarea, .submit, .guestbook-messages {font-size: 18px;}
 	}
 
 	.about-card, .recent, .portfolio, .recentart-1, .recentart-2, .home-quote, .guestbook-form {margin-bottom: 25px;}
@@ -530,6 +530,7 @@ footer {
 	
 		@media only screen and (max-width: 768px) {.meta, .meta-last {font-size: 14px;}}
 	
+	
 	.flag {
 		height: 1.2em;
 		vertical-align: middle;
@@ -557,6 +558,7 @@ footer {
 		.blogtable td, .blogtable th {display: table-cell; width: auto;}
 		
 .designhistory {width: 100%; padding-bottom: 20px;}
+
 
 
 
@@ -951,6 +953,7 @@ footer {
 		color: var(--col-text-light);
 		background-color: var(--col-secondary);
 		padding: 10px;
+		font-family: Raleway;
 	}
 	
 	.submit {
@@ -1040,7 +1043,10 @@ p {
 
 em {font-style: italic;}
 strong {font-weight: 900;}
+
 .date {color: var(--col-text-date)}
+	.icon {height: 1.1em; margin-bottom: -0.2em; margin-right: 2px;}
+	.portfolio-single .icon {height: 1.1em; margin-bottom: -0.2em; margin-right: 2px;}
 
 
 /* LISTS */
