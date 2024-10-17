@@ -605,8 +605,8 @@ footer {
 			margin-bottom: -20px;
 		}
 		
-		
-		
+.catbio {text-align: left;}
+.catpfp {width: 300px;}		
 
 	@media only screen and (max-width: 912px) {
 		.book, .game {max-width: 100%;}
@@ -614,6 +614,8 @@ footer {
 		.audiobooks p {text-align: left;}
 		.passions img {max-width: 100%; height: auto;}
 		.passion-text {padding: 8px; bottom: 55.5px;}
+		.catbio h1 {text-align: center;}
+		.catpfp {width: 100%;}
 	}
 
 
