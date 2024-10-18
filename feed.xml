@@ -54,25 +54,5 @@
 				<category>Art</category>
 			</item>
 
-			<item>
-				<title>Art manifesto</title>
-				<link>https://mxpoesu.github.io/post/2024-09-06.html</link>
-				<guid isPermaLink="true">https://mxpoesu.github.io/post/2024-09-06.html</guid>
-				<description>9 principles I stick to in my creative work</description>
-				<author>mx.poesu@proton.me (El Poesu)</author>
-				<pubDate>Fri, 6 Sep 2024 00:00:00 GMT</pubDate>
-				<category>Post</category>
-			</item>
-			
-			<item>
-				<title>About me and this website!</title>
-				<link>https://mxpoesu.github.io/post/2024-09-05.html</link>
-				<guid isPermaLink="true">https://mxpoesu.github.io/post/2024-09-05.html</guid>
-				<description>Who I am and what this site is</description>
-				<author>mx.poesu@proton.me (El Poesu)</author>
-				<pubDate>Thu, 5 Sep 2024 00:00:00 GMT</pubDate>
-				<category>Post</category>
-			</item>
-
 	</channel>
 </rss>

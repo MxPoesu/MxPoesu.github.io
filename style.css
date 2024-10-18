@@ -388,7 +388,7 @@ footer {
 	}
 
 	.about-card, .recent, .portfolio, .recentart-1, .recentart-2, .home-quote, .guestbook-form {margin-bottom: 25px;}
-	.about-text a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a, .guestbook-form a {text-decoration: underline; text-decoration-style: dotted;}
+	.about-card a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a, .guestbook-form a {text-decoration: underline; text-decoration-style: dotted;}
 		
 		
 
@@ -586,12 +586,13 @@ footer {
 	
 	.passions a {text-decoration: none;}
 	
-	.passions td {position: relative; transition: transform 0.3s ease;}
+	.passions td {position: relative; transition: transform 0.3s ease; padding: 2.5px;}
+	.passions tr {margin: 0;}
 	
 		.passions td:hover {transform: scale(1.03);}
 	
 		.passions img {
-			height: 35.5vh; 
+			height: 28vh; 
 			border-radius: 2px;
 		}
 		
@@ -602,7 +603,7 @@ footer {
 			bottom: 41px;
 			padding: 5px;
 			background-color: var(--col-bg-figcaption);
-			margin-bottom: -20px;
+			margin-bottom: -40px;
 		}
 		
 .catbio {text-align: left;}
