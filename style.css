@@ -642,13 +642,13 @@ footer {
 	  }
 	  
 	.card-button {
-		padding-left: 7px;
-		padding-right: 7px;
+		padding-left: 5px;
+		padding-right: 5px;
 	}	
 		
 		.card-button img {
 			transition: transform 0.3s ease;
-			height: 40px;
+			height: 36px;
 			width: auto;
 		}
 		
