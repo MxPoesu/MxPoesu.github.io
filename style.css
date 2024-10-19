@@ -320,7 +320,7 @@ footer {
 
 
 
-.fade, .giscus-post {
+.fade, .fade-long, .giscus-post {
 	animation-duration: auto;
 	animation-timing-function: ease-in-out;
 	animation-delay: 0s;
@@ -333,6 +333,9 @@ footer {
 	animation-range-end: entry-crossing 60%;
 	animation-timeline: view(y 80vh 10vh);
 	}
+	
+	.fade, .giscus-post {animation-name: show;}
+	.fade-long {animation-name: show-long;}	
 
 	@keyframes show {
 		0% {opacity: 15%;}
@@ -340,15 +343,25 @@ footer {
 		100% {opacity: 100%;}
 	}
 	
-	@media(prefers-reduced-motion) {
-		.fade, .giscus-post {animation: none;}
-	} 
+	@keyframes show-long {
+		0% {opacity: 15%;}
+		20% {opacity: 99%;}
+		100% {opacity: 100%;}
+	}
+	
+	@media(prefers-reduced-motion) {.fade, .fade-long, .giscus-post {animation: none;}} 
 	
 	@media only screen and (max-width: 768px) {
 		@keyframes show {
 			0% {opacity: 35%; }
 			20% {opacity: 99%; }
 			100% {opacity: 100%; }
+		}
+		
+		@keyframes show-long {
+			0% {opacity: 35%;}
+			10% {opacity: 99%;}
+			100% {opacity: 100%;}
 		}
 	} 
 
@@ -575,7 +588,7 @@ footer {
 		margin-bottom: 0;
 	}
 
-	.game {max-width: 49%;}
+	.game {max-width: 100%;}
 	
 	.passions {
 		text-align: center; 
@@ -857,7 +870,7 @@ footer {
 	
 	.pic-justify {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		flex-wrap: wrap;
 	}
 	
@@ -865,16 +878,8 @@ footer {
 			margin-bottom: 30px;
 		}
 	
-	.pic-center {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		margin-left: 210px;
-		margin-right: 210px;
-	}
-	
 		@media only screen and (max-width: 768px) {
-			.pic-justify, .pic-center {
+			.pic-justify {
 				text-align: center; 
 				display: grid; 
 				margin: 0;
@@ -969,10 +974,7 @@ footer {
 	
 	.submit:hover {background-color: var(--col-tape);}
 	.submit:active {border: 3px inset gray;  transform: translateY(2px);}
-	
-	.guestbook-messages {
-		text-align: left;
-	}
+	.guestbook-messages {text-align: left;}
 
 
 
@@ -986,9 +988,7 @@ footer {
 	margin-top: 18px;
 }
 	
-	@media only screen and (min-width: 768px) {
-		.giscus-post {width: 60%;}
-	}
+	@media only screen and (min-width: 768px) {.giscus-post {width: 60%;}}
 
 
 	
