@@ -1,15 +1,15 @@
 /* SITE */
 Owner: El Poesu 
-Last update: 2024/10/16
+Last update: 2024/10/19
 Language: English
 
 
 /* CONTACTS */
 E-mail: mx.poesu@proton.me
-Mastodon: mastodon.art/MxPoesu
+Mastodon: https://mastodon.art/@MxPoesu
+Bluesky: https://bsky.app/profile/mxpoesu.bsky.social
 Matrix: https://matrix.to/#/@burn-the-inquisitors:matrix.org
 Signal: https://signal.me/#eu/wyiAzZgLt8MhUjyc3XrelSI1fubSvkqfD7Xo3VslQUt22cNq279M5L7eQZS7mniJ
-Hipolink: https://hipolink.me/mx.poesu
 
 
 /* MORE ABOUT HUMANS.TXT */
