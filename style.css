@@ -397,6 +397,8 @@ footer {
 
 	@media only screen and (max-width: 768px) {
 		.about-card, .recent, .longread, .art-grid, .art-grid-back, .neighbours, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form, .inputarea, .submit, .guestbook-messages {font-size: 18px;}
+		.portfolio-single {padding-top: 0; padding-left: 0; padding-right: 0; width: 100%;}
+		.wip-about {margin: 15px;}
 	}
 
 	.about-card, .recent, .portfolio, .recentart-1, .recentart-2, .home-quote, .neighbours, .guestbook-form {margin-bottom: 25px;}
@@ -412,6 +414,10 @@ footer {
 	border-image-slice: 20;
 	border-image-outset: 3px;
 }
+
+	@media only screen and (max-width: 768px) {
+		.portfolio-single {border-bottom: 7px solid transparent; border-top: none; border-left: none; border-right: none;}
+	}
 
 
 
@@ -777,7 +783,7 @@ footer {
 		padding-right: 0;
 	}
 	
-	.portfolio-single {margin-top: 10px;}
+	.portfolio-single {margin-top: 0;}
 	
 	.portfolio-single .meta {
 		text-align: center;
@@ -795,6 +801,8 @@ footer {
 			height: 450px;
 			max-width: auto;
 		}
+		
+		.portfolio-single {margin-top: 10px;}
 		
 		.wip img {
 			height: auto; 
