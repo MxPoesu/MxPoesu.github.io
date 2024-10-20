@@ -592,19 +592,18 @@ footer {
 	.passions {
 		text-align: center; 
 		max-width: 100%; 
-		margin-left: auto; 
-		margin-right: auto;
+		display: grid; 
+		grid-template-columns: 25% 25% 25% 25%;
 	}
 	
 	.passions a {text-decoration: none;}
+	.passions div {position: relative; transition: transform 0.3s ease; padding: 2.5px;}
 	
-	.passions td {position: relative; transition: transform 0.3s ease; padding: 2.5px;}
-	.passions tr {margin: 0;}
-	
-		.passions td:hover {transform: scale(1.03);}
+		.passions div:hover {transform: scale(1.03);}
 	
 		.passions img {
-			height: 28vh; 
+			width: 100%; 
+			height: auto;
 			border-radius: 2px;
 		}
 		
@@ -615,17 +614,17 @@ footer {
 			bottom: 41px;
 			padding: 5px;
 			background-color: var(--col-bg-figcaption);
-			margin-bottom: -40px;
+			margin-bottom: -45px;
 		}
 		
 .catbio {text-align: left;}
 .catpfp {width: 300px;}		
 
 	@media only screen and (max-width: 912px) {
-		.book, .game {max-width: 100%;}
+		.book {max-width: 100%;}
 		.audiobooks td {text-align: center;}
 		.audiobooks p {text-align: left;}
-		.passions img {max-width: 100%; height: auto;}
+		.passions {display: grid; grid-template-columns: 50% 50%;}
 		.passion-text {padding: 8px; bottom: 55.5px;}
 		.catbio h1 {text-align: center;}
 		.catpfp {width: 100%;}
