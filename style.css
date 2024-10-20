@@ -378,7 +378,7 @@ footer {
 }
 
 
-.longread, .art-grid, .art-grid-back, .portfolio-single {
+.longread, .art-grid, .art-grid-back, .neighbours, .portfolio-single {
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
@@ -386,7 +386,7 @@ footer {
 
 
 /* PAPERS */
-.about-card, .recent, .longread, .art-grid-back, .portfolio-single, .home-quote, .guestbook-form {
+.about-card, .recent, .longread, .art-grid-back, .neighbours, .portfolio-single, .home-quote, .guestbook-form {
 	border-radius: 2px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -396,16 +396,16 @@ footer {
 }
 
 	@media only screen and (max-width: 768px) {
-		.about-card, .recent, .longread, .art-grid, .art-grid-back, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form, .inputarea, .submit, .guestbook-messages {font-size: 18px;}
+		.about-card, .recent, .longread, .art-grid, .art-grid-back, .neighbours, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form, .inputarea, .submit, .guestbook-messages {font-size: 18px;}
 	}
 
-	.about-card, .recent, .portfolio, .recentart-1, .recentart-2, .home-quote, .guestbook-form {margin-bottom: 25px;}
+	.about-card, .recent, .portfolio, .recentart-1, .recentart-2, .home-quote, .neighbours, .guestbook-form {margin-bottom: 25px;}
 	.about-card a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a, .guestbook-form a {text-decoration: underline; text-decoration-style: dotted;}
 		
 		
 
 /* BORDER IMAGE */
-.about-card, .longread, .recent, .art-grid-back, .portfolio-single, .home-quote, .guestbook-form, .guestbook-messages {
+.about-card, .longread, .recent, .art-grid-back, .neighbours, .portfolio-single, .home-quote, .guestbook-form, .guestbook-messages {
 	background-color: var(--col-primary);
 	border: 7px solid transparent;
 	border-image-source: url('images/border.webp');
@@ -417,7 +417,7 @@ footer {
 
 /* HOME GRID */
 .row-1, .row-2 {
-	width: 90%;
+	width: 92%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -939,7 +939,7 @@ footer {
 .guestbook {
 	font-size: 14px;
 	text-align: center;
-	width: 88%;
+	width: 90%;
 	padding-bottom: 15px;
 	margin-left: auto;
 	margin-right: auto;
