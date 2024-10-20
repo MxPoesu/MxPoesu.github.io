@@ -438,7 +438,7 @@ footer {
 			margin: 0;
 		}
 		
-			.now {
+			/* .now {
 				top: 60px;
 				left: 400px;
 				color: black;
@@ -450,9 +450,13 @@ footer {
 				left: 230px;
 				color: black;
 				transform: rotate(-15deg);
-			}
+			} */
 
-
+.neighbours img {
+	width: 88px;
+	height: 31px;
+	margin-top: 10px;
+}
 
 
 
