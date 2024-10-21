@@ -437,6 +437,11 @@ footer {
 	.home-quote {text-align: left;}
 	.recentart-1, .recentart-2, .gallery {position: relative;}
 	
+@media only screen and (min-width: 1920px) {
+	.row-1, .row-2 {width: 100%; }
+	.home-grid {display: flex; } 
+}	
+	
 		.recentart-1 h1, .recentart-2 h1 {
 			font-size: 78px;
 			font-weight: 500;
