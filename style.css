@@ -253,6 +253,14 @@ header {
 	
 	.back-link:focus {transform: translateY(0%);}
 
+.skip {
+	margin-top: 10px;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 10px;
+	max-width: 90%;
+}
 
 
 footer {
@@ -373,9 +381,7 @@ footer {
 /* MAIN */
 
 /* CENTERING SINGLE COLUMN CONTENT AND GRIDS */
-.longread, .art-grid, .art-grid-back {
-	margin-top: 35px;
-}
+.longread, .art-grid, .art-grid-back {margin-top: 35px;}
 
 
 .longread, .art-grid, .art-grid-back, .neighbours, .portfolio-single {
@@ -397,11 +403,12 @@ footer {
 
 	@media only screen and (max-width: 768px) {
 		.about-card, .recent, .longread, .art-grid, .art-grid-back, .neighbours, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form, .inputarea, .submit, .guestbook-messages {font-size: 18px;}
+		.skip {font-size: 12px;}
 		.portfolio-single {padding-top: 0; padding-left: 0; padding-right: 0; width: 100%;}
 		.wip-about {margin: 15px;}
 	}
 
-	.about-card, .recent, .portfolio, .recentart-1, .recentart-2, .home-quote, .neighbours, .guestbook-form {margin-bottom: 25px;}
+	.about-card, .recent, .recentart-1, .recentart-2, .home-quote, .neighbours, .guestbook-form, .portfolio {margin-bottom: 25px;}
 	.about-card a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a, .guestbook-form a {text-decoration: underline; text-decoration-style: dotted;}
 		
 		
@@ -422,6 +429,8 @@ footer {
 
 
 /* HOME GRID */
+.home-grid {margin-top: 10px;}
+
 .row-1, .row-2 {
 	width: 92%;
 	margin-left: auto;
@@ -668,8 +677,8 @@ footer {
 	  }
 	  
 	.card-button {
-		padding-left: 5px;
-		padding-right: 5px;
+		padding-left: 4px;
+		padding-right: 4px;
 	}	
 		
 		.card-button img {
