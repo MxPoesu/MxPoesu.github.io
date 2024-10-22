@@ -87,6 +87,8 @@ html {
 			font-weight: 500;
 			filter: brightness(85%);
 		}
+		
+		b {font-weight: 900;}
 	}
 
 		@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
@@ -339,7 +341,7 @@ footer {
 	animation-range-start: entry 0%;
 	animation-range-end: entry-crossing 60%;
 	animation-timeline: view(y 80vh 10vh);
-	}
+}
 	
 	.fade, .giscus-post {animation-name: show;}
 	.fade-long {animation-name: show-long;}	
@@ -403,6 +405,7 @@ footer {
 
 	@media only screen and (max-width: 768px) {
 		.about-card, .recent, .longread, .art-grid, .art-grid-back, .neighbours, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form, .inputarea, .submit, .guestbook-messages {font-size: 18px;}
+		
 		.skip {font-size: 12px;}
 		.portfolio-single {padding-top: 0; padding-left: 0; padding-right: 0; width: 100%;}
 		.wip-about {margin: 15px;}
@@ -442,35 +445,13 @@ footer {
 		padding-right: 10px;
 	}
 
-	.row-1 p, .row-2 p, .row-1 h1, .row-2 h1 {text-align: left;}
-	.home-quote {text-align: left;}
-	.recentart-1, .recentart-2, .gallery, .gallery-nsfw {position: relative;}
+	.row-1 p, .row-2 p, .row-1 h1, .row-2 h1, .home-quote {text-align: left;}
+	.recentart-1, .recentart-2, .gallery {position: relative;}
 	
 @media only screen and (min-width: 1920px) {
-	.row-1, .row-2 {width: 100%; }
-	.home-grid {display: flex; } 
+	.row-1, .row-2 {width: 100%;}
+	.home-grid {display: flex;} 
 }	
-	
-		.recentart-1 h1, .recentart-2 h1 {
-			font-size: 78px;
-			font-weight: 500;
-			position: absolute;
-			margin: 0;
-		}
-		
-			/* .now {
-				top: 60px;
-				left: 400px;
-				color: black;
-				transform: rotate(15deg);
-			}
-			
-			.latest {
-				bottom: 20px;
-				left: 230px;
-				color: black;
-				transform: rotate(-15deg);
-			} */
 
 .neighbours img {
 	width: 88px;
@@ -505,8 +486,6 @@ footer {
 	}
 
 		@media only screen and (max-width: 912px) {
-			.now {top: 80px; left: 5px; position: absolute;}
-			.latest {left: 100px; bottom: 20px;}
 			.tape-right {top: -15px; left: 260px; position: absolute;}
 		}
 
@@ -762,7 +741,6 @@ footer {
 		margin-bottom: 0;
 		margin-right: 61px;
 		text-align: right;
-		
 	}
 	
 		@media only screen and (max-width: 768px) {.see-all {margin-right: 18px;}}
@@ -917,30 +895,6 @@ footer {
 	}
 
 
-/* .gallery-nsfw img {
-	filter: blur(10px);
-	-webkit-filter: blur(10px);
-	transition: 0.4s ease;
-}
-
-	.gallery-nsfw img:hover, .gallery-nsfw img:focus, .gallery-nsfw img:active, .gallery-nsfw img:target {filter: none;}
-	
-	.gallery-nsfw p {
-		position: absolute; 
-		left: 17%; 
-		bottom: 24px; 
-		z-index: 9999; 
-		color: var(--col-text-main); 
-		background: var(--col-tape);
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 3px;
-		padding-bottom: 3px;
-		border-radius: 2px;
-		font-weight: 700;
-	}
-	
-	.gallery-nsfw a {text-decoration: none;} */
 
 
 
@@ -1049,13 +1003,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
 /* GENERAL FORMATTING */
 
 a {
@@ -1101,7 +1048,6 @@ p {
 }
 
 em {font-style: italic;}
-strong {font-weight: 900;}
 
 .date {color: var(--col-text-date)}
 	.icon {height: 1.1em; margin-bottom: -0.2em; margin-right: 2px;}
@@ -1109,26 +1055,28 @@ strong {font-weight: 900;}
 
 
 /* LISTS */
+ul, ol {margin-bottom: 0;}
+
 ul {
 	list-style-type: none;
-	padding: 0;
 	margin-top: 0;
-	margin-bottom: 0;
+	padding-left: 0; 
 	text-align: left;
 }
 
 	.star {
 		list-style-image: url('images/list.svg');
-		list-style-position: inside;
+		list-style-position: outside;
+		padding-left: 15px; 
 	}
 
 ol {
 	margin-top: 5px;
-	margin-bottom: 0;
-	padding-left: 15px;
+	padding-left: 15px; 
 }
 
 	li {line-height: 1.7;}
+	li p {padding-bottom: 1.5em;}
 
 
 
