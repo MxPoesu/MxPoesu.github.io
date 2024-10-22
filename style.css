@@ -48,19 +48,19 @@ html {
 	html {
 		color-scheme: light dark;
 
-		--col-primary: white;			/* Papers */
-		--col-secondary: #472536;		/* Brown. Navigation and footer */
-		--col-tertiary: #361C29;		/* Dark brown. Header */
-		--col-text-main: black;			/* Main body text */
-		--col-text-light: white;		/* Header and footer text */
-		--col-text-a: #ed8800;			/* Orange. Links on hover */
-		--col-text-date: #0089B3;		/* Blue. Dates */
-		--col-text-select: #b6f0f8;		/* Light blue. Text selection */
-		--col-shadow: #DEC8C1;			/* Artwork shadow */
-		--col-border: #361C29;			/* Meta-border */
-		--col-bg-c1: #ecded4; 			/* Dark beige. Pattern */
-		--col-bg-c2: #f8eee3;			/* Light beige. Background */
-		--col-tape: #D6BE99;			/* Light yellow. Tape */
+		--col-primary: white;					/* Papers */
+		--col-secondary: #472536;				/* Brown. Navigation and footer */
+		--col-tertiary: #361C29;				/* Dark brown. Header */
+		--col-text-main: black;					/* Main body text */
+		--col-text-light: white;				/* Header and footer text */
+		--col-text-a: #ed8800;					/* Orange. Links on hover */
+		--col-text-date: #0089B3;				/* Blue. Dates */
+		--col-text-select: #b6f0f8;				/* Light blue. Text selection */
+		--col-shadow: #DEC8C1;					/* Artwork shadow */
+		--col-border: #361C29;					/* Meta-border */
+		--col-bg-c1: #ecded4; 					/* Dark beige. Pattern */
+		--col-bg-c2: #f8eee3;					/* Light beige. Background */
+		--col-tape: rgba(214, 190, 153, 0.5);	/* Light yellow. Tape */
 		--col-bg-figcaption: rgba(255, 255, 255, 0.8); 
 		--col-table-border: lightgray; 
 	}
@@ -68,19 +68,19 @@ html {
 
  	@media (prefers-color-scheme: dark) {
 		html {
-			--col-primary: #292525;			/* Papers */
-			--col-secondary: #1A1015;		/* Brown. Navigation and footer */
-			--col-tertiary: #0D080A;		/* Dark brown. Header */
-			--col-text-main: #D4D1CF;		/* Main body text */
-			--col-text-light: #D4D1CF;		/* Header and footer text */
-			--col-text-a: #EDB566;			/* Orange. Links on hover */
-			--col-text-date: #5EA8CC;		/* Blue. Dates */
-			--col-text-select: #4D697A;		/* Light blue. Text selection */
-			--col-shadow: black;			/* Artwork shadow */
-			--col-border: #D4D1CF;			/* Meta-border */
-			--col-bg-c1: #262524; 			/* Light brown. Pattern */
-			--col-bg-c2: #0A0A09;			/* Dark brown. Background */
-			--col-tape: #6B5947;			/* Light yellow. Tape */
+			--col-primary: #292525;					/* Papers */
+			--col-secondary: #1A1015;				/* Brown. Navigation and footer */
+			--col-tertiary: #0D080A;				/* Dark brown. Header */
+			--col-text-main: #D4D1CF;				/* Main body text */
+			--col-text-light: #D4D1CF;				/* Header and footer text */
+			--col-text-a: #EDB566;					/* Orange. Links on hover */
+			--col-text-date: #5EA8CC;				/* Blue. Dates */
+			--col-text-select: #4D697A;				/* Light blue. Text selection */
+			--col-shadow: black;					/* Artwork shadow */
+			--col-border: #D4D1CF;					/* Meta-border */
+			--col-bg-c1: #262524; 					/* Light brown. Pattern */
+			--col-bg-c2: #0A0A09;					/* Dark brown. Background */
+			--col-tape: rgba(107, 89, 71, 0.5);		/* Light yellow. Tape */
 			--col-bg-figcaption: rgba(0, 0, 0, 0.6); 
 			--col-table-border: #575757; 
 			
@@ -444,7 +444,7 @@ footer {
 
 	.row-1 p, .row-2 p, .row-1 h1, .row-2 h1 {text-align: left;}
 	.home-quote {text-align: left;}
-	.recentart-1, .recentart-2, .gallery {position: relative;}
+	.recentart-1, .recentart-2, .gallery, .gallery-nsfw {position: relative;}
 	
 @media only screen and (min-width: 1920px) {
 	.row-1, .row-2 {width: 100%; }
@@ -492,7 +492,6 @@ footer {
 	width: 80px;
 	background-color: var(--col-tape);
 	top: -15px;
-	opacity: 0.5;
 	border-radius: 1px;
 	margin: 0;
 	padding: 0;
@@ -916,8 +915,36 @@ footer {
 		padding-right: 20px;
 		padding-bottom: 20px;
 	}
-		
-		
+
+
+/* .gallery-nsfw img {
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+	transition: 0.4s ease;
+}
+
+	.gallery-nsfw img:hover, .gallery-nsfw img:focus, .gallery-nsfw img:active, .gallery-nsfw img:target {filter: none;}
+	
+	.gallery-nsfw p {
+		position: absolute; 
+		left: 17%; 
+		bottom: 24px; 
+		z-index: 9999; 
+		color: var(--col-text-main); 
+		background: var(--col-tape);
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		border-radius: 2px;
+		font-weight: 700;
+	}
+	
+	.gallery-nsfw a {text-decoration: none;} */
+
+
+
+
 
 
 
@@ -1104,25 +1131,7 @@ ol {
 	li {line-height: 1.7;}
 
 
-spoiler-component {
-  background: var(--col-border);
-  color: transparent;
-  cursor: help;
-  user-select: none;
-  transition: background 0.3s ease 0.2s, color 0.2s ease 0.25s;
-}
 
-spoiler-component:hover, spoiler-component:focus {
-  background: inherit;
-  color: inherit;
-}
-
-/* 	Code for HTML:
-	<spoiler-component aria-label="Spoiler" role="group" tabindex="0">
-		<spoiler-content inert>
-		...
-		</spoiler-content>
-	</spoiler-component> */
 
 
 
