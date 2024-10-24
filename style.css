@@ -5,7 +5,7 @@ html {
 	font-family: Raleway;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 90%;
 	color: var(--col-text-main);
 	letter-spacing: 0.2px;
 	line-height: 1.7;
@@ -15,7 +15,7 @@ html {
 	scroll-padding-top: 40px;
 }
 
-	@media only screen and (max-width: 768px) {html {font-size: 16px;}}
+	@media only screen and (max-width: 768px) {html {font-size: 100%;}}
 
 	html {
 	  --s: 79px; /* control the size*/
@@ -158,12 +158,12 @@ header {
 		.nick h1 {
 			margin-top: 17px;
 			margin-bottom: 0px;
-			font-size: 39px;
+			font-size: 2.8rem;
 		}
 		
 			@media only screen and (max-width: 768px) {
 				.nick {grid-template-columns: 80px 130px; width: 230px;}
-				.nick h1 {font-size: 50px; margin-top: 5px;}
+				.nick h1 {font-size: 3rem; margin-top: 5px;}
 				.nick img {width: 80px; height: auto;}
 			}
 
@@ -236,7 +236,7 @@ header {
 	bottom: 10px;
 	left: 96%;
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 2rem;
 	text-align: right;
 	transform: translateY(-100%);
 	place-self: end;
@@ -246,7 +246,7 @@ header {
 		.back-link {
 			left: 82%;
 			bottom: 15px;
-			font-size: 40px;
+			font-size: 2.5rem;
 			padding-bottom: 10px;
 			padding-left: 12px;
 			padding-right: 12px;
@@ -260,7 +260,7 @@ header {
 	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 10px;
+	font-size: 0.75rem;
 	max-width: 90%;
 }
 
@@ -400,19 +400,19 @@ footer {
 	padding-right: 15px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	font-size: 14px;
+	font-size: 1rem;
 }
 
 	@media only screen and (max-width: 768px) {
-		.about-card, .recent, .longread, .art-grid, .art-grid-back, .neighbours, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form, .inputarea, .submit, .guestbook-messages {font-size: 18px;}
+		.about-card, .recent, .longread, .art-grid, .art-grid-back, .neighbours, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form, .inputarea, .submit, .guestbook-messages {font-size: 1.3rem;}
 		
-		.skip {font-size: 12px;}
+		.skip {font-size: 0.8rem;}
 		.portfolio-single {padding-top: 0; padding-left: 0; padding-right: 0; width: 100%;}
 		.wip-about {margin: 15px;}
 	}
 
 	.about-card, .recent, .recentart-1, .recentart-2, .home-quote, .neighbours, .guestbook-form, .portfolio {margin-bottom: 25px;}
-	.about-card a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a, .guestbook-form a {text-decoration: underline; text-decoration-style: dotted;}
+	.home-grid a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a, .guestbook-form a {text-decoration: underline; text-decoration-style: dotted;}
 		
 		
 
@@ -534,7 +534,7 @@ footer {
 
 	.meta, .meta-last {
 		text-align: center;
-		font-size: 12px;
+		font-size: 1rem;
 	}	
 	
 		.meta-last {
@@ -542,7 +542,7 @@ footer {
 			border-bottom: 2px dotted var(--col-border);
 		}
 	
-		@media only screen and (max-width: 768px) {.meta, .meta-last {font-size: 14px;}}
+		@media only screen and (max-width: 768px) {.meta, .meta-last {font-size: 1rem;}}
 	
 	
 	.flag {
@@ -691,7 +691,7 @@ footer {
 		padding-bottom: 0;
 		padding-left: 10px;
 		padding-right: 10px;
-		font-size: 12px;
+		font-size: 1rem;
 		text-decoration: none;
 	}
 	
@@ -943,7 +943,7 @@ footer {
 
 
 .guestbook {
-	font-size: 14px;
+	font-size: 1rem;
 	text-align: center;
 	width: 90%;
 	padding-bottom: 15px;
@@ -1020,7 +1020,7 @@ h1, .faves h2 {
 	font-family: "Reenie Beanie", cursive;
 	font-style: bold;
 	font-weight: 600;
-	font-size: 36px;
+	font-size: 2.6rem;
 	margin-top: 0;
 	margin-bottom: 5px;
 	text-decoration: none;
@@ -1031,15 +1031,15 @@ h2, .faves h1 {
 	font-family: "Raleway";
 	font-style: bold;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 1rem;
 	margin-top: 5px;
 	margin-bottom: 15px;
 	text-decoration: none;
 	text-align: center;
 }
 	@media only screen and (max-width: 768px) {
-		h1, .faves h2 {font-size: 42px;}
-		h2, .faves h1 {font-size: 18px;}
+		h1, .faves h2 {font-size: 3rem;}
+		h2, .faves h1 {font-size: 1.3rem;}
 	}
 
 p {
