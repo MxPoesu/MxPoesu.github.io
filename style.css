@@ -1053,6 +1053,8 @@ em {font-style: italic;}
 	.icon {height: 1.1em; margin-bottom: -0.2em; margin-right: 2px;}
 	.portfolio-single .icon {height: 1.1em; margin-bottom: -0.2em; margin-right: 2px;}
 
+cite {font-style: normal;}
+
 
 /* LISTS */
 ul, ol {margin-bottom: 0;}
