@@ -657,7 +657,7 @@ footer {
 
 /* BUTTONS */
 
-.contacts img, .fun img {
+.contact img, .fun img {
 	transition: transform 0.3s ease; 
 	height: 36px; 
 	width: auto; 
@@ -666,7 +666,7 @@ footer {
 	margin-top: 15px;
 }
 
-.contacts img:hover, .fun img:hover {transform: scale(1.2);}
+.contact img:hover, .fun img:hover {transform: scale(1.2);}
 
 .contacts, .fun, .controls {
 	margin-bottom: 0;
