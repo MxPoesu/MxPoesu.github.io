@@ -13,39 +13,25 @@ html {
 	text-rendering: optimizeLegibility;
 	scroll-behavior: smooth;
 	scroll-padding-top: 40px;
-}
-
-	@media only screen and (max-width: 768px) {html {font-size: 100%;}}
-
-	html {
-	  --s: 79px; /* control the size*/
-	  --c1: var(--col-bg-c1);
-	  --c2: var(--col-bg-c2);
-	  
-	  --_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--col-bg-c1) 78% 80%,#0000 81%);
-	  --_c:,#0000 75%,var(--col-bg-c2) 0;
-	  background:
-		conic-gradient(at 12% 20% var(--_c)) calc(var(--s)* .44) calc(.9*var(--s)),
-		conic-gradient(at 12% 20% var(--_c)) calc(var(--s)*-.06) calc(.4*var(--s)),
-		conic-gradient(at 20% 12% var(--_c)) calc(.9*var(--s)) calc(var(--s)* .44),
-		conic-gradient(at 20% 12% var(--_c)) calc(.4*var(--s)) calc(var(--s)*-.06),
-		var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2) var(--c2);
-	  background-size: var(--s) var(--s);
-	} /* background pattern; source: https://css-pattern.com/quatrefoils/ */
-
-	body {margin: 0;}
-
-	* {box-sizing: border-box;}
-
-
-
-
-
-
-/* COLOUR SCHEMES */
-
-
-	html {
+	
+	
+	/* background pattern source: https://css-pattern.com/quatrefoils/ */
+		--s: 79px; /* control the size*/
+		--c1: var(--col-bg-c1);
+		--c2: var(--col-bg-c2);
+		  
+		--_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--col-bg-c1) 78% 80%,#0000 81%);
+		--_c:,#0000 75%,var(--col-bg-c2) 0;
+		background:
+			conic-gradient(at 12% 20% var(--_c)) calc(var(--s)* .44) calc(.9*var(--s)),
+			conic-gradient(at 12% 20% var(--_c)) calc(var(--s)*-.06) calc(.4*var(--s)),
+			conic-gradient(at 20% 12% var(--_c)) calc(.9*var(--s)) calc(var(--s)* .44),
+			conic-gradient(at 20% 12% var(--_c)) calc(.4*var(--s)) calc(var(--s)*-.06),
+			var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2) var(--c2);
+		background-size: var(--s) var(--s);
+		
+		
+	/* color scheme */
 		color-scheme: light dark;
 
 		--col-primary: white;					/* Papers */
@@ -62,9 +48,12 @@ html {
 		--col-bg-c2: #f8eee3;					/* Light beige. Background */
 		--col-tape: rgba(214, 190, 153, 0.5);	/* Light yellow. Tape */
 		--col-bg-figcaption: rgba(255, 255, 255, 0.8); 
-		--col-table-border: lightgray; 
-	}
+		--col-table-border: lightgray; 	
+} 
 
+	@media only screen and (max-width: 768px) {html {font-size: 100%;}}
+	body {margin: 0;}
+	* {box-sizing: border-box;}
 
  	@media (prefers-color-scheme: dark) {
 		html {
@@ -385,7 +374,6 @@ footer {
 /* CENTERING SINGLE COLUMN CONTENT AND GRIDS */
 .longread, .art-grid, .art-grid-back {margin-top: 35px;}
 
-
 .longread, .art-grid, .art-grid-back, .neighbours, .portfolio-single {
 	margin-left: auto;
 	margin-right: auto;
@@ -432,26 +420,65 @@ footer {
 
 
 /* HOME GRID */
-.home-grid {margin-top: 10px;}
-
-.row-1, .row-2 {
-	width: 92%;
+.home-grid {
+	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-	td {
-		padding-left: 10px;
-		padding-right: 10px;
+	width: 90%;
+	display: block;
+	}
+	
+	.recentart-1, .recentart-2 {width: 100%;}
+	
+	@media only screen and (min-width: 912px) {
+		.home-grid {
+			display: grid;
+			grid-template-columns: auto auto;
+			gap: 20px;
+		}
+		
+		.recentart-1, .recentart-2 {
+			display: flex;
+			flex-grow: 1;
+			height: 92vh;
+		}
+	}
+	
+	@media only screen and (min-width: 1440px) {
+		.home-grid {
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			gap: 20px;
+		}
+		
+		.recentart-1, .recentart-2 {
+			height: 90%;
+		}
 	}
 
-	.row-1 p, .row-2 p, .row-1 h1, .row-2 h1, .home-quote {text-align: left;}
-	.recentart-1, .recentart-2, .gallery {position: relative;}
+
 	
-@media only screen and (min-width: 1920px) {
-	.row-1, .row-2 {width: 100%;}
-	.home-grid {display: flex;} 
-}	
+	.recentart-1 img {
+		height: 100%;
+		max-width: 100%;
+		object-fit: cover;
+		filter: drop-shadow(1px 4px 2px var(--col-shadow));
+		padding: 0;
+		margin: 0;
+	}
+	
+	.recentart-2 img {
+		height: 100%;
+		max-width: 100%;
+		object-fit: cover;
+		filter: drop-shadow(1px 4px 2px var(--col-shadow));
+		padding: 0;
+		margin: 0;
+	}
+	
+
+	.home-grid p, .home-grid h1 {text-align: left;}
+	.recentart-1, .recentart-2, .gallery {position: relative;}
 
 .neighbours img {
 	width: 88px;
@@ -480,7 +507,7 @@ footer {
 
 	.tape-right {
 		top: -15px;
-		left: 465px;
+		left: 400px;
 		transform: rotate(10deg);
 		position: absolute;
 	}
@@ -627,7 +654,7 @@ footer {
 		.audiobooks td {text-align: center;}
 		.audiobooks p {text-align: left;}
 		.passions {display: grid; grid-template-columns: 50% 50%;}
-		.passion-text {padding: 8px; bottom: 55.5px;}
+		.passion-text {padding: 8px; bottom: 61px;}
 		.catbio h1 {text-align: center;}
 		.catpfp {width: 100%;}
 	}
@@ -691,7 +718,7 @@ footer {
 		padding-bottom: 0;
 		padding-left: 10px;
 		padding-right: 10px;
-		font-size: 1rem;
+		font-size: 0.8rem;
 		text-decoration: none;
 	}
 	
@@ -803,45 +830,7 @@ footer {
 	}	
 	
 
-	.recentart-1 {
-		display: flex;
-		flex-grow: 1;
-		height: 92vh;
-	}
-	
-	.recentart-2 {
-		display: flex;
-		flex-grow: 1;
-		height: 94vh;
-	}
-	
-	.recentart-1 img {
-		height: 100%;
-		max-width: 100%;
-		object-fit: cover;
-		filter: drop-shadow(1px 4px 2px var(--col-shadow));
-		padding: 0;
-		margin: 0;
-	}
-	
-	.recentart-2 img {
-		height: 100%;
-		max-width: 100%;
-		object-fit: cover;
-		filter: drop-shadow(1px 4px 2px var(--col-shadow));
-		padding: 0;
-		margin: 0;
-	}
-	
-	@media only screen and (max-width: 912px) {
-		td, col {
-			display: block;
-			width: 100%;
-			padding-left:0;
-			padding-right:0;
-		  }
-		.recentart-1, .recentart-2 {height: 500px; max-width: 100%; }
-	}
+
 	
 
 			
@@ -972,7 +961,6 @@ footer {
 	.submit {
 		border: 3px outset black;
 		border-radius: 3px;
-		width: 90px;
 		transition: ease-out;
 		cursor: pointer;
 	}

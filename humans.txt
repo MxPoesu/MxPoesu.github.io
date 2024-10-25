@@ -1,6 +1,6 @@
 /* SITE */
-Owner: El Poesu 
-Last update: 2024/10/23
+Owner and everything: El Poesu 
+Last update: 2024/10/25
 Language: English
 
 
