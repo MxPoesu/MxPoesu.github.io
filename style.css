@@ -657,19 +657,19 @@ footer {
 
 /* BUTTONS */
 
-button {
-	background: none;
-	border: none;
-	padding-left: 4px;
+.contacts img, .fun img {
+	transition: transform 0.3s ease; 
+	height: 36px; 
+	width: auto; 
+	padding-left: 4px; 
 	padding-right: 4px;
+	margin-top: 15px;
 }
 
-button img {transition: transform 0.3s ease; height: 36px; width: auto;}
-button img:hover {transform: scale(1.2);}
+.contacts img:hover, .fun img:hover {transform: scale(1.2);}
 
 .contacts, .fun, .controls {
 	margin-bottom: 0;
-	margin-top: 15px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -687,6 +687,7 @@ button img:hover {transform: scale(1.2);}
 	padding-bottom: 8px;
 	border-top: 2px dotted var(--col-border);
 	border-bottom: 2px dotted var(--col-border);
+	margin-top: 15px;
 }
 
 	.controls th {
