@@ -608,9 +608,7 @@ footer {
 	}
 	
 	.passions a {text-decoration: none;}
-	.passions div {position: relative; transition: transform 0.3s ease; padding: 2.5px;}
-	
-		.passions div:hover {transform: scale(1.03);}
+	.passions div {position: relative; padding: 2.5px;}
 	
 		.passions img {
 			width: 100%; 
@@ -658,7 +656,6 @@ footer {
 /* BUTTONS */
 
 .contact img, .fun img {
-	transition: transform 0.3s ease; 
 	height: 36px; 
 	width: auto; 
 	padding-left: 4px; 
@@ -666,7 +663,7 @@ footer {
 	margin-top: 15px;
 }
 
-.contact img:hover, .fun img:hover {transform: scale(1.2);}
+.passions div:hover, .contact img:hover, .fun img:hover, .nav-button img:hover {filter: brightness(80%) saturate(1.1);}
 
 .contacts, .fun, .controls {
 	margin-bottom: 0;
