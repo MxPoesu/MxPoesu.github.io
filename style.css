@@ -13,27 +13,9 @@ html {
 	text-rendering: optimizeLegibility;
 	scroll-behavior: smooth;
 	scroll-padding-top: 40px;
-	
-	
-	/* background pattern source: https://css-pattern.com/quatrefoils/ */
-		--s: 79px; /* control the size*/
-		--c1: var(--col-bg-c1);
-		--c2: var(--col-bg-c2);
-		  
-		--_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--col-bg-c1) 78% 80%,#0000 81%);
-		--_c:,#0000 75%,var(--col-bg-c2) 0;
-		background:
-			conic-gradient(at 12% 20% var(--_c)) calc(var(--s)* .44) calc(.9*var(--s)),
-			conic-gradient(at 12% 20% var(--_c)) calc(var(--s)*-.06) calc(.4*var(--s)),
-			conic-gradient(at 20% 12% var(--_c)) calc(.9*var(--s)) calc(var(--s)* .44),
-			conic-gradient(at 20% 12% var(--_c)) calc(.4*var(--s)) calc(var(--s)*-.06),
-			var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2) var(--c2);
-		background-size: var(--s) var(--s);
-		
-		
-	/* color scheme */
-		color-scheme: light dark;
+	background: linear-gradient(-10deg, var(--col-bg-c1), var(--col-bg-c2));
 
+	color-scheme: light dark;
 		--col-primary: white;					/* Papers */
 		--col-secondary: #472536;				/* Brown. Navigation and footer */
 		--col-tertiary: #361C29;				/* Dark brown. Header */
@@ -42,19 +24,17 @@ html {
 		--col-text-a: #ed8800;					/* Orange. Links on hover */
 		--col-text-date: #0089B3;				/* Blue. Dates */
 		--col-text-select: #b6f0f8;				/* Light blue. Text selection */
-		--col-shadow: #DEC8C1;					/* Artwork shadow */
+		--col-shadow: #C2C2C2;					/* Artwork shadow */
 		--col-border: #361C29;					/* Meta-border */
-		--col-bg-c1: #ecded4; 					/* Dark beige. Pattern */
-		--col-bg-c2: #f8eee3;					/* Light beige. Background */
+		--col-bg-c1: #B8E2ED;					/* Blue. Gradient */
+		--col-bg-c2: #F2E4DA;					/* Light beige. Background */
 		--col-tape: rgba(214, 190, 153, 0.5);	/* Light yellow. Tape */
 		--col-bg-figcaption: rgba(255, 255, 255, 0.8); 
 		--col-table-border: lightgray; 	
+		--col-button: #472536;
+		--col-button-text: white;
 } 
-
-	@media only screen and (max-width: 768px) {html {font-size: 100%;}}
-	body {margin: 0;}
-	* {box-sizing: border-box;}
-
+	
  	@media (prefers-color-scheme: dark) {
 		html {
 			--col-primary: #292525;					/* Papers */
@@ -65,13 +45,15 @@ html {
 			--col-text-a: #EDB566;					/* Orange. Links on hover */
 			--col-text-date: #5EA8CC;				/* Blue. Dates */
 			--col-text-select: #4D697A;				/* Light blue. Text selection */
-			--col-shadow: black;					/* Artwork shadow */
+			--col-shadow: rgba(0, 0, 0, 0.5);		/* Artwork shadow */
 			--col-border: #D4D1CF;					/* Meta-border */
-			--col-bg-c1: #262524; 					/* Light brown. Pattern */
-			--col-bg-c2: #0A0A09;					/* Dark brown. Background */
+			--col-bg-c1: #1C73A3;					/* Blue. Gradient */
+			--col-bg-c2: #0A0A09;					/* Black. Background */
 			--col-tape: rgba(107, 89, 71, 0.5);		/* Light yellow. Tape */
 			--col-bg-figcaption: rgba(0, 0, 0, 0.6); 
 			--col-table-border: #575757; 
+			--col-button: #D4D1CF;
+			--col-button-text: #0A0A09;
 			
 			font-weight: 500;
 			filter: brightness(85%);
@@ -92,6 +74,16 @@ html {
 		}
 
 
+	@media only screen and (max-width: 768px) {html {font-size: 100%;}}
+	* {box-sizing: border-box;}
+	
+	body {
+		margin: 0; 	
+		background-image: url('images/bg.webp');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
 
 
 
@@ -103,14 +95,7 @@ html {
 header {
 	display: block;
 	padding-top: 2px;
-	padding-bottom: 5px;
-	border-top: 3px solid transparent;
-	border-left: 3px solid transparent;
-	border-right: 3px solid transparent;
-	border-image-source: url('images/border.webp');
-	border-image-slice: 20;
-	color: var(--col-text-light);
-	background-color: var(--col-tertiary);
+	padding-bottom: 5px;	
 }
 
 	.skip-link {
@@ -128,14 +113,15 @@ header {
 		margin-right: auto;
 		margin-bottom: 10px;	
 		display: grid;
-		grid-template-columns: 90px 110px;
-		width: 230px;
+		grid-template-columns: 130px 210px;
+		width: 340px;
 		gap: 20px;
 		line-height: 1;
+		place-items: center;
 	}
 
 		.nick img {
-			width: 90px;
+			width: 130px;
 			height: auto;
 		}
 		
@@ -145,9 +131,8 @@ header {
 		}
 		
 		.nick h1 {
-			margin-top: 17px;
 			margin-bottom: 0px;
-			font-size: 2.8rem;
+			font-size: 4.8rem;
 		}
 		
 			@media only screen and (max-width: 768px) {
@@ -177,31 +162,44 @@ header {
 	padding-bottom: 10px;
 	display: block;
 	flex-wrap: wrap;
-	color: var(--col-text-light);
-	background-color: var(--col-secondary);
-	border: 3px solid transparent;
-	border-image-source: url('images/border.webp');
-	border-image-slice: 20;
 }
 
-	.nav {margin-top: -3px;}
 	footer p a {text-decoration: underline; text-decoration-style: dotted;}
 
-	.nav-button, .footer-button {
-		padding: 5px;
-		margin-left: 30px;
-		margin-right: 30px;
+	.nav-button-a {
+		font-weight: 700;
+		background-color: var(--col-button);
+		color: var(--col-button-text);
+	}
+	
+	.nav-button:hover, .nav-button-a:hover {background-color: black}
+	
+	.nav-button {background-color: var(--col-primary);}
+	
+	.nav-button, .nav-button-a {
+		padding-top: 3px;
+		padding-bottom: 3px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 18.2px;
+		margin-right: 18.2px;
+		line-height: 2.5;
+		border: 7px solid transparent;
+		border-image-source: url('images/border-smol.webp');
+		border-image-slice: 20;
+		border-image-outset: 3px;
+		transition: 0.3s ease;
 	}
 	
 	@media only screen and (max-width: 768px) {
-		.nav-button, .footer-button {
-			padding: 3px;
-			margin-left: 6px;
-			margin-right: 6px;
+		.nav-button, .nav-button-a {
+			padding: 1.5px;
+			margin-left: 2px;
+			margin-right: 2px;
 		}
 	}
 	
-		.nav-button img {
+		.nav img {
 			vertical-align: text-bottom;
 			height: 1.2em;
 		}
@@ -214,8 +212,8 @@ header {
 	--offset: 100px; 
 	position: sticky;
 	position: -webkit-sticky;
-	color: var(--col-text-light);
-	background-color: var(--col-secondary); 
+	background-color: var(--col-button);
+	color: var(--col-button-text);
 	border-radius: 50%; 
 	padding-top: 0;
 	padding-bottom: 7px;
@@ -230,6 +228,7 @@ header {
 	transform: translateY(-100%);
 	place-self: end;
 	margin-top: calc(100vh + var(--offset));
+	transition: 0.3s ease;
 }
 	@media only screen and (max-width: 768px) {
 		.back-link {
@@ -243,6 +242,7 @@ header {
 	}
 	
 	.back-link:focus {transform: translateY(0%);}
+	.back-link:hover {background-color: black;}
 
 .skip {
 	margin-top: 10px;
@@ -255,22 +255,16 @@ header {
 
 
 footer {
-	margin-top: 30px;
-	padding-top: 20px;
-	padding-bottom: 50px;
-	height: 250px;	
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom: 80px;
 }
 
 
 	.footer-links {
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 20px;
-		margin-top: 0;
-		padding-top: 2px;
+		margin-bottom: 25px;
+		margin-top: 10px;
 	}
-	
-	footer img {height: 30px; border-radius: 1px;}
 	
 
 
@@ -372,7 +366,7 @@ footer {
 /* MAIN */
 
 /* CENTERING SINGLE COLUMN CONTENT AND GRIDS */
-.longread, .art-grid, .art-grid-back {margin-top: 35px;}
+.longread, .art-grid, .art-grid-back {margin-top: 20px;}
 
 .longread, .art-grid, .art-grid-back, .neighbours, .portfolio-single {
 	margin-left: auto;
@@ -658,8 +652,20 @@ footer {
 .contact img, .fun img {
 	height: 36px; 
 	width: auto; 
+	margin-top: 15px;
+	transition: 0.3s ease;
+}
+
+.contact img {
 	padding-left: 4px; 
 	padding-right: 4px;
+}
+
+.fun img {
+	height: 36px; 
+	width: auto; 
+	padding-left: 0; 
+	padding-right: 0;
 	margin-top: 15px;
 }
 
@@ -733,6 +739,7 @@ footer {
 
 .portfolio {
 	width: 100%;
+	filter: drop-shadow(1px 4px 2px var(--col-shadow));
 }
 	
 	.see-all {
@@ -750,13 +757,6 @@ footer {
 		flex-grow: 1;
 		justify-content: space-between;	
 		height: 48vh;
-		background-color: var(--col-secondary);
-		border-bottom: 5px solid transparent;
-		border-left: 3px solid transparent;
-		border-right: 3px solid transparent;
-		border-image-source: url('images/border.webp');
-		border-image-slice: 20;
-		border-image-outset: 2px;
 	}
 	
 		@media only screen and (max-width: 912px) {
@@ -800,6 +800,13 @@ footer {
 			max-width: 450px; 
 			margin-left: 100px; 
 			margin-right: 100px;}
+	}		
+	
+	@media only screen and (min-width: 1270px) {
+		.wip img {
+			margin-left: 0; 
+			margin-right: 0;
+		}
 	}	
 	
 
