@@ -625,7 +625,7 @@ footer {
 
 	@media only screen and (max-width: 912px) {
 		.book {max-width: 100%;}
-		.audiobooks td {text-align: center;}
+		.audiobooks td {display: flex; max-width: 100%; text-align: center;}
 		.audiobooks p {text-align: left;}
 		.passions {display: grid; grid-template-columns: 50% 50%;}
 		.passions p {padding: 8px; bottom: 61px;}
