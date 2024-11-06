@@ -371,7 +371,7 @@ footer {
 
 
 /* PAPERS */
-.about-card, .recent, .longread, .art-grid-back, .neighbours, .portfolio-single, .home-quote, .guestbook-form {
+.home-block, .longread, .art-grid-back, .neighbours, .portfolio-single, .guestbook-form {
 	border-radius: 2px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -381,20 +381,20 @@ footer {
 }
 
 	@media only screen and (max-width: 768px) {
-		.about-card, .recent, .longread, .art-grid, .art-grid-back, .neighbours, .portfolio-single, .portfolio-left, .portfolio-right, .home-quote, .guestbook-form, .inputarea, .submit, .guestbook-messages {font-size: 1.3rem;}
+		.home-block, .longread, .art-grid, .art-grid-back, .neighbours, .portfolio-single, .portfolio-left, .portfolio-right, .guestbook-form, .inputarea, .submit, .guestbook-messages {font-size: 1.3rem;}
 		
 		.skip {font-size: 0.8rem;}
 		.portfolio-single {padding-top: 0; padding-left: 0; padding-right: 0; width: 100%;}
 		.wip-about {margin: 15px;}
 	}
 
-	.about-card, .recent, .recentart-1, .recentart-2, .home-quote, .neighbours, .guestbook-form, .portfolio {margin-bottom: 25px;}
+	.home-block, .recentart-1, .recentart-2, .neighbours, .guestbook-form, .portfolio {margin-bottom: 25px;}
 	.home-grid a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a, .guestbook-form a {text-decoration: underline; text-decoration-style: dotted;}
 		
 		
 
 /* BORDER IMAGE */
-.about-card, .longread, .recent, .art-grid-back, .neighbours, .portfolio-single, .home-quote, .guestbook-form, .guestbook-messages {
+.longread, .home-block, .art-grid-back, .neighbours, .portfolio-single, .guestbook-form, .guestbook-messages {
 	background-color: var(--col-primary);
 	border: 7px solid transparent;
 	border-image-source: url('images/border.webp');
@@ -938,7 +938,7 @@ a {
 
 ::selection {background: var(--col-text-select);}
 
-h1, .faves h2 {
+h1 {
 	font-family: "Reenie Beanie", cursive;
 	font-style: bold;
 	font-weight: 600;
@@ -949,7 +949,7 @@ h1, .faves h2 {
 	line-height: 1;
 }
 
-h2, .faves h1 {
+h2 {
 	font-family: "Raleway";
 	font-style: bold;
 	font-weight: 700;
@@ -960,8 +960,8 @@ h2, .faves h1 {
 	text-align: center;
 }
 	@media only screen and (max-width: 768px) {
-		h1, .faves h2 {font-size: 3rem;}
-		h2, .faves h1 {font-size: 1.3rem;}
+		h1 {font-size: 3rem;}
+		h2 {font-size: 1.3rem;}
 	}
 
 p {
@@ -977,13 +977,12 @@ cite {font-style: normal;}
 
 
 /* LISTS */
-ul, ol {margin-bottom: 0;}
+ul, ol {margin-bottom: 0;text-align: left}
 
 ul {
 	list-style-type: none;
 	margin-top: 0;
 	padding-left: 0; 
-	text-align: left;
 }
 
 	.star {
