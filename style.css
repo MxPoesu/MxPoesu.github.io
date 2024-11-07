@@ -60,8 +60,11 @@ html {
 		}
 		
 		b {font-weight: 900;}
+		body {background-image: url('images/bg-dark.png');}
 	}
 
+		@media (prefers-color-scheme: light) {body {background-image: url('images/bg-light.png');}}
+		
 		@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
 			html {
 				--col-primary: black;			/* Papers */
@@ -257,7 +260,7 @@ footer {
 }
 
 	.footer-links {
-		margin-bottom: 25px;
+		margin-bottom: 45px;
 		margin-top: 10px;
 	}
 	
