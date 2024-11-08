@@ -18,7 +18,6 @@ html {
 	color-scheme: light dark;
 		--col-primary: white;					/* Papers */
 		--col-secondary: #472536;				/* Brown. Navigation and footer */
-		--col-tertiary: #361C29;				/* Dark brown. Header */
 		--col-text-main: black;					/* Main body text */
 		--col-text-light: white;				/* Header and footer text */
 		--col-text-a: #ed8800;					/* Orange. Links on hover */
@@ -39,7 +38,6 @@ html {
 		html {
 			--col-primary: #292525;					/* Papers */
 			--col-secondary: #1A1015;				/* Brown. Navigation and footer */
-			--col-tertiary: #0D080A;				/* Dark brown. Header */
 			--col-text-main: #D4D1CF;				/* Main body text */
 			--col-text-light: #D4D1CF;				/* Header and footer text */
 			--col-text-a: #EDB566;					/* Orange. Links on hover */
