@@ -594,7 +594,7 @@ footer {
 		text-align: center; 
 		max-width: 100%; 
 		display: grid; 
-		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-columns: 33.3% 33.3% 33.3%;
 	}
 	
 	.passions a {text-decoration: none;}
@@ -606,16 +606,6 @@ footer {
 			border-radius: 2px;
 		}
 		
-		.passions p {
-			position: relative;
-			color: var(--col-text-main);
-			font-weight: 500;
-			bottom: 41px;
-			padding: 5px;
-			background-color: var(--col-bg-figcaption);
-			margin-bottom: -45px;
-		}
-		
 .catbio {text-align: left;}
 .catpfp {width: 300px; padding-right: 15px;}		
 
@@ -623,7 +613,6 @@ footer {
 		.book {max-width: 100%;}
 		.audiobooks td {display: flex; max-width: 100%; text-align: center;}
 		.audiobooks p {text-align: left;}
-		.passions {display: grid; grid-template-columns: 50% 50%;}
 		.passions p {padding: 8px; bottom: 61px;}
 		.catbio h1 {text-align: center;}
 		.catpfp {width: 100%; padding: 0;}
@@ -950,13 +939,13 @@ h1 {
 	line-height: 1;
 }
 
-h2 {
+h2, h3 {
 	font-family: "Raleway";
 	font-style: bold;
 	font-weight: 900;
 	font-size: 1rem;
 	margin-top: 5px;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 	text-decoration: none;
 	text-align: center;
 }
