@@ -374,10 +374,7 @@ footer {
 /* PAPERS */
 .home-block, .longread, .art-grid-back, .neighbours, .portfolio-single, .guestbook-form {
 	border-radius: 2px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding: 20px;
 	font-size: 1rem;
 }
 
@@ -526,9 +523,9 @@ footer {
 
 	.blogpic {
 		max-height: auto;
-		max-width: 50%;
 		border-radius: 4px;
 		padding: 2.5px;
+		max-width: 50%;
 	}
 
 	.meta, .meta-last {
@@ -541,7 +538,10 @@ footer {
 			border-bottom: 2px dotted var(--col-border);
 		}
 	
-		@media only screen and (max-width: 768px) {.meta, .meta-last {font-size: 1rem;}}
+		@media only screen and (max-width: 768px) {
+			.meta, .meta-last {font-size: 1rem;}
+			.blogpic {max-width: 100%;}
+		}
 	
 	
 	.flag {
@@ -551,24 +551,6 @@ footer {
 		border-radius: 3px;
 		padding: 0;
 	}
-
-	.blogtable {
-		display: table;
-		max-width: 100%;
-		border-collapse: collapse;
-	}
-	
-		.blogtable table, .blogtable tr, .blogtable td, .blogtable th {
-			vertical-align: top;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			padding-left: 5px;
-			padding-right: 5px;
-			border: 2px solid var(--col-table-border);
-		}
-	
-		.blogtable th {text-align: center; background-color: var(--col-table-border);}
-		.blogtable td, .blogtable th {display: table-cell; width: auto;}
 		
 .designhistory {width: 100%; padding-bottom: 20px;}
 
@@ -642,8 +624,8 @@ footer {
 
 .contact img {
 	margin-top: 15px;
-	padding-left: 4px; 
-	padding-right: 4px;
+	padding-left: 3px; 
+	padding-right: 3px;
 }
 
 .fun img {
