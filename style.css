@@ -677,7 +677,7 @@ footer {
 				float: left;
 			}
 
-
+		
 
 
 
@@ -734,41 +734,41 @@ footer {
 		padding-right: 0;
 	}
 	
-	.portfolio-single {margin-top: 0;}
-	
-	.portfolio-single .meta {
+	.portfolio-grid .meta {
 		text-align: center;
 		padding: 0;
 		margin: 0;
 	}
 	
-	.portfolio-single img, .wip img {
+	.portfolio-grid img, .wip img {
 		height: 100%;
 		max-width: 100%;
 	}
 	
-	@media only screen and (min-width: 912px) {
-		.portfolio-single img {
+	@media only screen and (min-width: 992px) {
+		.portfolio-grid {margin-left: auto; margin-right: auto;}
+		
+		.portfolio-grid img {
 			height: 450px;
 			max-width: auto;
 		}
 		
-		.portfolio-single {margin-top: 10px;}
+		.wip {text-align: center;}
 		
 		.wip img {
 			height: auto; 
 			max-width: 450px; 
-			margin-left: 100px; 
-			margin-right: 100px;}
-	}		
-	
-	@media only screen and (min-width: 1270px) {
-		.wip img {
-			margin-left: 0; 
-			margin-right: 0;
 		}
-	}	
-	
+			
+		.portfolio-grid {
+			display: grid;
+			grid-template-columns: auto 35%;
+			align-items: center;
+			padding: 20px;
+		}
+		
+		.portfolio-grid .art-grid-back {margin-top: 0; padding: 10px;}
+	}		
 
 
 	
@@ -778,8 +778,9 @@ footer {
 
 .art-grid img {
 	height: 220px;
-	filter: drop-shadow(1px 4px 2px var(--col-shadow));
 }
+
+	.gallery {filter: drop-shadow(1px 4px 2px var(--col-shadow));}
 
 	@media only screen and (max-width: 768px) {
 		.art-grid img {
@@ -881,7 +882,7 @@ footer {
 
 
 
-.giscus-post, .giscus-art {
+.giscus {
 	max-width: 90%;
 	text-align: left;
 	margin-left: auto;
@@ -889,7 +890,7 @@ footer {
 	margin-top: 18px;
 }
 	
-	@media only screen and (min-width: 768px) {.giscus-post {width: 60%;}}
+	@media only screen and (min-width: 768px) {.giscus {width: 60%;}}
 
 
 	
@@ -943,7 +944,7 @@ p {
 
 .date {color: var(--col-text-date)}
 	.icon {height: 1.1em; margin-bottom: -0.2em; margin-right: 2px;}
-	.portfolio-single .icon {height: 1.1em; margin-bottom: -0.2em; margin-right: 2px;}
+	.portfolio-grid .icon {height: 1.1em; margin-bottom: -0.2em; margin-right: 2px;}
 
 cite {font-style: normal;}
 
