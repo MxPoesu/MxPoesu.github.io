@@ -308,7 +308,7 @@ footer {
 
 
 
-.fade, .fade-long, .giscus-post {
+.fade, .fade-long, .giscus {
 	animation-duration: auto;
 	animation-timing-function: ease-in-out;
 	animation-delay: 0s;
@@ -322,7 +322,7 @@ footer {
 	animation-timeline: view(y 80vh 10vh);
 }
 	
-	.fade, .giscus-post {animation-name: show;}
+	.fade, .giscus {animation-name: show;}
 	.fade-long {animation-name: show-long;}	
 
 	@keyframes show {
@@ -337,7 +337,7 @@ footer {
 		100% {opacity: 100%;}
 	}
 	
-	@media(prefers-reduced-motion) {.fade, .fade-long, .giscus-post {animation: none;}} 
+	@media(prefers-reduced-motion) {.fade, .fade-long, .giscus {animation: none;}} 
 	
 	@media only screen and (max-width: 768px) {
 		@keyframes show {
