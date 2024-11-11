@@ -153,7 +153,7 @@ header {
 
 /* NAVIGATION */
 
-.nav, footer {
+nav, footer {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: block;
@@ -195,7 +195,7 @@ header {
 		}
 	}
 	
-		.nav img {
+		nav img {
 			vertical-align: text-bottom;
 			height: 1.2em;
 		}
@@ -693,7 +693,7 @@ footer {
 
 /* PORTFOLIO */
 
-.portfolio, .nav, .footer-links {
+.portfolio, nav, .footer-links {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 100%;
