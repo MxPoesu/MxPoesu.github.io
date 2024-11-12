@@ -104,37 +104,63 @@ header {
 		.skip-link:focus {transform: translateY(0%);}
 		.skip-link:hover {opacity: 100%;}	
 
-	.nick {
+	.navigation {
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 10px;	
+		margin-bottom: 20px;	
 		display: grid;
-		grid-template-columns: 130px 210px;
-		width: 340px;
-		gap: 20px;
-		line-height: 1;
-		place-items: center;
+		grid-template-columns: 45% 55%;
+		max-width: 100%;
 	}
+	
+		.nav-1-col, .nav-2-col {
+			display: grid; 
+			place-items: center;
+		}
+		
+		.nav-1-col {
+			gap: 0;
+			grid-template-columns: 90% 10%;
+		}
+		
+		.nav-2-col {
+			gap: 30px;
+			text-align: left; 
+			line-height: 1.8;
+			grid-template-columns: 150px 150px;
+		}
+		
 
-		.nick img {
-			width: 130px;
+		.navigation img {
+			width: 190px;
 			height: auto;
 		}
 		
-		.nick p {
+		.navigation p {
 			font-weight: 300;
 			margin-bottom: 0px;
 		}
 		
-		.nick h1 {
-			margin-bottom: 0px;
-			font-size: 4.8rem;
+		.nick p {
+			font-size: 1.2rem; 
+			line-height: 1;
+			text-align: center;
 		}
 		
+		.nick h1 {
+			margin-bottom: 0px;
+			font-size: 4.2rem;
+		}
+		
+		.menu {display: none;}
+		
 			@media only screen and (max-width: 768px) {
-				.nick {grid-template-columns: 80px 130px; width: 230px;}
-				.nick h1 {font-size: 3rem; margin-top: 5px;}
-				.nick img {width: 80px; height: auto;}
+				.navigation {display: block; max-width: 95%;}
+				.navigation img {width: 150px; height: auto;}
+				.nick p {font-size: 1.2rem;}
+				.nick h1 {font-size: 3.5rem;}
+				.nav-1-col, .nav-2-col {gap: 0; grid-template-columns: auto auto;}
+				.menu {display: block;}
 			}
 
 
@@ -418,24 +444,27 @@ footer {
 	@media only screen and (min-width: 912px) {
 		.home-grid {
 			display: grid;
-			grid-template-columns: auto auto;
+			grid-template-columns: auto;
 			gap: 20px;
 		}
+		
+		.home-1 {display: grid; grid-template-columns: 45% 53%; gap: 20px;}
+		.home-2 {display: grid; grid-template-columns: 55% 43%; gap: 20px;}
 		
 		.recentart-1, .recentart-2 {
 			display: flex;
 			flex-grow: 1;
 		}
 		
-		.recentart-1 {height: 96vh;}
-		.recentart-2 {height: 92vh;}
+		.recentart-1 {height: 100vh;}
+		.recentart-2 {height: 104vh;}
 	}
 	
 	@media only screen and (min-width: 1440px) {
 		.home-grid {
 			display: grid;
 			grid-template-columns: auto auto auto auto;
-			gap: 20px;
+			gap: 40px;
 		}
 		
 		.recentart-1, .recentart-2 {height: 90%;}
