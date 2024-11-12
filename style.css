@@ -796,9 +796,9 @@ footer {
 			
 		.portfolio-grid {
 			display: grid;
-			grid-template-columns: auto 35%;
+			grid-template-columns: auto 30%;
 			align-items: center;
-			padding: 20px;
+			padding: 10px;
 		}
 		
 		.portfolio-grid .art-grid-back {margin-top: 0; padding: 10px;}
