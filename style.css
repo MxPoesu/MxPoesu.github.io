@@ -608,7 +608,7 @@ footer {
 		text-align: center; 
 		max-width: 100%; 
 		display: grid; 
-		grid-template-columns: 33.3% 33.3% 33.3%;
+		grid-template-columns: 25% 25% 25% 25%;
 	}
 	
 	.passions a {text-decoration: none;}
@@ -627,6 +627,7 @@ footer {
 		.book {max-width: 100%;}
 		.audiobooks td {display: flex; max-width: 100%; text-align: center;}
 		.audiobooks p {text-align: left;}
+		.passions {grid-template-columns: 50% 50%;}
 		.passions p {padding: 8px; bottom: 61px;}
 		.catbio h1 {text-align: center;}
 		.catpfp {width: 100%; padding: 0;}
