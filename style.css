@@ -159,7 +159,8 @@ header {
 				.navigation img {width: 150px; height: auto;}
 				.nick p {font-size: 1.2rem;}
 				.nick h1 {font-size: 3.5rem;}
-				.nav-1-col, .nav-2-col {gap: 0; grid-template-columns: auto auto;}
+				.nav-1-col {gap: 0; grid-template-columns: auto auto;}
+				.nav-2-col {gap: 0; grid-template-columns: 175px 175px;}
 				.menu {display: block;}
 			}
 
