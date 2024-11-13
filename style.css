@@ -780,13 +780,9 @@ footer {
 	}
 	
 	
-		@media only screen and (max-width: 768px) {
-			.pic-justify {
-				text-align: center; 
-				display: grid;
-				column-count: 1;
-			}
-		}
+		@media only screen and (max-width: 768px) {.pic-justify {column-count: 1;}}
+		@media only screen and (min-width: 1920px) {.pic-justify {column-count: 4;}}
+		@media only screen and (min-width: 2440px) {.pic-justify {column-count: 5;}}
 	
 	.wip-about {
 		text-align: left;
