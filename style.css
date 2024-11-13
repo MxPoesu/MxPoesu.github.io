@@ -195,7 +195,6 @@ nav, footer {
 	}
 	
 	.nav-button:hover, .nav-button-a:hover {background-color: black}
-	
 	.nav-button {background-color: var(--col-primary);}
 	
 	.nav-button, .nav-button-a {
@@ -220,11 +219,6 @@ nav, footer {
 			margin-right: 2px;
 		}
 	}
-	
-		nav img {
-			vertical-align: text-bottom;
-			height: 1.2em;
-		}
 		
 		@media only screen and (max-width: 768px) {.nav-button img {width: 18px;}}
 
