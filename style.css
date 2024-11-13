@@ -290,13 +290,14 @@ footer {
 	
 
 
-.sitemap {
+.longread-grid {
 	display: grid;
 	grid-template-columns: auto auto;
 }
 	
-	@media only screen and (max-width: 768px) {.sitemap {display: block}}
-	.map-col-1 {padding-right: 15px;}
+	@media only screen and (max-width: 768px) {.longread-grid {display: block}}
+	.longread-wide .col-1 {padding-right: 30px;}
+	.longread-grid p {text-align: left;}
 
 
 
@@ -388,9 +389,9 @@ footer {
 /* MAIN */
 
 /* CENTERING SINGLE COLUMN CONTENT AND GRIDS */
-.longread, .art-grid, .art-grid-back {margin-top: 20px;}
+.longread, .longread-wide, .art-grid, .artwork-nav {margin-top: 20px;}
 
-.longread, .art-grid, .art-grid-back, .neighbours, .portfolio-single {
+.longread, .longread-wide, .art-grid, .artwork-nav, .neighbours, .portfolio-single {
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
@@ -398,14 +399,14 @@ footer {
 
 
 /* PAPERS */
-.home-block, .longread, .art-grid-back, .neighbours, .portfolio-single, .guestbook-form {
+.home-block, .longread, .longread-wide, .artwork-nav, .neighbours, .portfolio-single, .guestbook-form {
 	border-radius: 2px;
 	padding: 20px;
 	font-size: 1rem;
 }
 
 	@media only screen and (max-width: 768px) {
-		.home-block, .longread, .art-grid, .art-grid-back, .neighbours, .portfolio-single, .portfolio-left, .portfolio-right, .guestbook-form, .inputarea, .submit, .guestbook-messages {font-size: 1.3rem;}
+		.home-block, .longread, .longread-wide, .art-grid, .artwork-nav, .neighbours, .portfolio-single, .portfolio-left, .portfolio-right, .guestbook-form, .inputarea, .submit, .guestbook-messages {font-size: 1.3rem;}
 		
 		.skip {font-size: 0.8rem;}
 		.portfolio-single {padding-top: 0; padding-left: 0; padding-right: 0; width: 100%;}
@@ -413,12 +414,12 @@ footer {
 	}
 
 	.home-block, .recentart-1, .recentart-2, .neighbours, .guestbook-form, .portfolio {margin-bottom: 25px;}
-	.home-grid a, .longread a, li a, .art-grid a, .art-grid-back a, .wip-about a, .guestbook-form a {text-decoration: underline; text-decoration-style: dotted;}
+	.home-grid a, .longread a, .longread-wide a, li a, .art-grid a, .wip-about a, .guestbook-form a {text-decoration: underline; text-decoration-style: dotted;}
 		
 		
 
 /* BORDER IMAGE */
-.longread, .home-block, .art-grid-back, .neighbours, .portfolio-single, .guestbook-form, .guestbook-messages {
+.longread, .longread-wide, .home-block, .artwork-nav, .neighbours, .portfolio-single, .guestbook-form, .guestbook-messages {
 	background-color: var(--col-primary);
 	border: 7px solid transparent;
 	border-image-source: url('images/border.webp');
@@ -482,55 +483,7 @@ footer {
 	
 
 	.home-grid p, .home-grid h1 {text-align: left;}
-	.recentart-1, .recentart-2, .gallery {position: relative;}
-
-
-
-
-
-
-
-
-
-
-/* DECORATIONS */
-
-.tape-right, .tape-left, .tape-center {
-	height: 40px;
-	width: 80px;
-	background-color: var(--col-tape);
-	top: -15px;
-	border-radius: 1px;
-	margin: 0;
-	padding: 0;
-}
-
-	.tape-right {
-		top: -15px;
-		left: 400px;
-		transform: rotate(10deg);
-		position: absolute;
-	}
-
-		@media only screen and (max-width: 912px) {
-			.tape-right {top: -15px; left: 260px; position: absolute;}
-		}
-
-	.tape-left {
-		top: -15px;
-		left: -25px;
-		position: absolute;
-		transform: rotate(-10deg);
-	}
-	
-	.tape-center {
-		right: 30%;
-		height: 30px;
-		width: 70px;
-		transform: rotate(3deg);
-		position: absolute;
-	}
-
+	.recentart-1, .recentart-2 {position: relative;}
 
 
 
@@ -619,8 +572,7 @@ footer {
 			border-radius: 2px;
 		}
 		
-.catbio {text-align: left;}
-.catpfp {width: 300px; padding-right: 15px;}		
+.catpfp {max-width: 100%; height: auto;}		
 
 	@media only screen and (max-width: 912px) {
 		.book {max-width: 100%;}
@@ -628,7 +580,6 @@ footer {
 		.audiobooks p {text-align: left;}
 		.passions {grid-template-columns: 50% 50%;}
 		.passions p {padding: 8px; bottom: 61px;}
-		.catbio h1 {text-align: center;}
 		.catpfp {width: 100%; padding: 0;}
 		.catbio td, .catbio col {
 			display: block;
@@ -799,7 +750,7 @@ footer {
 			padding: 10px;
 		}
 		
-		.portfolio-grid .art-grid-back {margin-top: 0; padding: 10px;}
+		.portfolio-grid .artwork-nav {margin-top: 0; padding: 10px;}
 	}		
 
 
@@ -808,43 +759,32 @@ footer {
 			
 .art-grid {width: 100%;}
 
-	.art-grid img {height: 400px; padding-left: 5px; padding-right: 5px;}
-
-	.gallery {filter: drop-shadow(1px 4px 2px var(--col-shadow));}
-
-	@media only screen and (max-width: 768px) {
-		.art-grid img {
-			width: 100%; 
-			height: auto; 
-			margin-left: auto;
-		}
+	.art-grid img {
+		filter: drop-shadow(1px 4px 2px var(--col-shadow));
+		max-width: 100%; 
+		height: auto;
 	}
-	
+
 	.art-grid h1 {
 		margin-bottom: 10px;
-		margin-left: 45px;
+		margin-left: 30px;
 		font-style: normal;
 		font-weight: 400;
 		text-align: left;
 		padding: 3px;
 	}
 	
-	
 	.pic-justify {
-		display: flex;
-		justify-content: space-evenly;
-		flex-wrap: wrap;
+		column-count: 3; 
+		justify-content: center;
 	}
 	
-		.pic-justify img {
-			margin-bottom: 30px;
-		}
 	
 		@media only screen and (max-width: 768px) {
 			.pic-justify {
 				text-align: center; 
-				display: grid; 
-				margin: 0;
+				display: grid;
+				column-count: 1;
 			}
 		}
 	
