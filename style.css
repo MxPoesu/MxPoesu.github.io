@@ -514,7 +514,6 @@ footer {
 
 		@media only screen and (max-width: 912px) {
 			.tape-right {top: -15px; left: 260px; position: absolute;}
-			.tape-center {display: none;}
 		}
 
 	.tape-left {
@@ -807,11 +806,9 @@ footer {
 	
 
 			
+.art-grid {width: 100%;}
 
-
-.art-grid img {
-	height: 250px;
-}
+	.art-grid img {height: 400px; padding-left: 5px; padding-right: 5px;}
 
 	.gallery {filter: drop-shadow(1px 4px 2px var(--col-shadow));}
 
@@ -825,6 +822,7 @@ footer {
 	
 	.art-grid h1 {
 		margin-bottom: 10px;
+		margin-left: 45px;
 		font-style: normal;
 		font-weight: 400;
 		text-align: left;
