@@ -538,13 +538,14 @@ footer {
 
 /* INTERESTS */
 
-.audiobooks {
-	padding-bottom: 10px;
+.audiobook {
+	display: grid;
+	grid-template-columns: auto auto;
 }
 
 	.book {
 		max-width: 100px;
-		padding-right: 10px;
+		padding-right: 20px;
 		margin-bottom: 0;
 	}
 
@@ -570,8 +571,9 @@ footer {
 
 	@media only screen and (max-width: 912px) {
 		.book {max-width: 100%;}
-		.audiobooks td {display: flex; max-width: 100%; text-align: center;}
-		.audiobooks p {text-align: left;}
+		.audiobook {display: block; width: 100%; text-align: center;}
+		.audiobook p {text-align: left;}
+		.book {padding-right: 0; padding-bottom: 15px;}
 		.passions {grid-template-columns: 50% 50%;}
 		.passions p {padding: 8px; bottom: 61px;}
 		.catpfp {width: 100%; padding: 0;}
@@ -608,6 +610,7 @@ footer {
 .fun img {
 	height: 31px; 
 	width: auto; 
+	margin-top: 10px; 
 	padding-left: 0; 
 	padding-right: 0;
 	border-radius: 2px;
@@ -781,8 +784,7 @@ footer {
 	.wip-about {
 		text-align: left;
 		padding-bottom: 20px;
-		padding-left: 0;
-		padding-right: 0;
+		margin: 0;
 	}
 
 
