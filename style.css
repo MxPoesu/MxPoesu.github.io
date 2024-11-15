@@ -2,7 +2,7 @@
 
 html {
 	text-align: center;
-	font-family: Raleway;
+	font-family: var(--font-body);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 90%;
@@ -32,6 +32,10 @@ html {
 		--col-table-border: lightgray; 	
 		--col-button: #472536;
 		--col-button-text: white;
+		
+	--font-header: Reenie Beanie;
+	--font-body: Raleway;
+	--font-emoji: Noto Color Emoji;
 } 
 	
  	@media (prefers-color-scheme: dark) {
@@ -501,25 +505,10 @@ footer {
 
 	.blogpic {
 		max-height: auto;
-		border-radius: 4px;
+		border-radius: 2px;
 		padding: 2.5px;
-		max-width: 50%;
+		max-width: 100%;
 	}
-
-	.meta, .meta-last {
-		text-align: center;
-		font-size: 1rem;
-	}	
-	
-		.meta-last {
-			padding-bottom: 8px;
-			border-bottom: 2px dotted var(--col-border);
-		}
-	
-		@media only screen and (max-width: 768px) {
-			.meta, .meta-last {font-size: 1rem;}
-			.blogpic {max-width: 100%;}
-		}
 	
 	
 	.flag {
@@ -529,8 +518,6 @@ footer {
 		border-radius: 3px;
 		padding: 0;
 	}
-		
-.designhistory {width: 100%; padding-bottom: 20px;}
 
 
 
@@ -559,7 +546,7 @@ footer {
 	}
 	
 	.passions a {text-decoration: none;}
-	.passions div {position: relative; padding: 2.5px;}
+	.passions div {position: relative; padding: 2.5px; margin-bottom: 10px;}
 	
 		.passions img {
 			width: 100%; 
@@ -616,7 +603,7 @@ footer {
 	border-radius: 2px;
 }
 
-.passions div:hover, .contact img:hover, .fun img:hover, .nav-button img:hover {filter: brightness(80%) saturate(1.1);}
+.passions a:hover, .contact img:hover, .fun img:hover, .nav-button img:hover {filter: brightness(80%) saturate(1.1);}
 
 .contacts, .fun, .controls {
 	margin-bottom: 0;
@@ -815,7 +802,7 @@ footer {
 }
 
 	.inputarea {
-		font-family: Raleway;
+		font-family: var(--font-body);
 		font-weight: 400;
 		color: var(--col-text-main);
 		background-color: var(--col-primary);
@@ -829,7 +816,7 @@ footer {
 		color: var(--col-text-light);
 		background-color: var(--col-secondary);
 		padding: 10px;
-		font-family: Raleway;
+		font-family: var(--font-body);
 	}
 	
 	.submit {
@@ -875,7 +862,7 @@ a {
 ::selection {background: var(--col-text-select);}
 
 h1 {
-	font-family: "Reenie Beanie", cursive;
+	font-family: var(--font-header);
 	font-style: bold;
 	font-weight: 600;
 	font-size: 2.6rem;
@@ -886,7 +873,7 @@ h1 {
 }
 
 h2, h3 {
-	font-family: "Raleway";
+	font-family: var(--font-body);
 	font-style: bold;
 	font-weight: 900;
 	font-size: 1rem;
@@ -935,7 +922,13 @@ ol {
 	li {line-height: 1.7;}
 	li p {padding-bottom: 1.5em;}
 
+figure {
+	margin: 0; 
+	text-align: center;
+	margin-bottom: 25px;
+} 
 
+	figure img {width: 100%;}
 
 
 
@@ -998,7 +991,7 @@ ol {
 /* EMOJIS */ 
 
 .emoji {
-	font-family: 'Noto Color Emoji';
+	font-family: var(--font-emoji);
 	font-style: normal;
 	font-weight: 400;
 }
