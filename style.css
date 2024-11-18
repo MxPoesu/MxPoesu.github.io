@@ -24,7 +24,6 @@ html {
 		--col-text-date: #0089B3;				/* Blue. Dates */
 		--col-text-select: #b6f0f8;				/* Light blue. Text selection */
 		--col-shadow: #C2C2C2;					/* Artwork shadow */
-		--col-border: #361C29;					/* Meta-border */
 		--col-bg-c1: #B8E2ED;					/* Blue. Gradient */
 		--col-bg-c2: #F2E4DA;					/* Light beige. Background */
 		--col-tape: rgba(214, 190, 153, 0.5);	/* Light yellow. Tape */
@@ -48,7 +47,6 @@ html {
 			--col-text-date: #5EA8CC;				/* Blue. Dates */
 			--col-text-select: #4D697A;				/* Light blue. Text selection */
 			--col-shadow: rgba(0, 0, 0, 0.5);		/* Artwork shadow */
-			--col-border: #D4D1CF;					/* Meta-border */
 			--col-bg-c1: #1C73A3;					/* Blue. Gradient */
 			--col-bg-c2: #0A0A09;					/* Black. Background */
 			--col-tape: rgba(107, 89, 71, 0.5);		/* Light yellow. Tape */
@@ -618,33 +616,13 @@ footer {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	margin-top: 15px;
-}
-
-	.controls th {
-		margin-bottom: 0;
-		padding-top: 0;
-		padding-bottom: 0;
-		padding-left: 10px;
-		padding-right: 10px;
-		font-size: 0.8rem;
-		text-decoration: none;
+	margin-bottom: 0;
+	font-size: 0.8rem;
+	display: grid;
+	grid-template-columns: auto auto auto;
 	}
 	
-	
-		.controls a {text-decoration: none;}	
-		
-		.controls span, .controls p {
-			font-weight: 300;
-			margin: 0;
-			padding: 0;
-		}	
-		
-			.th1 {text-align: right;}
-
-			.th2 {
-				text-align: left;
-				float: left;
-			}
+	.controls a {text-decoration: none;}	
 
 		
 
@@ -702,12 +680,7 @@ footer {
 		padding-left: 0;
 		padding-right: 0;
 	}
-	
-	.portfolio-grid .meta {
-		text-align: center;
-		padding: 0;
-		margin: 0;
-	}
+
 	
 	.portfolio-grid img, .wip img {
 		height: 100%;
