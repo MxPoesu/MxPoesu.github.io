@@ -897,6 +897,13 @@ ul {
 		list-style-position: outside;
 		padding-left: 15px; 
 	}
+	
+	.dot {
+		list-style-image: none;
+		list-style-type: circle;
+		margin-top: 0;
+		padding-left: 15px; 
+	}
 
 ol {
 	margin-top: 5px;
