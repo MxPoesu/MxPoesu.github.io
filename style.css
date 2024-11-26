@@ -629,6 +629,7 @@ footer {
 	font-size: 0.8rem;
 	display: grid;
 	grid-template-columns: auto auto auto;
+	width: 200px;
 	}
 	
 	.controls a {text-decoration: none;}	
