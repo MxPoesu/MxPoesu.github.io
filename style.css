@@ -824,7 +824,7 @@ footer {
 	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 18px;
+	margin-top: 25px;
 }
 	
 	@media only screen and (min-width: 768px) {.giscus {width: 60%;}}
