@@ -604,7 +604,7 @@ footer {
 .fun img {
 	height: 31px; 
 	width: auto; 
-	margin-top: 10px; 
+	margin: 0; 
 	padding-left: 0; 
 	padding-right: 0;
 	border-radius: 2px;
