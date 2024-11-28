@@ -395,7 +395,7 @@ footer {
 
 
 /* PAPERS */
-.home-block, .longread, .longread-wide, .artwork-nav, .neighbours, .portfolio-single, .guestbook-form {
+.home-block, .longread, .longread-wide, .artwork-nav, .neighbours, .portfolio-single, .guestbook-form, .comments {
 	border-radius: 2px;
 	padding: 20px;
 	font-size: 1rem;
@@ -415,7 +415,7 @@ footer {
 		
 
 /* BORDER IMAGE */
-.longread, .longread-wide, .home-block, .artwork-nav, .neighbours, .portfolio-single, .guestbook-form, .guestbook-messages {
+.longread, .longread-wide, .home-block, .artwork-nav, .neighbours, .portfolio-single, .guestbook-form, .guestbook-messages, .comments {
 	background-color: var(--col-primary);
 	border: 7px solid transparent;
 	border-image-source: url('images/border.webp');
@@ -819,7 +819,7 @@ footer {
 
 
 
-.giscus {
+.comments {
 	max-width: 90%;
 	text-align: left;
 	margin-left: auto;
@@ -827,7 +827,7 @@ footer {
 	margin-top: 25px;
 }
 	
-	@media only screen and (min-width: 768px) {.giscus {width: 60%;}}
+	@media only screen and (min-width: 768px) {.comments {width: 60%;}}
 
 
 	
