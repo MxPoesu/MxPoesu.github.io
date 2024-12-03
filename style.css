@@ -243,6 +243,7 @@ footer {
 	.footer-grid-mob {
 		display: grid;
 		grid-template-columns: 100px 210px;
+		gap: 40px;
 	}
 	
 	.ring a {text-decoration: none;}
