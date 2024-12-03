@@ -580,7 +580,7 @@ footer {
 
 .fun-150 img {width: 150px; height: 20px;}
 
-.passions a:hover, .contact img:hover, .fun img:hover, .fun-150 img:hover, .nav-button img:hover {filter: brightness(80%) saturate(1.1);}
+.passions a:hover, .contact img:hover, .fun img:hover, .fun-150 img:hover {filter: brightness(80%) saturate(1.1);}
 
 .contacts, .fun, .controls {
 	margin-bottom: 0;
