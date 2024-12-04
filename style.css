@@ -76,9 +76,28 @@ html {
 	* {box-sizing: border-box;}
 	
 	body {margin: 0;}
+	
+		body::before {
+			content: "";
+			position: fixed;
+			top: -25px;
+			left: 0;
+			width: 100%;
+			height: 50px;
+			background: linear-gradient(var(--col-bg-c2), transparent);
+			z-index: 1;
+		}
 
-
-
+		body::after {
+			content: "";
+			position: fixed;
+			bottom: -25px;
+			left: 0;
+			width: 100%;
+			height: 50px;
+			background: linear-gradient(transparent, var(--col-bg-c2));
+			z-index: 1;
+		}
 
 
 
@@ -306,52 +325,6 @@ footer {
 		}
 	}
 
-
-
-.fade, .fade-long, .giscus {
-	animation-duration: auto;
-	animation-timing-function: ease-in-out;
-	animation-delay: 0s;
-	animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-fill-mode: both;
-	animation-play-state: running;
-	animation-name: show;
-	animation-range-start: entry 0%;
-	animation-range-end: entry-crossing 60%;
-	animation-timeline: view(y 80vh 10vh);
-}
-	
-	.fade, .giscus {animation-name: show;}
-	.fade-long {animation-name: show-long;}	
-
-	@keyframes show {
-		0% {opacity: 15%;}
-		60% {opacity: 99%;}
-		100% {opacity: 100%;}
-	}
-	
-	@keyframes show-long {
-		0% {opacity: 15%;}
-		20% {opacity: 99%;}
-		100% {opacity: 100%;}
-	}
-	
-	@media(prefers-reduced-motion) {.fade, .fade-long, .giscus {animation: none;}} 
-	
-	@media only screen and (max-width: 768px) {
-		@keyframes show {
-			0% {opacity: 35%; }
-			20% {opacity: 99%; }
-			100% {opacity: 100%; }
-		}
-		
-		@keyframes show-long {
-			0% {opacity: 35%;}
-			10% {opacity: 99%;}
-			100% {opacity: 100%;}
-		}
-	} 
 
 
 
