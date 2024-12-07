@@ -74,31 +74,7 @@ html {
 
 	@media only screen and (max-width: 768px) {html {font-size: 100%;}}
 	* {box-sizing: border-box;}
-	
 	body {margin: 0;}
-	
-		body::before {
-			content: "";
-			position: fixed;
-			top: -25px;
-			left: 0;
-			width: 100%;
-			height: 50px;
-			background: linear-gradient(var(--col-bg-c2), transparent);
-			z-index: 1;
-		}
-
-		body::after {
-			content: "";
-			position: fixed;
-			bottom: -25px;
-			left: 0;
-			width: 100%;
-			height: 50px;
-			background: linear-gradient(transparent, var(--col-bg-c2));
-			z-index: 1;
-		}
-
 
 
 
