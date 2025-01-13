@@ -195,6 +195,7 @@ nav, footer {
 	font-weight: 700;
 	font-size: 2rem;
 	text-align: right;
+	text-decoration: none;
 	transform: translateY(-100%);
 	place-self: end;
 	margin-top: calc(100vh + var(--offset));
@@ -213,6 +214,7 @@ nav, footer {
 	
 	.back-link:focus {transform: translateY(0%);}
 	.back-link:hover {background-color: black;}
+	.skip a, header a {text-decoration: none;}
 
 
 footer {
@@ -326,7 +328,6 @@ footer {
 	}
 
 	.home-block, .recentart-1, .recentart-2, .neighbours, .guestbook-form, .portfolio {margin-bottom: 25px;}
-	.home-grid a, .longread a, .longread-wide a, li a, .art-grid a, .wip-about a, .guestbook-form a, footer a {text-decoration: underline; text-decoration-style: dotted;}
 		
 		
 
@@ -743,9 +744,9 @@ footer {
 
 a {
 	color: var(--primary);
-	text-decoration: none;
-	}
-
+	text-decoration: underline; 
+	text-decoration-style: dotted;
+}
 	a:hover {color: var(--col-text-a); text-shadow: 0 0 8px #FFC38E}
 
 ::selection {background: var(--col-text-select);}
