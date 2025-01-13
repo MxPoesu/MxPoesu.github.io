@@ -214,15 +214,6 @@ nav, footer {
 	.back-link:focus {transform: translateY(0%);}
 	.back-link:hover {background-color: black;}
 
-.skip {
-	margin-top: 10px;
-	margin-bottom: 0;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 0.75rem;
-	max-width: 90%;
-}
-
 
 footer {
 	margin-top: 5px;
@@ -313,7 +304,7 @@ footer {
 /* CENTERING SINGLE COLUMN CONTENT AND GRIDS */
 .longread, .longread-wide, .art-grid, .artwork-nav {margin-top: 20px;}
 
-.longread, .longread-wide, .art-grid, .artwork-nav, .neighbours, .portfolio-single {
+.longread, .longread-wide, .art-grid, .artwork-nav, .neighbours, .portfolio-single, .skip {
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
@@ -329,8 +320,7 @@ footer {
 
 	@media only screen and (max-width: 768px) {
 		.home-block, .longread, .longread-wide, .art-grid, .artwork-nav, .neighbours, .portfolio-single, .portfolio-left, .portfolio-right, .guestbook-form, .inputarea, .submit, .guestbook-messages {font-size: 1.3rem;}
-		
-		.skip {font-size: 0.8rem;}
+	
 		.portfolio-single {padding-top: 0; padding-left: 0; padding-right: 0; width: 100%;}
 		.wip-about {margin: 15px;}
 	}
@@ -424,7 +414,7 @@ footer {
 	text-align: left;
 }
 
-	@media only screen and (min-width: 768px) {.longread {width: 60%;}}
+	@media only screen and (min-width: 768px) {.longread, .skip {width: 60%;}}
 	.longread h1 {text-align: center;}
 
 	.blogpic {
