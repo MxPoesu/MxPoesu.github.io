@@ -82,13 +82,12 @@ html {
 
 header {
 	display: block;
-	padding-top: 2px;
-	padding-bottom: 5px;	
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 	.skip-link {
 		font-weight: 700;
-		left: 50%;
 		transform: translateY(-100%);
 		opacity: 0;
 	}
@@ -155,9 +154,6 @@ header {
 				.nav-2-col {gap: 0; grid-template-columns: 175px 175px;}
 				.menu {display: block;}
 			}
-
-
-
 
 
 
