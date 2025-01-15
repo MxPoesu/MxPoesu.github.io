@@ -241,6 +241,13 @@ footer {
 		width: 130px;
 		font-size: 1.2rem;
 	}
+	
+	.ring-2 img {
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+	}
 
 .longread-grid {
 	display: grid;
