@@ -76,7 +76,7 @@ html {
 		margin: 0;
 		display: grid;
 		grid-template-columns: 29% auto;
-		gap: 30px;
+		gap: 20px;
 	}
 	
 	aside {
