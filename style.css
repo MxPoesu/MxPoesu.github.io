@@ -75,7 +75,7 @@ html {
 	.index {
 		margin: 0;
 		display: grid;
-		grid-template-columns: 26% auto;
+		grid-template-columns: 29% auto;
 		gap: 30px;
 	}
 	
@@ -94,6 +94,17 @@ html {
 		border-image-slice: 20;
 		border-image-outset: 3px;
 	}
+	
+	.pfp {
+		height: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	
+	@media only screen and (min-width: 1920px) {.index {grid-template-columns: 15% auto;}}
+	
+	@media only screen and (max-width: 994px) {aside {overflow-y: scroll;}}
 
 	@media only screen and (max-width: 768px) {
 		html {font-size: 100%;}
@@ -112,6 +123,7 @@ html {
 			border-image-source: url('images/border.webp');
 			border-image-slice: 20;
 			border-image-outset: 3px;
+			overflow: hidden;
 		}
 	}
 
@@ -402,7 +414,7 @@ footer {
 /* BUTTONS */
 
 .contact img {
-	height: 25px; 
+	height: 30px; 
 	padding-left: 3px; 
 	padding-right: 3px;
 }
