@@ -281,7 +281,7 @@ footer {
 
 /* MAIN */
 
-.longread, .longread-wide, .art-grid, .artwork-nav, .neighbours, .portfolio-single, .skip, .skip-i {
+.longread, .longread-wide, .art-grid, .artwork-nav, .neighbours, .portfolio-single, .skip, .skip-i, summary {
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
@@ -326,7 +326,10 @@ footer {
 	text-align: left;
 }
 
-	@media only screen and (min-width: 768px) {.longread, .skip {width: 60%;}}
+	@media only screen and (min-width: 768px) {
+		.longread, .skip, summary {width: 60%;}
+	}
+
 	.longread h1 {text-align: center;}
 
 	.blogpic {
@@ -486,7 +489,7 @@ footer {
 			max-width: auto;
 		}
 		
-		.wip {text-align: center;}
+		.wip {text-align: center; height: 100vh; overflow-y: scroll;}
 		
 		.wip img {
 			height: auto; 
