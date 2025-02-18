@@ -201,13 +201,9 @@ header {
 	
 
 
-footer {
-	margin-top: 25px;
-	padding-bottom: 15px;
-	max-width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-}
+footer {padding-bottom: 15px;}
+	
+	footer p {width: 90%; margin-left: auto; margin-right: auto;}
 	
 	.ring {
 		display: grid;
@@ -543,9 +539,16 @@ footer {
 		margin: 0;
 	}
 
+.divider {
+	margin-top: 15px; 
+	margin-bottom: 15px;
+	width: 100%; 
+	height: auto;
+}
 
+@media only screen and (min-width: 768px) {.divider {width: 95%; margin-right: 25px;}}
 
-
+ 
 
 
 
